@@ -1,226 +1,226 @@
-# 电商文案合规与证据框架
+# Khung tuân thủ và bằng chứng cho nội dung thương mại điện tử
 
-> 本文件用于保守执行和风险筛查，不是法律意见，也不能替代目标市场的现行法律、监管文件、平台规则或专业审核。平台规则和监管要求会变化；当用户询问具体当前规则时，应优先核验官方最新来源。
+> Tệp này dùng để thực thi thận trọng và sàng lọc rủi ro, không phải ý kiến pháp lý, cũng không thay được pháp luật hiện hành, văn bản của cơ quan quản lý, quy định nền tảng hay thẩm định chuyên môn tại thị trường mục tiêu. Quy định nền tảng và yêu cầu quản lý có thể thay đổi; khi người dùng hỏi quy định hiện hành cụ thể, ưu tiên kiểm tra nguồn chính thức mới nhất.
 
-来源索引：[source-notes.md](source-notes.md)。下文的来源 ID 对应官方文本/入口与适用范围；仅有平台入口不代表具体规则已核验。字数/字号是本 Skill 的设计基线，不冒充法律或平台要求。
+Danh mục nguồn: [source-notes.md](source-notes.md). Mã nguồn bên dưới ứng với văn bản/cổng chính thức và phạm vi áp dụng; chỉ có cổng nền tảng không có nghĩa quy định cụ thể đã được kiểm tra. Số chữ/cỡ chữ là chuẩn thiết kế của Skill này, không giả làm yêu cầu pháp luật hay nền tảng.
 
-## 1. 先看“宣称类型”，不要只做敏感词替换
+## 1. Xét “loại tuyên bố” trước, đừng chỉ thay từ nhạy cảm
 
-来源：CN-AD、CN-PRICE；美国场景另看 US-ADS、US-CLAIMS。
+Nguồn: VN-AD, VN-PRICE, VN-CONS; thị trường Mỹ xem thêm US-ADS, US-CLAIMS.
 
-| 宣称类型 | 例子 | 处理原则 |
+| Loại tuyên bố | Ví dụ | Nguyên tắc xử lý |
 |---|---|---|
-| 商品事实 | 材质、净含量、规格、产地、配料 | 以包装、参数表、合同、检测或用户确认资料为准 |
-| 性能/效果 | 更耐用、更快、更静音、改善体验 | 需要可解释的参数、测试、机制或证据；不能把推测写成事实 |
-| 数据 | 20kg、99%、3倍、未检出 | 必须能追溯到可信来源；来源不明时不要使用精确数字 |
-| 认证/资质 | FDA、CE、有机、专利、非遗、获奖 | 只能基于真实有效且适用于该商品/主体/市场的材料表达 |
-| 比较 | 比普通款更强、优于竞品 | 需要统一口径、可比条件和来源；避免虚构竞品数据或贬损性表达 |
-| 价格/稀缺 | 最低价、全网最低、限量、仅剩 | 需要与当前真实销售条件一致，并核验目标平台最新规则 |
-| 用户评价/销量 | 10万+好评、复购第一 | 只能引用真实可核验的数据，不可模拟消费者证言 |
-| 健康/医疗/功效 | 治疗、修复、降血糖、增强免疫 | 高风险；必须先确认产品法律属性、批准/备案范围和目标市场规则 |
+| Sự thật sản phẩm | Chất liệu, khối lượng tịnh, quy cách, xuất xứ, thành phần | Lấy bao bì, bảng thông số, hợp đồng, kiểm nghiệm hoặc tài liệu người dùng xác nhận làm chuẩn |
+| Tính năng/hiệu quả | Bền hơn, nhanh hơn, êm hơn, cải thiện trải nghiệm | Cần thông số, thử nghiệm, cơ chế hoặc bằng chứng giải thích được; không viết phỏng đoán thành sự thật |
+| Số liệu | 20kg, 99%, gấp 3 lần, không phát hiện | Phải truy được nguồn đáng tin; nguồn không rõ thì không dùng số chính xác |
+| Chứng nhận/giấy phép | VietGAP, OCOP, ISO, hữu cơ, bằng sáng chế, giải thưởng | Chỉ được dùng dựa trên tài liệu thật, còn hiệu lực và áp dụng cho đúng sản phẩm/chủ thể/thị trường |
+| So sánh | Mạnh hơn loại thường, tốt hơn đối thủ | Cần cùng tiêu chí, điều kiện so sánh được và nguồn; tránh bịa số liệu đối thủ hoặc hạ thấp đối thủ |
+| Giá/khan hiếm | Giá thấp nhất, rẻ nhất thị trường, số lượng có hạn, chỉ còn | Phải khớp điều kiện bán thật hiện tại, kiểm tra quy định mới nhất của nền tảng và quy định khuyến mại |
+| Đánh giá/doanh số | 10.000+ đánh giá 5 sao, mua lại số một | Chỉ trích dẫn số liệu thật, kiểm chứng được; không giả lập lời chứng của người tiêu dùng |
+| Sức khỏe/y tế/công dụng | Chữa, phục hồi, hạ đường huyết, tăng đề kháng | Rủi ro cao; phải xác định tính chất pháp lý của sản phẩm, phạm vi được cấp phép/công bố và quy định thị trường mục tiêu trước |
 
-## 2. 证据状态
+## 2. Trạng thái bằng chứng
 
-内部执行状态，不是监管分类；事实义务参考 CN-AD、US-ADS。材料需核对对象与范围，用户口述或示例成图不等于资质证明。
+Đây là trạng thái thực thi nội bộ, không phải phân loại pháp lý; nghĩa vụ trung thực tham chiếu VN-AD, VN-CONS, US-ADS. Tài liệu phải đối chiếu đối tượng và phạm vi; lời kể của người dùng hay ảnh mẫu không phải bằng chứng giấy phép.
 
-对每条关键宣称使用四种状态：
+Mỗi tuyên bố then chốt dùng một trong bốn trạng thái:
 
-- **已确认**：用户材料或可靠来源直接支持。
-- **有依据**：可由已确认事实合理翻译，但不能扩大含义。
-- **待补证**：需要检测、认证、官方规则、批准范围或其他证据。
-- **禁止**：明显要求编造、误导、越权功效、虚假背书或无法合法支持。
+- **Đã xác nhận**: tài liệu người dùng hoặc nguồn đáng tin hỗ trợ trực tiếp.
+- **Có căn cứ**: có thể chuyển hợp lý từ sự thật đã xác nhận, nhưng không được mở rộng nghĩa.
+- **Cần bổ sung bằng chứng**: cần kiểm nghiệm, chứng nhận, quy định chính thức, phạm vi được cấp phép hoặc bằng chứng khác.
+- **Cấm**: rõ ràng đòi bịa đặt, gây hiểu lầm, vượt phạm vi công dụng, xác nhận giả hoặc không thể hỗ trợ hợp pháp.
 
-最终稿只使用“已确认”和“有依据”。“待补证”要改为中性表达，或整项删除并列入稿外待确认清单。
+Bản cuối chỉ dùng “Đã xác nhận” và “Có căn cứ”. “Cần bổ sung bằng chứng” phải chuyển sang cách nói trung tính, hoặc bỏ hẳn và đưa vào danh sách cần xác nhận ngoài bản.
 
-## 3. 高风险表达
+## 3. Cách diễn đạt rủi ro cao
 
-来源：CN-AD、CN-WEB、CN-HEALTH；其他市场按当地规则，不能直接迁移中国禁限词表。
+Nguồn: VN-AD, VN-AD-ND, VN-AD-PENALTY, VN-FOOD; thị trường khác theo quy định địa phương, không bê nguyên danh sách từ cấm của Việt Nam sang.
 
-### 绝对化与保证性表达
+### Cách nói tuyệt đối và cam kết
 
-“最好、第一、唯一、100%、绝对、彻底、永久、零风险、保证有效”等词通常具有较高风险，但是否违法或可用取决于具体语境、证据、司法辖区和平台规则。不要把一张静态禁词表当成最终法律判断。
+“Nhất, duy nhất, tốt nhất, số một, 100%, tuyệt đối, triệt để, vĩnh viễn, không rủi ro, cam kết hiệu quả”… thường có rủi ro cao, nhưng có vi phạm hay được phép dùng hay không còn tùy ngữ cảnh, bằng chứng, thẩm quyền và quy định nền tảng. Đừng coi một danh sách từ cấm tĩnh là kết luận pháp lý cuối cùng.
 
-国内商品主图/PDP按第10节更严格的默认策略执行：不用最高级营销口径和医疗功效承诺，潜在合法例外另作人工复核，不直接进入最终稿。真实的“第一步”“100g”等操作顺序/规格不能只因含某个字而判违法。参见 CN-AD、CN-AD-ABS、CN-CITE。
+Ảnh chính/PDP hướng tới người tiêu dùng Việt Nam thực hiện theo chiến lược mặc định chặt hơn ở mục 10: không dùng cách nói so sánh nhất và cam kết công dụng chữa bệnh trong lớp tiếp thị; ngoại lệ có thể hợp pháp đưa rà soát thủ công riêng, không vào thẳng bản cuối. Trình tự thao tác và quy cách có thật như “bước đầu tiên”, “100g” không bị coi là vi phạm chỉ vì chứa một chữ nào đó. Xem VN-AD, VN-AD-ND.
 
-默认做法：
+Mặc định:
 
-- 能用客观参数就不用空泛最高级。
-- 能写“基于某测试/某条件”就不要写无条件保证。
-- 无证据时删除或降级，而不是简单换成“更”“较”“有助于”就认为安全。
+- Dùng được thông số khách quan thì không dùng so sánh nhất chung chung.
+- Viết được “theo thử nghiệm X / trong điều kiện Y” thì không viết cam kết vô điều kiện.
+- Không có bằng chứng thì xóa hoặc hạ mức, không phải chỉ đổi sang “hơn”, “khá”, “hỗ trợ” là cho rằng an toàn.
 
-### 医疗、健康与身体功能
+### Y tế, sức khỏe và chức năng cơ thể
 
-不要仅靠加“非医疗产品”“效果因人而异”等免责声明来修复本身不允许的宣称。先判断产品法律属性，再判断允许说什么。
+Đừng chỉ thêm tuyên bố miễn trừ như “không phải sản phẩm y tế”, “hiệu quả tùy cơ địa” để sửa một tuyên bố vốn không được phép. Xác định tính chất pháp lý của sản phẩm trước, rồi mới xét được nói gì.
 
-高风险类别包括但不限于：
+Nhóm rủi ro cao gồm nhưng không giới hạn:
 
-- 普通食品与饮料
-- 保健食品 / 膳食补充剂
-- 药品、医疗器械
-- 健康护理、体态管理、按摩器材
-- 儿童、孕产妇相关商品
+- Thực phẩm thông thường và đồ uống
+- Thực phẩm bảo vệ sức khỏe / thực phẩm chức năng / thực phẩm bổ sung
+- Thuốc, trang thiết bị y tế
+- Chăm sóc sức khỏe, quản lý vóc dáng, máy massage
+- Sản phẩm cho trẻ em, phụ nữ mang thai và sau sinh
 
-## 4. 食品与健康类保守执行
+## 4. Thực thi thận trọng với thực phẩm và sức khỏe
 
-来源：CN-FOOD、CN-HEALTH；美国对应 US-CLAIMS/US-ADS，禁止跨市场扩大批准范围。
+Nguồn: VN-FOOD, VN-HEALTH; Mỹ tương ứng US-CLAIMS/US-ADS; không mở rộng phạm vi được phép giữa các thị trường.
 
-### 普通食品/饮料
+### Thực phẩm thông thường/đồ uống
 
-在未确认目标市场允许范围和产品身份前，默认不要把普通食品写成具有疾病预防、治疗、身体功能改善或特定健康功效。
+Trước khi xác nhận phạm vi được phép của thị trường mục tiêu và tính chất sản phẩm, mặc định không viết thực phẩm thông thường thành có công dụng phòng bệnh, chữa bệnh, cải thiện chức năng cơ thể hay công dụng sức khỏe cụ thể.
 
-优先使用：
+Ưu tiên dùng:
 
-- 原料与产地
-- 配料与真实营养信息
-- 口感、香气、风味
-- 工艺、包装、规格
-- 冲泡/食用方式
-- 真实使用场景
-- 可验证的品牌与供应链信息
+- Nguyên liệu và vùng trồng/xuất xứ
+- Thành phần và thông tin dinh dưỡng thật
+- Vị, mùi, hương
+- Quy trình, bao bì, quy cách
+- Cách pha/cách dùng
+- Bối cảnh sử dụng thật
+- Thông tin thương hiệu và chuỗi cung ứng kiểm chứng được
 
-### 保健食品 / 膳食补充剂
+### Thực phẩm bảo vệ sức khỏe / thực phẩm bổ sung
 
-不同市场定义和可宣称范围差异很大。必须确认：
+Định nghĩa và phạm vi được tuyên bố khác nhau rất nhiều giữa các thị trường. Phải xác nhận:
 
-1. 目标国家/地区。
-2. 商品法律属性。
-3. 注册、备案、批准、标签或允许宣称的原文。
-4. 平台当前类目政策。
+1. Quốc gia/khu vực mục tiêu.
+2. Tính chất pháp lý của sản phẩm.
+3. Bản gốc giấy tiếp nhận đăng ký bản công bố sản phẩm, giấy xác nhận nội dung quảng cáo, nhãn hoặc tuyên bố được phép.
+4. Chính sách ngành hàng hiện hành của nền tảng.
 
-没有上述信息时，不扩大功效，不把其他市场的批准范围直接移植过来。
+Thiếu các thông tin trên thì không mở rộng công dụng, không bê nguyên phạm vi được phép của thị trường khác sang.
 
-### 医疗器械 / 健康设备 / 按摩器材
+### Trang thiết bị y tế / thiết bị sức khỏe / máy massage
 
-不要因商品与“疼痛、康复、矫正、治疗”场景相关，就默认可以使用医疗化表达。先确认产品是否为医疗器械、适应范围和注册/批准信息。
+Đừng vì sản phẩm liên quan đến bối cảnh “đau, phục hồi, chỉnh tư thế, điều trị” mà mặc định được dùng cách nói y khoa. Xác nhận trước sản phẩm có phải trang thiết bị y tế không, phạm vi chỉ định và thông tin công bố/đăng ký lưu hành.
 
-非医疗属性商品优先描述：
+Sản phẩm không mang tính chất y tế ưu tiên mô tả:
 
-- 使用场景
-- 材质与结构
-- 档位、续航、噪音、便携性等真实参数
-- 操作体验
+- Bối cảnh sử dụng
+- Chất liệu và cấu trúc
+- Thông số thật như số chế độ, thời lượng pin, độ ồn, độ gọn nhẹ
+- Trải nghiệm thao tác
 
-### 母婴 / 儿童用品
+### Mẹ và bé / đồ trẻ em
 
-先区分儿童日用品、婴幼儿食品、特医食品和儿童化妆品，并核对年龄、使用条件、警示与测试范围。没有对应证据，不写“新生儿适用”“食品级”“无敏”“绝对安全”，不虚构医生/妈妈评价。中国场景查 CN-AD/CN-FOOD/CN-HEALTH 及适用标准；海外场景重新核验。资料不全时先交证据缺口与可支持的外观/规格方向。
+Phân biệt đồ dùng trẻ em, thực phẩm cho trẻ nhỏ, sản phẩm dinh dưỡng y học và mỹ phẩm trẻ em trước, đối chiếu độ tuổi, điều kiện dùng, cảnh báo và phạm vi thử nghiệm. Không có bằng chứng tương ứng thì không viết “dùng được cho trẻ sơ sinh”, “an toàn thực phẩm”, “không gây kích ứng”, “an toàn tuyệt đối”, không bịa đánh giá của bác sĩ/mẹ bỉm. Sữa và sản phẩm dinh dưỡng cho trẻ nhỏ kiểm VN-CHILD (có giới hạn quảng cáo riêng); thị trường nước ngoài kiểm lại từ đầu. Tài liệu chưa đủ thì giao trước danh sách thiếu bằng chứng và hướng ngoại hình/quy cách có hỗ trợ.
 
-### 化妆品 / 个护
+### Mỹ phẩm / chăm sóc cá nhân
 
-来源：CN-COS、CN-AD。先核对商品属性、注册/备案、标签和功效依据，不能把普通护肤写成治疗，也不能由某一成分推断整品功效。儿童化妆品还需专项规则；无法访问原文时标记待核验。
+Nguồn: VN-COS, VN-AD. Kiểm tra tính chất sản phẩm, phiếu công bố sản phẩm mỹ phẩm, nhãn và căn cứ công dụng trước; không viết chăm sóc da thông thường thành điều trị, không suy công dụng toàn sản phẩm từ một thành phần. Mỹ phẩm trẻ em cần quy định riêng; không truy cập được bản gốc thì đánh dấu cần kiểm tra.
 
-## 5. 数据、检测与认证
+## 5. Số liệu, kiểm nghiệm và chứng nhận
 
-来源：CN-AD、CN-COS、CN-HEALTH、US-ADS；品牌/Logo 权利另查 CN-IP。没有实际授权或材料，不因图上存在某标志就认定已认证。
+Nguồn: VN-AD, VN-AD-ND, VN-COS, VN-HEALTH, US-ADS; quyền nhãn hiệu/logo kiểm VN-IP. Không có ủy quyền hay tài liệu thực tế thì không vì ảnh có một dấu nào đó mà kết luận đã được chứng nhận.
 
-以下内容必须能追溯：
+Các nội dung sau phải truy được nguồn:
 
-- 精确百分比、倍数、测试结果
-- “未检出”“零添加”“无某成分”等可验证声明
-- 认证、证书、批准、注册、专利、奖项
-- 产地、年份、等级、稀缺性
-- 销量、排名、复购、好评率
+- Phần trăm chính xác, số lần, kết quả thử nghiệm
+- Tuyên bố kiểm chứng được như “không phát hiện”, “không chất bảo quản”, “không chứa X”
+- Chứng nhận, giấy chứng nhận, giấy phép, công bố, bằng sáng chế, giải thưởng
+- Xuất xứ, năm, hạng, độ hiếm
+- Doanh số, xếp hạng, tỷ lệ mua lại, tỷ lệ đánh giá tốt
 
-引用时尽量保留：来源名称、适用产品、适用时间、检测条件或证书范围。不要把“企业有证”自动等同于“该 SKU 可使用该宣称”。
+Khi trích dẫn, cố giữ: tên nguồn, sản phẩm áp dụng, thời gian áp dụng, điều kiện thử nghiệm hoặc phạm vi giấy chứng nhận. Đừng mặc định “doanh nghiệp có giấy” là “SKU này được dùng tuyên bố đó”. Ví dụ OCOP, VietGAP, chỉ dẫn địa lý phải đúng sản phẩm, đúng chủ thể và còn hiệu lực.
 
-## 6. 对比与竞品
+## 6. So sánh và đối thủ
 
-来源：CN-AD、CN-IP、US-ADS。
+Nguồn: VN-AD, VN-COMP, VN-IP, US-ADS.
 
-可以做“帮助用户选择”的客观对比，但必须：
+Có thể làm so sánh khách quan “giúp người dùng chọn”, nhưng phải:
 
-- 使用一致口径和同一比较条件。
-- 不虚构对手参数。
-- 不把主观评价写成事实。
-- 不用贬损性表达替代证据。
-- 如果使用具体竞品品牌，确认目标市场和平台是否允许这种呈现。
+- Dùng cùng tiêu chí và cùng điều kiện so sánh.
+- Không bịa thông số đối thủ.
+- Không viết đánh giá chủ quan thành sự thật.
+- Không dùng lời hạ thấp thay cho bằng chứng.
+- Không so sánh trực tiếp giá, chất lượng, hiệu quả với hàng hóa cùng loại của tổ chức, cá nhân khác khi pháp luật áp dụng cấm (Luật Quảng cáo có quy định riêng); dùng thương hiệu đối thủ cụ thể thì xác nhận thị trường và nền tảng có cho phép không.
 
-更稳妥的做法是比较“本品规格/结构/使用条件”与“常见选择维度”。
+Cách an toàn hơn là so sánh “quy cách/cấu trúc/điều kiện dùng của sản phẩm này” với “các tiêu chí chọn mua thường gặp”.
 
-### 价格 / 组合 / 促销
+### Giá / combo / khuyến mãi
 
-来源：CN-PRICE、CN-AD 及对应平台当前活动规则。核对币种、SKU、件数、单位价/总价、优惠门槛、人群、有效期、运费和对比价依据。限制条件紧邻价格，不能只在底部藏小字。未提供价目和活动证据时，只写已知组合，不编造划线价、最低价、限量或倒计时。
+Nguồn: VN-PRICE, VN-PROMO, VN-AD và quy định chương trình hiện hành của nền tảng. Đối chiếu đơn vị tiền tệ (VNĐ), SKU, số lượng, đơn giá/tổng giá, ngưỡng ưu đãi, đối tượng, thời hạn, phí vận chuyển và căn cứ giá so sánh. Điều kiện giới hạn đặt sát giá, không giấu chữ nhỏ ở đáy. Mức giảm, thời gian khuyến mại và hình thức chương trình kiểm theo quy định khuyến mại hiện hành (có giới hạn mức giảm và số ngày). Không có bảng giá và căn cứ chương trình thì chỉ viết combo đã biết, không bịa giá gạch, giá thấp nhất, số lượng có hạn hay đếm ngược.
 
-## 7. 平台规则的时效性
+## 7. Tính cập nhật của quy định nền tảng
 
-来源：[平台官方入口及访问限制](source-notes.md#平台官方入口)。结论须记录实际读取的文档标题、版本/生效日期和条款，不能只贴首页。
+Nguồn: [cổng chính thức của nền tảng và giới hạn truy cập](source-notes.md#cổng-chính-thức-của-nền-tảng). Kết luận phải ghi tên tài liệu thực đã đọc, phiên bản/ngày hiệu lực và điều khoản, không chỉ dán trang chủ.
 
-不要把历史经验写成“平台现在明确规定”。以下内容通常需要实时核验：
+Đừng viết kinh nghiệm cũ thành “nền tảng hiện quy định rõ”. Các nội dung sau thường cần kiểm tra thời gian thực:
 
-- 主图是否允许文字、徽章、边框、道具、人物或场景
-- 图片尺寸、比例、文件格式
-- 类目资质与禁售规则
-- 价格、促销、对比、功效、评价相关限制
-- A+、Brand Story、详情页或视频素材规则
+- Ảnh chính có cho phép chữ, huy hiệu, viền, đạo cụ, người hay bối cảnh không
+- Kích thước, tỷ lệ, định dạng ảnh
+- Giấy tờ ngành hàng và quy định hàng cấm bán
+- Giới hạn về giá, khuyến mãi, so sánh, công dụng, đánh giá
+- Quy định A+, Brand Story, trang chi tiết hoặc tư liệu video
 
-如果可以联网，优先查询官方帮助中心、政策中心或卖家后台官方文档。无法核验时明确写：
+Có mạng thì ưu tiên tra trung tâm trợ giúp, trung tâm chính sách hoặc tài liệu chính thức trong kênh người bán. Không kiểm tra được thì ghi rõ:
 
-> 当前平台规则未实时核验，以下仅按保守视觉与文案原则执行，上线前需以平台最新官方规则复核。
+> Quy định nền tảng hiện hành chưa được kiểm tra thời gian thực; phần dưới chỉ thực hiện theo nguyên tắc hình ảnh và nội dung thận trọng, trước khi đăng cần đối chiếu lại quy định chính thức mới nhất của nền tảng.
 
-## 8. 上线前检查
+## 8. Kiểm tra trước khi đăng
 
-- [ ] 每个关键事实是否有来源？
-- [ ] 每个精确数字是否可追溯？
-- [ ] 是否把“待补证”写成了确定事实？
-- [ ] 是否存在医疗、健康、功效或保证性暗示？
-- [ ] 是否存在虚构认证、销量、评价、排名或竞品数据？
-- [ ] 免责声明是否被错误地当成“免责通行证”？
-- [ ] 当前平台规则是否需要实时核验？
-- [ ] 跨境场景是否按目标市场重新判断，而非直接套用中国规则？
+- [ ] Mỗi sự thật then chốt có nguồn không?
+- [ ] Mỗi con số chính xác có truy được không?
+- [ ] Có viết “cần bổ sung bằng chứng” thành sự thật chắc chắn không?
+- [ ] Có ám chỉ y tế, sức khỏe, công dụng hay cam kết không?
+- [ ] Có bịa chứng nhận, doanh số, đánh giá, xếp hạng hay số liệu đối thủ không?
+- [ ] Tuyên bố miễn trừ có bị dùng sai như “giấy thông hành” không?
+- [ ] Quy định nền tảng hiện hành có cần kiểm tra thời gian thực không?
+- [ ] Bán xuyên biên giới có xét lại theo thị trường mục tiêu, không bê nguyên quy định Việt Nam không?
 
-## 9. 来源索引（供核验，非法律意见）
+## 9. Danh mục nguồn (để kiểm tra, không phải ý kiến pháp lý)
 
-形成宣称或规则结论前先查对应官方材料，不等写完最终稿才补来源。[详细来源、市场、版本与访问限制](source-notes.md) 集中维护，避免两处索引互相漂移。
+Trước khi đưa ra kết luận về tuyên bố hay quy định, tra tài liệu chính thức tương ứng trước, không đợi viết xong bản cuối mới bổ sung nguồn. [Nguồn chi tiết, thị trường, phiên bản và giới hạn truy cập](source-notes.md) được quản lý tập trung, tránh hai nơi lệch nhau.
 
-| 类型 | 核验文件/机构 | 官方入口与范围 |
+| Loại | Văn bản/cơ quan cần kiểm tra | Cổng chính thức và phạm vi |
 |---|---|---|
-| 中国广告与消费者保护 | 《广告法》《消费者权益保护法》《电子商务法》《反不正当竞争法》及互联网广告规章 | [国家法律法规数据库](https://flk.npc.gov.cn/)、[市场监管总局](https://www.samr.gov.cn/)；具体文本与版本见详细索引 |
-| 中国食品与保健食品 | 《食品安全法》、实施条例、保健食品标签与广告审查材料 | [市场监管总局](https://www.samr.gov.cn/)；按实际法律属性与批准范围核验 |
-| 中国药品/医疗器械/化妆品 | 注册/备案、标签、功效依据、广告与专项要求 | [国家药监局](https://www.nmpa.gov.cn/)；本次入口返回412，未当作已读具体条款 |
-| 国内平台 | 淘宝/天猫、京东、拼多多、抖音小店、小红书、视频号/微信小店 | [各平台官方入口与访问结果](source-notes.md#平台官方入口)；按展示位置和当前类目文档复核 |
-| Amazon / Shopify / 其他跨境平台 | 对应站点图片、A+、类目、宣称与促销条款 | [卖家中心/帮助中心索引](source-notes.md#平台官方入口)；入口可访问不等于具体规则已核验 |
-| 美国市场 | 广告真实性、评价/代言披露、食品/补充剂宣称与标签 | [FTC](https://www.ftc.gov/)、[FDA](https://www.fda.gov/)；对应文件见详细索引 |
-| 其他市场 | 当地广告、食品、化妆品、儿童用品等要求 | 先定位目标国家/地区监管机构；不能移植其他市场的批准范围 |
+| Quảng cáo và bảo vệ người tiêu dùng Việt Nam | Luật Quảng cáo và văn bản sửa đổi, nghị định hướng dẫn, nghị định xử phạt; Luật Bảo vệ quyền lợi người tiêu dùng; quy định thương mại điện tử; Luật Cạnh tranh | [Cơ sở dữ liệu văn bản Chính phủ](https://vanban.chinhphu.vn/), [Bộ Văn hóa, Thể thao và Du lịch](https://bvhttdl.gov.vn/), [Bộ Công Thương](https://moit.gov.vn/); văn bản và phiên bản cụ thể xem danh mục chi tiết |
+| Thực phẩm và thực phẩm bảo vệ sức khỏe | Luật An toàn thực phẩm, nghị định hướng dẫn, quy định công bố và quảng cáo thực phẩm | [Cục An toàn thực phẩm](https://vfa.gov.vn/); kiểm theo tính chất pháp lý và phạm vi công bố thực tế |
+| Thuốc/trang thiết bị y tế/mỹ phẩm | Công bố/đăng ký lưu hành, nhãn, căn cứ công dụng, xác nhận nội dung quảng cáo | [Bộ Y tế](https://moh.gov.vn/), [Cục Quản lý Dược](https://dav.gov.vn/); chưa truy cập được trong lần Việt hóa này |
+| Nền tảng trong nước | Shopee, Lazada, TikTok Shop, Tiki, Sendo, Facebook/Zalo | [Cổng chính thức từng nền tảng](source-notes.md#cổng-chính-thức-của-nền-tảng); kiểm lại theo vị trí hiển thị và tài liệu ngành hàng hiện hành |
+| Amazon / Shopify / nền tảng xuyên biên giới khác | Quy định ảnh, A+, ngành hàng, tuyên bố và khuyến mãi của từng site | [Chỉ mục trung tâm người bán/trợ giúp](source-notes.md#cổng-chính-thức-của-nền-tảng); truy cập được cổng không có nghĩa đã kiểm tra quy định cụ thể |
+| Thị trường Mỹ | Tính trung thực quảng cáo, công khai đánh giá/người đại diện, tuyên bố và nhãn thực phẩm/thực phẩm bổ sung | [FTC](https://www.ftc.gov/), [FDA](https://www.fda.gov/); văn bản tương ứng xem danh mục chi tiết |
+| Thị trường khác | Yêu cầu địa phương về quảng cáo, thực phẩm, mỹ phẩm, đồ trẻ em… | Xác định cơ quan quản lý của quốc gia/khu vực mục tiêu trước; không bê phạm vi được phép của thị trường khác |
 
-本轮已逐个尝试访问列明入口；可读正文、仅导航/JavaScript、需要登录及网络/权限阻塞分别记录。无法读取具体文档时标记“未核验”，不能把访问入口或历史日期写成现行条款已确认。引用结论需附来源名称、版本/生效日期（可得时）与核验日期。
+Không đọc được tài liệu cụ thể thì đánh dấu “chưa kiểm tra”, không viết truy cập được cổng hay ngày cũ thành điều khoản hiện hành đã xác nhận. Kết luận trích dẫn kèm tên nguồn, phiên bản/ngày hiệu lực (nếu có) và ngày kiểm tra.
 
-## 10. 国内主图/详情图文案执行
+## 10. Thực thi nội dung ảnh chính/ảnh chi tiết tại Việt Nam
 
-适用：面向中国大陆推广的商品主图、详情图、商品卡及其文案改稿，包括淘宝/天猫、京东、拼多多、抖音小店、小红书、视频号/微信小店。先按实际市场、产品类别和内容性质判断；不能靠改名为“详情说明”“用户体验”规避商业宣传责任，也不能声称所有商品信息都在法律上自动属于广告。无论是否构成广告，均不编造、误导商品信息。
+Áp dụng cho ảnh chính, ảnh chi tiết, thẻ sản phẩm và bản sửa nội dung hướng tới người tiêu dùng Việt Nam, gồm Shopee, Lazada, TikTok Shop, Tiki, Sendo, Facebook/Zalo shop và website bán hàng. Xét theo thị trường, loại sản phẩm và tính chất nội dung thực tế; không thể đổi tên thành “mô tả chi tiết”, “trải nghiệm người dùng” để né trách nhiệm quảng cáo, cũng không tuyên bố mọi thông tin sản phẩm đương nhiên là quảng cáo theo luật. Dù có phải quảng cáo hay không, đều không bịa đặt, không gây hiểu lầm về thông tin sản phẩm.
 
-### 法律底线与本 Skill 的保守默认
+### Ranh giới pháp luật và mặc định thận trọng của Skill
 
-来源均在 [官方索引](source-notes.md)。下表是执行摘要，不替代原文，也不把内部设计建议写成法条。
+Nguồn đều ở [danh mục chính thức](source-notes.md). Bảng dưới là tóm tắt thực thi, không thay bản gốc, không viết khuyến nghị thiết kế nội bộ thành điều luật; số điều có thể đổi sau sửa đổi, hãy đối chiếu bản hợp nhất hiện hành.
 
-| 检查项 | 依据 | 执行动作 |
+| Mục kiểm tra | Căn cứ | Hành động thực thi |
 |---|---|---|
-| 宣称真实、明确且不误导 | CN-AD 第4、8、28条 | 材质、规格、产地、功能、价格、荣誉和承诺逐项对应资料，不把成分/结构推成整品功效；资料有问题也不能照抄 |
-| 绝对化、优越性营销 | CN-AD 第9条第3项；CN-AD-ABS 第2、5–7项 | 默认改写“国家级、最高级、最佳、全网第一、唯一、顶级”等营销口径；有材料仍先核对语境、例外和误导风险，疑难原句不入最终文字层 |
-| 排名、销量与比较 | CN-AD 第11、13、28条；CN-CITE 第12–13项 | 不贬损竞品，不移植竞品证据；不得只补时间/地域就认定“第一”可用。小于省级地域、过窄行业、无专有国/行标等情形须按2026引证指南核对 |
-| 引证数据与文摘 | CN-AD 第11条；CN-CITE 第4–11、14–15项 | 查机构资质、方法、原始结论和可查询来源；消费者可见处标明出处、实验条件、样品限定、适用范围和期限，不把实验室结果扩大成日常保证 |
-| 价格、赠品及允诺 | CN-AD 第8条；CN-PRICE；CN-CITE 第11项 | 价格对应SKU/件数/币种；券、人群、拼单、运费、活动期等影响理解的条件紧邻价格；赠品写清品种、规格、数量、期限和方式，信息不全则不写赠品承诺 |
-| 普通商品与健康、药械 | CN-AD 第16–20条 | 普通商品不宣传疾病治疗或混淆药械身份；保健食品不宣传疾病预防/治疗、替代药物或保证性效果。普通食品不因成分与养生联想就写保健功能 |
-| 专利、官方背书、证言 | CN-AD 第9、12、33、38条 | 不借国家机关名义/形象背书；专利核对有效权利、种类和专利号；认证不得扩大对象与范围；他人名义/形象和评价不伪造、不超授权 |
-| 其他禁止内容与特殊受众 | CN-AD 第9–10、20、23、38、40条；CN-WEB 第12条 | 排查国家标识、歧视、迷信等禁止内容，按类别核对婴儿食品替代母乳宣传、酒类、未成年人定向媒介与代言限制；不因商品资料真实而免检 |
-| 禁限广告 | CN-AD 第15、22条；CN-WEB 第6条 | 烟草/电子烟、特殊药品和处方药先查禁止、媒介限制与适用例外，不默认可做普通电商广告 |
-| 法定广告审查 | CN-AD 第46条；CN-WEB 第7–9条 | 药械、保健食品等须审查广告缺批准材料时停止生成待发布广告，只列补证清单和非发布结构。已审内容不得任意剪改；法定审查不能由店铺或平台审核代替 |
+| Tuyên bố trung thực, rõ ràng, không gây hiểu lầm | VN-AD (hành vi cấm: quảng cáo không đúng hoặc gây nhầm lẫn về số lượng, chất lượng, giá, công dụng, kiểu dáng, bao bì, xuất xứ, bảo hành…); VN-CONS | Chất liệu, quy cách, xuất xứ, chức năng, giá, danh hiệu và cam kết đối chiếu từng mục với tài liệu, không suy công dụng toàn sản phẩm từ thành phần/cấu trúc; tài liệu có vấn đề cũng không chép lại |
+| “Nhất”, “duy nhất”, “tốt nhất”, “số một” và từ tương tự | VN-AD (hành vi cấm khi không có tài liệu hợp pháp chứng minh); VN-AD-ND (loại tài liệu hợp pháp, yêu cầu ghi nguồn và thời gian) | Mặc định viết lại; có tài liệu vẫn kiểm ngữ cảnh, loại tài liệu được chấp nhận, thời điểm và phạm vi; câu khó không vào lớp chữ cuối |
+| Xếp hạng, doanh số và so sánh | VN-AD (cấm so sánh trực tiếp với hàng cùng loại của người khác, cấm cạnh tranh không lành mạnh); VN-COMP | Không hạ thấp đối thủ, không bê bằng chứng của đối thủ; “số một trên Shopee” cần căn cứ có thời gian, phạm vi, nguồn và vẫn phải kiểm có được dùng không |
+| Số liệu trích dẫn và kết quả thử nghiệm | VN-AD, VN-AD-ND, VN-CONS | Kiểm tư cách tổ chức, phương pháp, kết luận gốc và nguồn tra cứu được; ở chỗ người tiêu dùng nhìn thấy ghi rõ nguồn, điều kiện thử nghiệm, giới hạn mẫu, phạm vi và thời hạn; không mở rộng kết quả phòng thí nghiệm thành cam kết hàng ngày |
+| Giá, quà tặng và cam kết | VN-PRICE, VN-PROMO, VN-CONS | Giá ứng với SKU/số lượng/VNĐ; voucher, đối tượng, đơn tối thiểu, phí ship, thời gian chương trình đặt sát giá; quà tặng ghi rõ loại, quy cách, số lượng, thời hạn và cách nhận; thiếu thông tin thì không viết cam kết quà tặng |
+| Hàng thông thường và sức khỏe, thuốc, thiết bị y tế | VN-AD, VN-FOOD, VN-HEALTH | Hàng thông thường không quảng cáo chữa bệnh hoặc gây nhầm với thuốc/thiết bị y tế; thực phẩm bảo vệ sức khỏe không quảng cáo phòng/chữa bệnh, thay thế thuốc hay cam kết hiệu quả và phải có câu khuyến cáo bắt buộc; thực phẩm thường không vì thành phần gợi liên tưởng sức khỏe mà viết thành công dụng |
+| Bằng sáng chế, chứng nhận, xác nhận, lời chứng | VN-AD, VN-IP | Không mượn danh/hình ảnh cơ quan nhà nước; bằng sáng chế đối chiếu hiệu lực, loại và số bằng; chứng nhận (OCOP, VietGAP, ISO…) không mở rộng đối tượng và phạm vi; tên/hình ảnh người khác và đánh giá không giả mạo, không vượt ủy quyền |
+| Nội dung cấm khác và đối tượng đặc biệt | VN-AD (hành vi cấm về thuần phong mỹ tục, trẻ em, xúc phạm…); VN-CHILD | Rà soát quốc kỳ/quốc huy, lãnh tụ, phân biệt đối xử, mê tín; kiểm giới hạn quảng cáo sữa và sản phẩm dinh dưỡng cho trẻ nhỏ, rượu bia, nội dung hướng tới trẻ em; tài liệu sản phẩm thật cũng không miễn kiểm |
+| Hàng cấm/hạn chế quảng cáo | VN-AD (sản phẩm, hàng hóa cấm quảng cáo) | Thuốc lá/thuốc lá điện tử, rượu từ 15 độ trở lên, thuốc kê đơn, sữa thay thế sữa mẹ cho trẻ dưới 24 tháng… kiểm cấm, giới hạn phương tiện và ngoại lệ trước, không mặc định làm quảng cáo TMĐT thông thường |
+| Xác nhận nội dung quảng cáo bắt buộc | VN-AD (điều kiện quảng cáo), VN-FOOD, VN-HEALTH | Thực phẩm bảo vệ sức khỏe, thiết bị y tế, mỹ phẩm… cần xác nhận/tài liệu theo quy định mà thiếu thì dừng tạo quảng cáo để đăng, chỉ liệt kê danh sách bổ sung và cấu trúc không dùng để đăng. Nội dung đã được xác nhận không tự ý cắt sửa; kiểm duyệt của shop hay nền tảng không thay được xác nhận theo luật |
 
-**保守默认**：国内主图/详情图的营销层不用极限词和医疗功效词；不提供谐音、拼音、拆字、表情、字体藏字或画面隐喻版本。纯操作顺序、真实规格或依法必须出现的声明按含义处理，不能机械删除“最”“第一”“药物”等字串。确需保留的潜在合法表达先交替换稿，原句、材料及法规依据放稿外待人工复核；法律禁止的内容即使人工同意仍不能发布。不予处罚、减轻处罚等裁量不等于发布许可。
+**Mặc định thận trọng**: lớp tiếp thị của ảnh chính/ảnh chi tiết tại Việt Nam không dùng từ so sánh nhất và từ công dụng y khoa; không cung cấp phiên bản né bằng viết tắt, bỏ dấu, tách chữ, emoji, giấu chữ trong font hay ẩn dụ hình ảnh. Trình tự thao tác thuần túy, quy cách thật hoặc tuyên bố bắt buộc theo luật xử lý theo nghĩa, không xóa máy móc các chuỗi “nhất”, “số một”, “thuốc”. Cách nói có thể hợp pháp mà cần giữ thì giao bản thay thế trước, câu gốc, tài liệu và căn cứ pháp luật đặt ngoài bản chờ rà soát thủ công; nội dung pháp luật cấm thì dù được người dùng đồng ý cũng không được đăng. Mức xử phạt thấp hay được miễn không phải giấy phép đăng.
 
-**引证与自证**：外部报告、受托检测/统计属于引证；按 CN-CITE 第8–10项公开出处及必要条件。广告主自行测试等自证依第17–18项处理，法律允许情形可不标出处，但仍需真实可举证并明确适用条件；本 Skill 保守建议标“企业自测”，不得包装成独立第三方认证。AI生成的数字、论文或测试图不能凭生成结果当作已验证证据。
+**Trích dẫn và tự chứng minh**: báo cáo bên ngoài, kiểm nghiệm/thống kê thuê ngoài là trích dẫn; ghi nguồn và điều kiện cần thiết. Thử nghiệm doanh nghiệp tự làm phải thật, chứng minh được và nêu rõ điều kiện áp dụng; Skill khuyến nghị thận trọng ghi “doanh nghiệp tự thử nghiệm”, không gói thành chứng nhận độc lập của bên thứ ba. Số liệu, bài báo hay ảnh thử nghiệm do AI tạo không được coi là bằng chứng đã kiểm chứng.
 
-### 文案与版式联审
+### Rà soát nội dung và bố cục cùng lúc
 
-1. 先写一个有材料支撑的购买理由，用材质、结构、容量、外观、真实使用方式等表达价值；不为增强转化编造效果、好评、销量、价格或稀缺。
-2. 每张执行卡列“国内广告合规自检”：产品类别、允许宣称、事实来源、禁止/高风险口径、可见出处与条件、法定审查/人工复核缺口。结果分“通过 / 阻断 / 待人工复核”；通过仅表示本次方案检查，不能保证执法或平台审核结论。
-3. “最终文字层”完整汇总标题、副文案、数据标签、出处和声明，单独给设计师；删除的风险原句、推理和待补证事项只在稿外备注。超限或仍有补证/审查阻断的文字先实际改完，不能列为最终稿再建议未来修改。中性场景描述也不能补造未提供的属性、比较或使用效果。
-4. 引证出处和适用条件必须能正常辨认；不可用更小字号、近似背景色隐藏限制。关键条件靠近宣称，长出处/说明用独立可读区域，放不下就拆模块或删除该宣称。适用的法定声明保留原文，不受营销副文案字数上限挤压。
-5. 主图、详情图、SKU选项与价格信息一起核对；文案、包装、示意图、徽章、人物和前后对比画面形成的整体暗示同样审查。原包装疑似问题不能靠保真要求免检，也不能擅改包装冒充真实商品。
-6. 完成方案检查后才交可用文字；法定审查或关键证据未齐时完成其余支持部分，明确阻断。实际成图的逐字、保真和移动端可读性另验，不冒称已验收。
+1. Viết trước một lý do mua có tài liệu hỗ trợ, thể hiện giá trị bằng chất liệu, cấu trúc, dung tích, ngoại hình, cách dùng thật; không vì tăng chuyển đổi mà bịa hiệu quả, đánh giá, doanh số, giá hay sự khan hiếm.
+2. Mỗi thẻ thực thi có mục “Tự kiểm tuân thủ quảng cáo Việt Nam”: loại sản phẩm, tuyên bố được phép, nguồn sự thật, cách nói cấm/rủi ro cao, nguồn và điều kiện hiển thị, thiếu xác nhận theo luật/rà soát thủ công. Kết quả chia “Đạt / Chặn / Chờ rà soát thủ công”; Đạt chỉ là kết quả kiểm tra phương án lần này, không bảo đảm kết luận của cơ quan hay kiểm duyệt nền tảng.
+3. “Lớp chữ cuối cùng” gom đủ tiêu đề, phụ đề, nhãn số liệu, nguồn và tuyên bố, giao riêng cho designer; câu rủi ro đã xóa, lập luận và mục cần bổ sung chỉ ghi chú ngoài bản. Chữ vượt giới hạn hoặc còn chặn bằng chứng/xác nhận phải sửa xong thật sự, không liệt kê là bản cuối rồi khuyên sửa sau. Mô tả bối cảnh trung tính cũng không được bổ sung thuộc tính, so sánh hay hiệu quả chưa cung cấp.
+4. Nguồn trích dẫn và điều kiện áp dụng phải đọc được bình thường; không giấu giới hạn bằng chữ nhỏ hơn, màu gần nền. Điều kiện then chốt đặt gần tuyên bố, nguồn/giải thích dài dùng vùng riêng đọc được, không đủ chỗ thì tách module hoặc bỏ tuyên bố đó. Tuyên bố bắt buộc theo luật giữ nguyên văn, không bị giới hạn số chữ phụ đề tiếp thị chèn ép.
+5. Ảnh chính, ảnh chi tiết, lựa chọn SKU và thông tin giá kiểm cùng nhau; ám chỉ tổng thể từ nội dung, bao bì, ảnh minh họa, huy hiệu, người mẫu và ảnh trước/sau cũng phải rà. Bao bì gốc nghi có vấn đề không được miễn kiểm vì yêu cầu trung thực, cũng không được tự sửa bao bì để giả làm hàng thật.
+6. Kiểm tra phương án xong mới giao nội dung dùng được; xác nhận theo luật hoặc bằng chứng then chốt chưa đủ thì hoàn thành phần hỗ trợ còn lại, chặn rõ ràng. Ảnh thành phẩm thực tế kiểm riêng từng chữ, dấu, độ trung thực và độ đọc trên điện thoại, không tự nhận đã nghiệm thu.
 
-### 改写示意（非商品事实）
+### Ví dụ viết lại (không phải sự thật sản phẩm)
 
-| 风险诉求 | 已有材料 | 可采用的方向 |
+| Yêu cầu rủi ro | Tài liệu đã có | Hướng có thể dùng |
 |---|---|---|
-| “收纳架全网最强承重” | 仅不锈钢、可伸缩 | “不锈钢材质”“按需伸缩”，不造承重数字 |
-| “普通黑芝麻食品乌发防脱” | 只有食品名称 | 只写“黑芝麻食品”；风味、配料和工艺未提供也不补造 |
-| “检测35dB，日常始终静音” | 特定型号、档位、距离与样品检测 | 仅在可用且能清楚展示出处/条件时给限定结果，否则删数字，不升级为日常承诺 |
+| “Kệ để đồ chịu lực tốt nhất thị trường” | Chỉ có inox, co giãn được | “Chất liệu inox”, “Co giãn theo nhu cầu”, không bịa số tải trọng |
+| “Mè đen thường giúp đen tóc, chống rụng tóc” | Chỉ có tên thực phẩm | Chỉ viết “Thực phẩm mè đen”; vị, thành phần và quy trình chưa cung cấp thì không bổ sung |
+| “Kiểm nghiệm 35dB, lúc nào cũng êm” | Kiểm nghiệm mẫu ở model, chế độ, khoảng cách cụ thể | Chỉ khi dùng được và thể hiện rõ nguồn/điều kiện mới đưa kết quả có giới hạn; nếu không thì bỏ số, không nâng thành cam kết hàng ngày |

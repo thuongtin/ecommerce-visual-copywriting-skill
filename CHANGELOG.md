@@ -4,6 +4,10 @@
 
 ### Changed
 
+- Vietnamese localization: `SKILL.md` and all `references/`, examples, README and test prompts are now in Vietnamese for the Vietnam market (Shopee, Lazada, TikTok Shop, Tiki, Sendo, Facebook/Zalo); compliance framing moves from China's Advertising Law to Vietnam's Law on Advertising, Consumer Protection Law and related decrees (screening only, not legal advice). `SKILL.en.md` and `README.en.md` follow the same Vietnam-market rules. China-prefixed prompt cases are renamed `vn_*`.
+- Replace README showcase images with Vietnam-market AI illustrations (Ri6 durian gift box, Bát Tràng tea set in two views, Hội An lanterns) and redraw `assets/showcase-output.svg` in Vietnamese.
+- `scripts/count-copy.py` defaults to Vietnamese syllable counting (`--language vi`); `scripts/scan-final-copy.py` flags Vietnamese placeholders and internal-note phrasing.
+
 - Stop instructing the model to keep placeholders for unproven claims: Needs-proof items are rewritten neutrally or deleted and listed in a pending-confirmation list outside the copy.
 - Evidence ledger gains source types (documentary proof, supplier claim, visual observation, guesswork); only proof and cross-checked supplier claims enter finished copy, and specification areas hold Verified data only.
 - Add listing/first-screen/cover rules, a five-step decision order, a three-part check for FAQ questions and an explicit list of content the image model must not generate; drop the annotation column from the kickoff questionnaire table.

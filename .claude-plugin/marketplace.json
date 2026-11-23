@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "ecommerce-visual-copywriting",
-      "description": "电商视觉策划与执行 v3：支持主图、详情页、Amazon Listing/A+、跨境本地化、证据账本、Reference Fidelity、设计师交接、生图 Prompt 与合规审查。",
+      "description": "Kế hoạch và thực thi hình ảnh TMĐT v3: ảnh chính, trang chi tiết Shopee/Lazada/TikTok Shop/Tiki, Amazon Listing/A+, bản địa hóa xuyên biên giới, sổ bằng chứng, Reference Fidelity, bàn giao designer, Prompt tạo ảnh và kiểm tra tuân thủ.",
       "version": "3.0.0",
       "author": {
         "name": "feichanggege",

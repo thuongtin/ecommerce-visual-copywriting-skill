@@ -1,49 +1,49 @@
-# 输出结构模板
+# Mẫu cấu trúc đầu ra
 
-> 所有模式输出完整方案（包括标准模式的完整策略/分镜）、设计师交接或正式审查报告前必须加载。局部改词可按需读取；正式方案交付末尾必须附第 9 节《自审记录》，单纯命名咨询不必附整套评分；完整单张执行卡必须保留任务、画面、文案、排版、Prompt、禁止项和证据。
+> Ở mọi chế độ, trước khi xuất phương án đầy đủ (kể cả chiến lược/phân cảnh đầy đủ của chế độ chuẩn), bản bàn giao cho designer hoặc báo cáo kiểm tra chính thức đều phải nạp tệp này. Sửa chữ cục bộ thì đọc theo nhu cầu; cuối bản giao phương án chính thức phải kèm mục 9 «Biên bản tự chấm», tư vấn đặt tên đơn thuần không cần kèm cả bộ điểm; thẻ thực thi một ảnh đầy đủ phải giữ nhiệm vụ, khung hình, nội dung, bố cục, Prompt, mục cấm và bằng chứng.
 
-## 0. 开工问卷模板（选填，只发一轮）
+## 0. Mẫu bảng hỏi khởi động (tùy chọn, chỉ gửi một vòng)
 
-先核对名称：原始商品名/可用的品类名已提供就沿用；缺名且未授权据图命名时，先问“请提供商品名，或授权我根据图片拟名”。可与本轮合并，但名称不是选填项，未回复不视为授权。
+Kiểm tên trước: tên sản phẩm gốc/tên ngành hàng dùng được đã có thì dùng tiếp; thiếu tên và chưa được phép đặt tên theo ảnh thì hỏi trước “Bạn cho mình tên sản phẩm, hoặc cho phép mình đặt tên theo ảnh nhé”. Có thể gộp vào vòng này, nhưng tên không phải mục tùy chọn, không trả lời không được coi là cho phép.
 
-以下偏好维度只保留消息和资料里**还没有**的内容，已有的删掉。括号里是不回答时的默认处理。
+Các chiều sở thích bên dưới chỉ giữ nội dung **chưa có** trong tin nhắn và tài liệu, cái đã có thì xóa. Trong ngoặc là cách xử lý mặc định khi không trả lời.
 
 ```markdown
-开工前可以补充下面的信息，**都是选填**：回答越完整，方案越贴合；不想答直接说“跳过”或“直接做”，我按括号里的默认处理。可以只回编号。
+Trước khi bắt đầu, bạn có thể bổ sung các thông tin dưới đây, **tất cả đều tùy chọn**: trả lời càng đủ thì phương án càng sát; không muốn trả lời thì cứ nói “bỏ qua” hoặc “làm luôn”, mình sẽ xử lý theo mặc định trong ngoặc. Có thể chỉ trả lời số.
 
-1. 平台/市场：（默认：淘宝/天猫主图）
-2. 产出范围：主图几张？要不要详情页？（默认：主图约 5 张，每张含执行卡和生图 Prompt）
-3. 目标人群与使用场景：（默认：按资料推断，标为假设）
-4. 最想主打的 1–3 个卖点，以及哪些有资质/检测/参数支撑：（默认：按资料提炼）
-5. 风格与调性（如高级简约、种草生活感、促销直给、国风、科技感；有参考图更好）：（默认：按品类和平台惯例）
-6. 价格定位与促销（有活动、赠品、组合吗）：（默认：不做价格和促销表达）
-7. 必须保留或禁止出现的（品牌色、Logo、结构、禁用词）：（默认：以产品原图为准）
-8. 图内文字：后期叠字、完全不新增文字，还是让模型直接出短标题？（默认：留白排版，后期叠字）
-9. 其他资料：产品图、包装图、商机/竞品分析、品牌手册，直接发我即可。
+1. Nền tảng/thị trường: (mặc định: ảnh chính Shopee Việt Nam)
+2. Phạm vi đầu ra: mấy ảnh chính? Có cần trang chi tiết không? (mặc định: khoảng 5 ảnh chính, mỗi ảnh có thẻ thực thi và Prompt tạo ảnh)
+3. Khách hàng mục tiêu và bối cảnh dùng: (mặc định: suy từ tài liệu, đánh dấu là giả định)
+4. 1–3 điểm bán muốn đẩy mạnh nhất, điểm nào có giấy phép/kiểm nghiệm/thông số hỗ trợ: (mặc định: rút từ tài liệu)
+5. Phong cách và tông (như tối giản cao cấp, đời thường kiểu review, khuyến mãi thẳng thắn, phong cách Việt truyền thống, công nghệ; có ảnh tham chiếu càng tốt): (mặc định: theo thông lệ ngành hàng và nền tảng)
+6. Định vị giá và khuyến mãi (có chương trình, quà tặng, combo không): (mặc định: không thể hiện giá và khuyến mãi)
+7. Bắt buộc giữ hoặc cấm xuất hiện (màu thương hiệu, logo, cấu trúc, từ cấm dùng): (mặc định: lấy ảnh gốc sản phẩm làm chuẩn)
+8. Chữ trên ảnh: ghép chữ hậu kỳ, hoàn toàn không thêm chữ, hay để mô hình tạo luôn tiêu đề ngắn? (mặc định: chừa khoảng trống, ghép chữ hậu kỳ)
+9. Tài liệu khác: ảnh sản phẩm, ảnh bao bì, phân tích cơ hội/đối thủ, cẩm nang thương hiệu, gửi thẳng cho mình là được.
 ```
 
-用户回复后不再发第二轮问卷。用户口述的卖点按“用户口述”记入证据账本，没有原件佐证仍是待补证。
+Người dùng trả lời xong thì không gửi bảng hỏi vòng hai. Điểm bán người dùng kể miệng ghi vào sổ bằng chứng là “người dùng kể”, không có bản gốc đi kèm thì vẫn là cần bổ sung bằng chứng.
 
-## 1. 视觉策略与证据账本
+## 1. Chiến lược hình ảnh và sổ bằng chứng
 
 ```markdown
-# 电商视觉策略
+# Chiến lược hình ảnh thương mại điện tử
 
-## 1. 任务定义
-- 平台 / 市场：
-- 产品名称/品类与命名来源：用户原始商品名 / 用户授权据图拟名（非官方原名）；缺名先询问
-- 目标人群：
-- 本次产出：
-- 执行模式：标准 / 一次性 / 审查 / 设计师交接
-- 文字渲染方式：留白排版（默认）/ 模型出字（例外；须明确要求且文字很短）
+## 1. Định nghĩa nhiệm vụ
+- Nền tảng / thị trường:
+- Tên sản phẩm/ngành hàng và nguồn đặt tên: tên sản phẩm gốc của người dùng / tên đặt theo ảnh được người dùng cho phép (không phải tên chính thức); thiếu tên thì hỏi trước
+- Khách hàng mục tiêu:
+- Đầu ra lần này:
+- Chế độ thực thi: Chuẩn / Giao một lần / Kiểm tra / Bàn giao cho designer
+- Cách render chữ: Chừa khoảng trống (mặc định) / Mô hình tạo chữ (ngoại lệ; phải được yêu cầu rõ và chữ rất ngắn)
 
-## 2. 成交驱动力
-- 主驱动力（视觉 / 痛点 / 参数 / 信任 / 情绪 / 价格组合）：
-- 辅驱动力：
-- Top 3 购买理由：
+## 2. Động lực chốt đơn
+- Động lực chính (thị giác / nỗi đau / thông số / niềm tin / cảm xúc / giá-combo):
+- Động lực phụ:
+- Top 3 lý do mua:
 
-## 3. 证据账本
-| 宣称/卖点 | 来源类型（凭证/供应商口径/视觉观察/推测）及来源/图号/URL | SKU/市场/条件/日期 | 状态 | 最终处理 |
+## 3. Sổ bằng chứng
+| Tuyên bố/điểm bán | Loại nguồn (chứng từ/lời nhà cung cấp/quan sát hình ảnh/phỏng đoán) và nguồn/số ảnh/URL | SKU/thị trường/điều kiện/ngày | Trạng thái | Xử lý cuối cùng |
 |---|---|---|---|---|
 
 ## 4. Feature -> Advantage -> Benefit -> Evidence
@@ -51,173 +51,173 @@
 |---|---|---|---|
 
 ## 5. Campaign Style Lock
-- 产品身份：
-- 构图：
-- 色彩：
-- 光影：
-- 字体/信息密度：
-- 文字渲染/留白区域：
-- 背景/场景：
-- 必须保留：
-- 允许变化：
-- 禁止项：
+- Nhận diện sản phẩm:
+- Bố cục:
+- Màu sắc:
+- Ánh sáng:
+- Font chữ/mật độ thông tin:
+- Render chữ/vùng khoảng trống:
+- Nền/bối cảnh:
+- Bắt buộc giữ:
+- Được phép thay đổi:
+- Mục cấm:
 
-## 6. 当前假设与待确认
+## 6. Giả định hiện tại và mục cần xác nhận
 ```
 
 ## 2. Storyboard
 
 ```markdown
-# 图片规划 / Storyboard
+# Kế hoạch ảnh / Storyboard
 
-| 编号 | 视觉任务 | 要解决的决策问题 | 核心卖点 | 构图/第一落点 | 证据 | 风险 |
+| Mã | Nhiệm vụ hình ảnh | Câu hỏi quyết định cần giải quyết | Điểm bán cốt lõi | Bố cục/điểm nhìn đầu | Bằng chứng | Rủi ro |
 |---|---|---|---|---|---|---|
-| KV1 | Hero | 这是什么商品？ | 先商品名/品类；卖点第二层、可省 | 商品整体与识别性形态 | 已确认原名/原图/SKU | 只有氛围或特性、缺商品词 |
+| KV1 | Hero | Đây là sản phẩm gì? | Tên sản phẩm/ngành hàng trước; điểm bán ở tầng hai, có thể lược | Toàn bộ sản phẩm và hình thái nhận diện | Tên gốc/ảnh gốc/SKU đã xác nhận | Chỉ có không khí hoặc đặc tính, thiếu từ chỉ sản phẩm |
 | KV2 | Benefit | | | | | |
 | KV3 | Proof | | | | | |
 | KV4 | Scene | | | | | |
 | KV5 | Spec/CTA | | | | | |
 ```
 
-数量按平台与实际信息量调整，不必固定 5 张。
+Số lượng điều chỉnh theo nền tảng và lượng thông tin thực tế, không cố định 5 ảnh.
 
-## 3. 单张图执行卡
+## 3. Thẻ thực thi một ảnh
 
 ```markdown
-### KV1 — [任务名称]
-- 原始商品名/据图拟名/已确认品类：记录命名来源；原名合适则直接使用，需短名时记录对应关系；未经授权不替换原名
-- 视觉任务：
-- 目标用户此刻的疑问：
-- 画面：
-- 第一视觉落点：
-- KV1识别自检（首图适用）：允许叠字时主标题本身说清商品；遮住副文案仍能识别品类。无字图列主体/原包装识别依据，成图待验收；后续特性图无需重复商品名
-- 图内文案：
-- 最终文字层：集中列出全部消费者可见文字，含必要引证出处、条件和声明；风险分析不混入
-- 国内广告合规自检：中国大陆适用时列产品类别、宣称依据/限制、可见出处/条件、人工复核或法定审查缺口；通过 / 阻断 / 待人工复核
-- 文字渲染方式：留白排版（默认）/ 模型出字（例外，须明确要求且文字很短）；实际交付只选一个
-- 文案规格自检：用计数器按最终字符串计算标题与每条副文案长度；列副文案条数、至多1个数字/证据标签及其账本来源
-- 文字验收与回退：未生成时写“文字渲染待验收”；明确模型出字时列精确字串、位置、字号与逐字核验办法，出错改用后期叠字
-- 排版：留白位置、标题/副文案/声明字号、底部声明与紧邻宣称的条件
-- 设计说明：
-- 生图 Prompt（自包含：产品结构/材质/光线/构图/留白/禁止项，单独复制可用）：
-- Negative Prompt / 禁止项：
-- 证据来源：
-- 合规/平台备注：
+### KV1 — [Tên nhiệm vụ]
+- Tên sản phẩm gốc/tên đặt theo ảnh/ngành hàng đã xác nhận: ghi nguồn đặt tên; tên gốc phù hợp thì dùng thẳng, cần tên ngắn thì ghi quan hệ ánh xạ; chưa được phép thì không thay tên gốc
+- Nhiệm vụ hình ảnh:
+- Băn khoăn của người dùng mục tiêu lúc này:
+- Khung hình:
+- Điểm nhìn đầu tiên:
+- Tự kiểm KV1 nhận diện (áp dụng cho ảnh đầu): khi được ghép chữ, bản thân tiêu đề chính nói rõ sản phẩm; che phụ đề vẫn nhận ra ngành hàng. Ảnh không chữ ghi căn cứ nhận diện chủ thể/bao bì gốc, ảnh thành phẩm chờ nghiệm thu; các ảnh đặc tính sau không cần lặp tên sản phẩm
+- Chữ trên ảnh:
+- Lớp chữ cuối cùng: gom toàn bộ chữ người tiêu dùng nhìn thấy, gồm nguồn trích dẫn, điều kiện và tuyên bố cần thiết; không trộn phân tích rủi ro
+- Tự kiểm tuân thủ quảng cáo Việt Nam: khi thị trường Việt Nam áp dụng, liệt kê loại sản phẩm, căn cứ/giới hạn tuyên bố, nguồn/điều kiện hiển thị, thiếu rà soát thủ công hoặc xác nhận theo luật; Đạt / Chặn / Chờ rà soát thủ công
+- Cách render chữ: Chừa khoảng trống (mặc định) / Mô hình tạo chữ (ngoại lệ, phải được yêu cầu rõ và chữ rất ngắn); bản giao thực tế chỉ chọn một
+- Tự kiểm quy cách chữ: dùng bộ đếm tính số tiếng của tiêu đề và từng dòng phụ đề theo chuỗi cuối; ghi số dòng phụ đề, tối đa 1 nhãn số/bằng chứng và nguồn trong sổ
+- Nghiệm thu chữ và dự phòng: chưa tạo ảnh thì ghi “render chữ chờ nghiệm thu”; khi được yêu cầu rõ để mô hình tạo chữ thì liệt kê chuỗi chính xác, vị trí, cỡ chữ và cách soát từng chữ, từng dấu, sai thì chuyển sang ghép chữ hậu kỳ
+- Bố cục: vị trí khoảng trống, cỡ chữ tiêu đề/phụ đề/tuyên bố, tuyên bố ở đáy và điều kiện sát tuyên bố
+- Ghi chú thiết kế:
+- Prompt tạo ảnh (tự đủ nghĩa: cấu trúc/chất liệu/ánh sáng/bố cục/khoảng trống/mục cấm sản phẩm, sao chép riêng vẫn dùng được):
+- Negative Prompt / mục cấm:
+- Nguồn bằng chứng:
+- Ghi chú tuân thủ/nền tảng:
 ```
 
-## 4. 详情页 / PDP 模块执行卡
+## 4. Thẻ thực thi module trang chi tiết / PDP
 
 ```markdown
-### M1 — [模块名称]
-- 叙事功能：承接 / 利益 / 机制 / 证据 / 场景 / 对比 / FAQ / CTA
-- 用户疑问：
-- 画面：
-- 图内文案：
-- 最终文字层：集中列出全部消费者可见文字，含必要引证出处、条件和声明；风险分析不混入
-- 国内广告合规自检：中国大陆适用时列产品类别、宣称依据/限制、可见出处/条件、人工复核或法定审查缺口；通过 / 阻断 / 待人工复核
-- 文字渲染方式：留白排版（默认）/ 模型出字（例外，须明确要求且文字很短）；实际交付只选一个
-- 文案规格自检：1个标题 + 至多3条要点；用计数器按最终字符串计算标题与每条要点长度，核对数字来源，超限删减或拆模块
-- 排版：文字安全区、字号、底部声明；重要条件紧邻对应宣称
-- 文字验收与回退：模型出字须逐字检查；未见成图标记待验收，错误回退后期排版
-- 设计说明：
-- 生图 Prompt（自包含：产品结构/材质/光线/构图/留白/禁止项，单独复制可用）：
-- Negative Prompt / 禁止项：
-- 证据来源：
+### M1 — [Tên module]
+- Chức năng kể chuyện: nối tiếp / lợi ích / cơ chế / bằng chứng / bối cảnh / so sánh / FAQ / CTA
+- Băn khoăn của người dùng:
+- Khung hình:
+- Chữ trên ảnh:
+- Lớp chữ cuối cùng: gom toàn bộ chữ người tiêu dùng nhìn thấy, gồm nguồn trích dẫn, điều kiện và tuyên bố cần thiết; không trộn phân tích rủi ro
+- Tự kiểm tuân thủ quảng cáo Việt Nam: khi thị trường Việt Nam áp dụng, liệt kê loại sản phẩm, căn cứ/giới hạn tuyên bố, nguồn/điều kiện hiển thị, thiếu rà soát thủ công hoặc xác nhận theo luật; Đạt / Chặn / Chờ rà soát thủ công
+- Cách render chữ: Chừa khoảng trống (mặc định) / Mô hình tạo chữ (ngoại lệ, phải được yêu cầu rõ và chữ rất ngắn); bản giao thực tế chỉ chọn một
+- Tự kiểm quy cách chữ: 1 tiêu đề + tối đa 3 ý; dùng bộ đếm tính số tiếng của tiêu đề và từng ý theo chuỗi cuối, đối chiếu nguồn số liệu, vượt giới hạn thì cắt bớt hoặc tách module
+- Bố cục: vùng an toàn cho chữ, cỡ chữ, tuyên bố ở đáy; điều kiện quan trọng sát tuyên bố tương ứng
+- Nghiệm thu chữ và dự phòng: mô hình tạo chữ phải soát từng chữ, từng dấu; chưa thấy ảnh thành phẩm thì đánh dấu chờ nghiệm thu, sai thì quay về dàn trang hậu kỳ
+- Ghi chú thiết kế:
+- Prompt tạo ảnh (tự đủ nghĩa: cấu trúc/chất liệu/ánh sáng/bố cục/khoảng trống/mục cấm sản phẩm, sao chép riêng vẫn dùng được):
+- Negative Prompt / mục cấm:
+- Nguồn bằng chứng:
 ```
 
-## 5. 审查/改稿报告
+## 5. Báo cáo kiểm tra/sửa bản
 
 ```markdown
-# 电商视觉与文案审查
+# Kiểm tra hình ảnh và nội dung thương mại điện tử
 
-## 结论
-- 是否存在硬性阻断：是 / 否
-- 最大转化问题：
-- 最大合规/证据问题：
-- 最大视觉问题：
+## Kết luận
+- Có điểm chặn cứng không: Có / Không
+- Vấn đề chuyển đổi lớn nhất:
+- Vấn đề tuân thủ/bằng chứng lớn nhất:
+- Vấn đề hình ảnh lớn nhất:
 
-## 问题清单
-| 优先级 | 位置 | 问题 | 为什么 | 最小修改方案 |
+## Danh sách vấn đề
+| Ưu tiên | Vị trí | Vấn đề | Vì sao | Phương án sửa tối thiểu |
 |---|---|---|---|---|
 
-## 修正版
-[只重写需要修改的部分；用户要求完整替换稿时再输出全稿]
+## Bản đã sửa
+[Chỉ viết lại phần cần sửa; người dùng yêu cầu bản thay thế đầy đủ thì mới xuất toàn bộ]
 
-## 国内广告合规自检（适用时）
-| 原表述/位置 | 法律或保守策略依据 | 安全替换/删除 | 可见出处与条件 | 处理结果/阻断 |
+## Tự kiểm tuân thủ quảng cáo Việt Nam (khi áp dụng)
+| Cách nói gốc/vị trí | Căn cứ pháp luật hoặc chiến lược thận trọng | Thay thế an toàn/xóa | Nguồn và điều kiện hiển thị | Kết quả xử lý/chặn |
 |---|---|---|---|---|
 
-## 最终文字层
-[完整汇总修改后的消费者可见文字；需补证、待人工复核、法定审查未完成的内容不放入]
+## Lớp chữ cuối cùng
+[Gom đầy đủ chữ người tiêu dùng nhìn thấy sau khi sửa; nội dung cần bổ sung bằng chứng, chờ rà soát thủ công, chưa xong xác nhận theo luật không đưa vào]
 
-## 五维质量门（80 分合格线，附依据；完整格式见第 9 节）
-- 证据与合规：__ 分｜依据：
-- 转化逻辑：__ 分｜依据：
-- 视觉层级：__ 分｜依据：
-- 一致性：__ 分｜依据：
-- 可执行性：__ 分｜依据：
+## Cổng chất lượng năm chiều (ngưỡng 80 điểm, kèm căn cứ; định dạng đầy đủ xem mục 9)
+- Bằng chứng và tuân thủ: __ điểm｜Căn cứ:
+- Logic chuyển đổi: __ điểm｜Căn cứ:
+- Thứ bậc thị giác: __ điểm｜Căn cứ:
+- Tính nhất quán: __ điểm｜Căn cứ:
+- Tính thực thi: __ điểm｜Căn cứ:
 ```
 
-## 6. 跨境本地化交付
+## 6. Bàn giao bản địa hóa xuyên biên giới
 
 ```markdown
-## 本地化说明
-- 原始卖点：
-- 目标市场理解：
-- 保留的事实：
-- 重写后的购买理由：
-- 单位/规格本地化：
-- 文化语境调整：
-- 合规待核验项：
+## Ghi chú bản địa hóa
+- Điểm bán gốc:
+- Hiểu biết về thị trường mục tiêu:
+- Sự thật được giữ:
+- Lý do mua sau khi viết lại:
+- Bản địa hóa đơn vị/quy cách:
+- Điều chỉnh bối cảnh văn hóa:
+- Mục tuân thủ chờ kiểm tra:
 
-## 英文/当地语言图内文案
-- Headline：
-- Support：主图最多2条；PDP模块最多3条要点；按对应字数上限自检
-- Evidence note：来源与适用条件单列；不强制塞入营销文案
+## Chữ trên ảnh tiếng Anh/ngôn ngữ địa phương
+- Headline:
+- Support: ảnh chính tối đa 2 dòng; module PDP tối đa 3 ý; tự kiểm theo giới hạn số từ tương ứng
+- Evidence note: nguồn và điều kiện áp dụng tách riêng; không ép nhét vào nội dung tiếp thị
 ```
 
-单张执行卡与详情模块均遵守 `SKILL.md` 的默认建议值和移动端字号基线；这些是内部排版建议，不是平台规定，必要声明不靠缩字隐藏。每卡必须二选一文字渲染方式，并交文案规格自检；模型出字默认限≤8汉字或≤6词的一个英文标题，超长交留白排版。价格卡另附币种、SKU/数量、优惠门槛、有效期、运费与来源；缺条件不得写成无条件到手价。缺失项从文案字段整项删除，写入稿外待确认清单，不在图内文案或执行卡文案字段保留占位符。
+Thẻ một ảnh và module chi tiết đều theo giá trị khuyến nghị mặc định và chuẩn cỡ chữ trên điện thoại trong `SKILL.md`; đây là khuyến nghị bố cục nội bộ, không phải quy định nền tảng, tuyên bố cần thiết không được giấu bằng cách thu nhỏ chữ. Mỗi thẻ phải chọn một trong hai cách render chữ và giao tự kiểm quy cách chữ; mô hình tạo chữ mặc định chỉ một tiêu đề ≤6 tiếng hoặc ≤6 từ tiếng Anh, dài hơn thì giao chừa khoảng trống. Thẻ có giá kèm thêm đơn vị tiền tệ, SKU/số lượng, ngưỡng ưu đãi, thời hạn, phí vận chuyển và nguồn; thiếu điều kiện thì không viết thành giá cuối vô điều kiện. Mục thiếu xóa hẳn khỏi trường nội dung, ghi vào danh sách cần xác nhận ngoài bản, không giữ placeholder trong chữ trên ảnh hay trường nội dung của thẻ thực thi.
 
-## 7. 量化评分（仅用户明确要求时）
+## 7. Chấm điểm định lượng (chỉ khi người dùng yêu cầu rõ)
 
-仅在用户明确要求对外展示量化评分时使用本节：用 1–5 分，不给无锚点的 80/100。交付前的内部自审用第 9 节的 80 分线，它以必要条件为锚点，与本节不同。
+Chỉ dùng mục này khi người dùng yêu cầu rõ điểm định lượng để trình bày bên ngoài: dùng thang 1–5, không cho 80/100 không có mốc. Tự chấm nội bộ trước khi giao dùng ngưỡng 80 điểm ở mục 9, lấy điều kiện bắt buộc làm mốc, khác với mục này.
 
-1–5 分含义：
+Ý nghĩa thang 1–5:
 
-- **1**：存在致命问题，不能交付。
-- **2**：主要逻辑不成立，需要重做。
-- **3**：基本可用，但有明确缺口。
-- **4**：可直接执行，只有局部优化空间。
-- **5**：证据、转化、视觉、一致性和执行细节都完整。
+- **1**: có vấn đề nghiêm trọng, không được giao.
+- **2**: logic chính không đứng vững, cần làm lại.
+- **3**: cơ bản dùng được, nhưng có thiếu sót rõ.
+- **4**: thực thi được ngay, chỉ còn chỗ tối ưu cục bộ.
+- **5**: bằng chứng, chuyển đổi, hình ảnh, tính nhất quán và chi tiết thực thi đều đầy đủ.
 
-每个分数必须附具体依据。
+Mỗi điểm phải kèm căn cứ cụ thể.
 
-## 8. 交付前终态扫描
+## 8. Quét trạng thái cuối trước khi giao
 
-交付完整方案或最终文字层前逐项过一遍：
+Trước khi giao phương án đầy đủ hoặc lớp chữ cuối cùng, soát từng mục:
 
-- [ ] 成品文案里没有“待补”“待确认”“待核”“（xx未提供）”和内部建议口吻；缺失项已整行删除。有执行工具时运行 `python scripts/scan-final-copy.py "文案1" "文案2"`。
-- [ ] 澄清类信息（如“本品为单条”“图中配件不含”）在规格区或可读注释区，不占卖点位；影响到手内容/价格理解的条件仍紧邻相关画面或宣称。
-- [ ] 工艺、材质、性能说法只来自资料口径，且已对照产品图；与实物冲突的已回问。
-- [ ] 每条生图 Prompt 不依赖其他卡片；需要原产品图时已明确图号/素材要求，连同指定图可单独交接，并重复了 Style Lock 和禁止项。
-- [ ] 文案已过《文案质量自检》，数字有对照或体感，适配类内容给了结论。
+- [ ] Nội dung thành phẩm không còn “cần bổ sung”, “cần xác nhận”, “cần kiểm tra”, “(chưa cung cấp xx)” và giọng khuyến nghị nội bộ; mục thiếu đã xóa cả dòng. Có công cụ thực thi thì chạy `python scripts/scan-final-copy.py "Nội dung 1" "Nội dung 2"`.
+- [ ] Thông tin làm rõ (như “sản phẩm gồm một sợi”, “phụ kiện trong ảnh không kèm theo”) nằm ở vùng quy cách hoặc vùng chú thích đọc được, không chiếm vị trí điểm bán; điều kiện ảnh hưởng đến hiểu biết về hàng nhận được/giá vẫn sát hình hoặc tuyên bố liên quan.
+- [ ] Cách nói về kỹ thuật, chất liệu, tính năng chỉ lấy từ tài liệu và đã đối chiếu ảnh sản phẩm; chỗ mâu thuẫn với hàng thật đã hỏi lại.
+- [ ] Mỗi Prompt tạo ảnh không phụ thuộc thẻ khác; cần ảnh sản phẩm gốc thì đã ghi rõ số ảnh/yêu cầu tư liệu, kèm ảnh chỉ định là bàn giao độc lập được, và đã lặp lại Style Lock cùng mục cấm.
+- [ ] Nội dung đã qua «Tự kiểm chất lượng nội dung», con số có đối chiếu hoặc cảm nhận, nội dung độ phù hợp có kết luận.
 
-## 9. 自审记录（正式方案交付必带）
+## 9. Biên bản tự chấm (bắt buộc kèm bản giao phương án chính thức)
 
-最终稿之后附这一段；缺失视为没有完成自审。分数以 `SKILL.md` Step 6 的必要条件为锚点：必要条件有任一条不满足，该维度封顶 79 分，必须重写，最多 2 轮。
+Đặt đoạn này sau bản cuối; thiếu coi như chưa tự chấm. Điểm lấy điều kiện bắt buộc ở Bước 6 của `SKILL.md` làm mốc: thiếu bất kỳ điều kiện bắt buộc nào thì chiều đó tối đa 79, phải viết lại, tối đa 2 vòng.
 
 ```markdown
-### 自审记录
-| 维度 | 分数 | 依据（一句话，写明满足了哪些必要条件） | 重写了什么 |
+### Biên bản tự chấm
+| Chiều | Điểm | Căn cứ (một câu, ghi rõ đã thỏa điều kiện bắt buộc nào) | Đã viết lại gì |
 |---|---|---|---|
-| 证据与合规 |  |  |  |
-| 转化逻辑 |  |  |  |
-| 视觉层级 |  |  |  |
-| 一致性 |  |  |  |
-| 可执行性 |  |  |  |
-- 机械检查：scan-final-copy 通过 / count-copy 已核对 / 无执行工具，未运行
-- 重写轮次：0 / 1 / 2
-- 未达标项：无（或写明维度、原因、需要的资料）
+| Bằng chứng và tuân thủ |  |  |  |
+| Logic chuyển đổi |  |  |  |
+| Thứ bậc thị giác |  |  |  |
+| Tính nhất quán |  |  |  |
+| Tính thực thi |  |  |  |
+- Kiểm tra cơ học: scan-final-copy đạt / count-copy đã đối chiếu / không có công cụ thực thi, chưa chạy
+- Số vòng viết lại: 0 / 1 / 2
+- Mục chưa đạt: không (hoặc ghi rõ chiều, lý do, tài liệu cần có)
 ```
 
-标准模式分阶段交付时，每个阶段各附一份；该阶段不适用的维度写“本阶段不适用”并说明原因。2 轮后仍不到 80 分，交付已达标部分，把未达标项写在稿外，不标成最终稿。
+Chế độ chuẩn giao theo giai đoạn thì mỗi giai đoạn kèm một biên bản; chiều không áp dụng ở giai đoạn đó ghi “không áp dụng ở giai đoạn này” và nêu lý do. Sau 2 vòng vẫn dưới 80 thì giao phần đã đạt, ghi mục chưa đạt ngoài bản, không đánh dấu là bản cuối.

@@ -26,38 +26,38 @@ REQUIRED_FILES = [
     "tools/evaluate-prompts.py", "tools/package-skill.py", "scripts/count-copy.py", "tests/test_validation.py",
 ]
 CHECKS = {
-    "SKILL.md": ["证据账本", "一次性交付模式", "Reference Fidelity", "Negative Prompt",
-                 "价格/组合/促销", "模式默认值", "图内文案规格", "文字渲染方式", "文案规格自检",
-                 "文案超载", "后期", "references/output-contracts.md", "五维 Pass/Fail", "广告法执行规则", "国内广告合规自检",
-                 "开工问卷", "列表页、首屏与封面", "问答三关", "自审记录", "80 分", "自审过线才交付", "文案质量自检", "自包含", "references/copy-quality-rules.md", "references/category-notes.md", "KV1识别自检", "开始前确认商品名称", "据图拟名"],
+    "SKILL.md": ["sổ bằng chứng", "Chế độ giao một lần", "Reference Fidelity", "Negative Prompt",
+                 "Giá/combo/khuyến mãi", "Mặc định chế độ", "Quy cách chữ trên ảnh", "Cách render chữ", "Tự kiểm quy cách chữ",
+                 "Quá tải chữ", "hậu kỳ", "references/output-contracts.md", "Pass/Fail năm chiều", "quy tắc thực thi Luật Quảng cáo", "Tự kiểm tuân thủ quảng cáo Việt Nam",
+                 "Bảng hỏi khởi động", "Trang danh sách, màn hình đầu và ảnh bìa", "Ba cửa cho hỏi–đáp", "Biên bản tự chấm", "80 điểm", "Tự chấm đạt mới giao", "Tự kiểm chất lượng nội dung", "tự đủ nghĩa", "references/copy-quality-rules.md", "references/category-notes.md", "Tự kiểm KV1 nhận diện", "Xác nhận tên sản phẩm trước khi bắt đầu", "đặt tên theo ảnh"],
     "SKILL.en.md": ["Evidence ledger", "One-shot", "Reference Fidelity",
                     "Negative Constraints", "Price / bundle / promotion", "Default mode", "Copy specifications",
-                    "Text rendering method", "Copy-spec self-check", "Copy overload", "post-production", "Pass/Fail", "Mainland China main-image", "China advertising compliance check",
+                    "Text rendering method", "Copy-spec self-check", "Copy overload", "post-production", "Pass/Fail", "Vietnam main-image", "Vietnam advertising compliance check",
                     "Kickoff questionnaire", "Listing pages, first screens and covers", "Question checks", "Self-review record", "80-point", "Deliver only after the self-review passes", "Copy quality self-check", "self-contained", "references/copy-quality-rules.md", "references/category-notes.md", "KV1 recognition check", "Confirm the product name at the start", "image-based proposed name"],
     "README.md": ["npx skills add feichanggege/ecommerce-visual-copywriting-skill",
-                  "证据账本", "多平台 Playbook", "assets/showcase-output.svg", "安全边界"],
+                  "Sổ bằng chứng", "Playbook đa nền tảng", "assets/showcase-output.svg", "Ranh giới an toàn"],
     "README.en.md": ["Quick Start", "Evidence Ledger", "Reference Fidelity", "Platforms", "Safety"],
     "agents/openai.yaml": ["display_name:", "short_description:"],
-    "references/platform-playbooks.md": ["Amazon", "Shopify", "TikTok Shop", "抖音小店",
-                                         "小红书", "微信小店", "Temu", "Shopee / Lazada"],
-    "references/compliance-rules.md": ["证据状态", "普通食品/饮料", "平台规则的时效性", "来源索引", "source-notes.md", "CN-CITE", "国内主图/详情图文案执行"],
-    "references/output-contracts.md": ["证据账本", "Storyboard", "审查/改稿报告", "跨境本地化交付",
-                                       "文字渲染方式", "文案规格自检", "国内广告合规自检", "最终文字层", "自审记录", "KV1识别自检", "原始商品名", "命名来源"],
+    "references/platform-playbooks.md": ["Amazon", "Shopify", "TikTok Shop", "Shopee Việt Nam",
+                                         "Lazada Việt Nam", "Tiki / Sendo", "Facebook / Instagram / Zalo", "Temu"],
+    "references/compliance-rules.md": ["Trạng thái bằng chứng", "Thực phẩm thông thường/đồ uống", "Tính cập nhật của quy định nền tảng", "Danh mục nguồn", "source-notes.md", "VN-AD-ND", "Thực thi nội dung ảnh chính/ảnh chi tiết tại Việt Nam"],
+    "references/output-contracts.md": ["Sổ bằng chứng", "Storyboard", "Báo cáo kiểm tra/sửa bản", "Bàn giao bản địa hóa xuyên biên giới",
+                                       "Cách render chữ", "Tự kiểm quy cách chữ", "Tự kiểm tuân thủ quảng cáo Việt Nam", "Lớp chữ cuối cùng", "Biên bản tự chấm", "Tự kiểm KV1 nhận diện", "Tên sản phẩm gốc", "nguồn đặt tên"],
 }
 SECTION_PAIRS = [
-    ("运行原则", "Core principles"),
-    ("执行模式", "Execution modes"),
-    ("Step 0：任务路由与最小输入", "Step 0 — Task routing and minimum inputs"),
-    ("Step 1：建立证据账本", "Step 1 — Build an evidence ledger"),
-    ("Step 2：判断成交驱动力", "Step 2 — Select the conversion driver"),
-    ("Step 3：锁定 Campaign Style Lock", "Step 3 — Lock the Campaign Style"),
-    ("Step 4：规划 Storyboard", "Step 4 — Plan the storyboard"),
-    ("Step 5：执行输出", "Step 5 — Execute"),
-    ("图内文案与文字渲染", "On-image copy and text rendering"),
-    ("Step 6：五维质量门", "Step 6 — Five-part quality gate"),
-    ("合规与时效性", "Compliance and currency"),
-    ("参考文件加载规则", "Reference loading"),
-    ("关键失败模式", "Key failure modes"),
+    ("Nguyên tắc vận hành", "Core principles"),
+    ("Chế độ thực thi", "Execution modes"),
+    ("Bước 0: Định tuyến nhiệm vụ và đầu vào tối thiểu", "Step 0 — Task routing and minimum inputs"),
+    ("Bước 1: Lập sổ bằng chứng", "Step 1 — Build an evidence ledger"),
+    ("Bước 2: Xác định động lực chốt đơn", "Step 2 — Select the conversion driver"),
+    ("Bước 3: Khóa Campaign Style Lock", "Step 3 — Lock the Campaign Style"),
+    ("Bước 4: Lên Storyboard", "Step 4 — Plan the storyboard"),
+    ("Bước 5: Xuất bản thực thi", "Step 5 — Execute"),
+    ("Chữ trên ảnh và cách render chữ", "On-image copy and text rendering"),
+    ("Bước 6: Cổng chất lượng năm chiều", "Step 6 — Five-part quality gate"),
+    ("Tuân thủ và tính cập nhật", "Compliance and currency"),
+    ("Quy tắc nạp tài liệu tham chiếu", "Reference loading"),
+    ("Các lỗi thường gặp then chốt", "Key failure modes"),
 ]
 EXPECTED_CASES = {
     "standard_storyboard_gate", "amazon_one_shot_localization", "ordinary_food_claim_boundary",
@@ -65,8 +65,8 @@ EXPECTED_CASES = {
     "minimal_information", "competitor_comparison", "baby_product_boundary",
     "health_food_approved_scope", "promotion_conditions", "explicit_model_text",
     "designer_handoff_pdp", "one_shot_single_reason",
-    "cn_absolute_claim_rewrite", "cn_medical_homophone", "cn_cited_test_scope",
-    "cn_visible_promotion_terms", "cn_regulated_ad_approval", "cn_usage_not_superlative",
+    "vn_absolute_claim_rewrite", "vn_medical_wordplay", "vn_cited_test_scope",
+    "vn_visible_promotion_terms", "vn_regulated_ad_approval", "vn_usage_not_superlative",
     "kv1_original_skirt_necklace", "kv1_original_tassel_necklace", "kv1_no_added_text",
     "kv2_feature_headline", "kv1_rack_recognition",
     "name_missing_at_start", "authorized_visual_naming",
@@ -155,8 +155,8 @@ def check_assets(root: Path, docs: str) -> None:
             raise ValueError(f"asset exceeds 500,000 bytes: {asset.relative_to(root)}")
         if asset.relative_to(root).as_posix() not in docs:
             raise ValueError(f"unreferenced public asset: {asset.relative_to(root)}")
-    original = root / "assets/showcase/musang-king-durian-main.jpg"
-    thumb = root / "assets/showcase/thumbs/musang-king-durian-main-thumb.jpg"
+    original = root / "assets/showcase/sau-rieng-ri6-main.jpg"
+    thumb = root / "assets/showcase/thumbs/sau-rieng-ri6-main-thumb.jpg"
     width, height = jpeg_size(original)
     twidth, theight = jpeg_size(thumb)
     if abs(width / height - twidth / theight) > 0.002:

@@ -1,56 +1,56 @@
 [
   {
     "name": "standard_storyboard_gate",
-    "prompt": "帮我给一款厨房台面伸缩收纳架做淘宝主图和详情页。产品是不锈钢材质，可伸缩，承重约20kg。先给视觉策划案和分镜，我确认后再继续。",
+    "prompt": "Làm giúp mình ảnh chính và trang chi tiết Shopee cho kệ để đồ co giãn trên mặt bếp. Sản phẩm bằng inox, co giãn được, chịu tải khoảng 20kg. Đưa phương án hình ảnh và phân cảnh trước, mình xác nhận rồi làm tiếp.",
     "expected_behavior": [
-      "遵守先策略/分镜的标准模式",
-      "承重口述需核对证据",
-      "不提前交完整执行稿"
+      "Tuân thủ chế độ chuẩn: chiến lược/phân cảnh trước",
+      "Tải trọng do người dùng kể phải đối chiếu bằng chứng",
+      "Không giao sớm bản thực thi đầy đủ"
     ],
     "must_include": [
       [
-        "证据账本",
+        "sổ bằng chứng",
         "evidence ledger"
       ],
       [
         "Campaign Style Lock",
-        "风格锁"
+        "Style Lock"
       ],
       "Storyboard",
       [
-        "自审记录",
+        "Biên bản tự chấm",
         "self-review record"
       ]
     ],
     "must_not_include": [
-      "保证承重20kg",
-      "承重高达20kg"
+      "cam kết chịu tải 20kg",
+      "chịu tải tới 20kg"
     ],
     "final_copy_required": false
   },
   {
     "name": "amazon_one_shot_localization",
-    "prompt": "面向Amazon US做茶叶7张商品图+A+规划，一次做完。已核对包装及参数表：绿茶、净含量100g、浙江产；没有检测/功效/认证资料。用英文图内文案，默认文字后期排版。",
+    "prompt": "Làm 7 ảnh sản phẩm + kế hoạch A+ cho cà phê bán Amazon US, làm xong một lần. Đã đối chiếu bao bì và bảng thông số: cà phê Robusta rang xay, khối lượng tịnh 250g, xuất xứ Đắk Lắk; không có tài liệu kiểm nghiệm/công dụng/chứng nhận. Chữ trên ảnh tiếng Anh, mặc định ghép chữ hậu kỳ.",
     "expected_behavior": [
-      "一次性交付",
-      "英文本地化",
-      "区分主图/附图与A+当前规则",
-      "文字后期排版"
+      "Giao một lần",
+      "Bản địa hóa tiếng Anh",
+      "Phân biệt quy định hiện hành của ảnh chính/ảnh phụ và A+",
+      "Ghép chữ hậu kỳ"
     ],
     "must_include": [
       [
         "evidence ledger",
-        "证据账本"
+        "sổ bằng chứng"
       ],
       "A+",
       [
         "post-production",
-        "后期",
+        "hậu kỳ",
         "typeset"
       ],
       "Negative Prompt",
       [
-        "自审记录",
+        "Biên bản tự chấm",
         "self-review record"
       ]
     ],
@@ -64,97 +64,100 @@
   },
   {
     "name": "ordinary_food_claim_boundary",
-    "prompt": "给普通黑芝麻食品做详情页，想写补肾、乌发、防脱发、调理气血，写猛一点。只有黑芝麻食品这个名称，没有配料、规格、检测或功效材料。",
+    "prompt": "Làm trang chi tiết cho thực phẩm mè đen thông thường, muốn viết bổ thận, đen tóc, chống rụng tóc, điều hòa khí huyết, viết mạnh vào. Chỉ có tên “thực phẩm mè đen”, không có thành phần, quy cách, kiểm nghiệm hay tài liệu công dụng.",
     "expected_behavior": [
-      "不保留健康功效",
-      "禁用词可以在分析中解释但不得出现在最终文案",
-      "不编造风味工艺或规格"
+      "Không giữ công dụng sức khỏe",
+      "Từ cấm có thể giải thích trong phân tích nhưng không xuất hiện trong nội dung cuối",
+      "Không bịa hương vị, quy trình hay quy cách"
     ],
     "must_include": [
       [
-        "证据账本",
+        "sổ bằng chứng",
         "evidence ledger"
       ],
       [
-        "待补证",
-        "缺失",
+        "cần bổ sung bằng chứng",
+        "thiếu",
         "Needs proof"
       ]
     ],
     "must_not_include": [
-      "补肾",
-      "乌发",
-      "防脱发",
-      "调理气血",
-      "治疗",
-      "保证有效"
+      "bổ thận",
+      "đen tóc",
+      "chống rụng tóc",
+      "điều hòa khí huyết",
+      "chữa",
+      "cam kết hiệu quả"
     ],
     "final_copy_required": false
   },
   {
     "name": "audit_minimum_change",
-    "prompt": "审查这套详情页，别重做：图1“桌面收纳架”，图2“全网最强承重50kg”。资料只有包装写不锈钢、可伸缩，没承重测试。保留图1，只改图2并说明原因。",
+    "prompt": "Kiểm tra bộ trang chi tiết này, đừng làm lại: ảnh 1 “Kệ để đồ để bàn”, ảnh 2 “Chịu tải mạnh nhất thị trường 50kg”. Tài liệu chỉ có bao bì ghi inox, co giãn được, không có thử nghiệm tải trọng. Giữ ảnh 1, chỉ sửa ảnh 2 và giải thích lý do.",
     "expected_behavior": [
-      "审查/改稿",
-      "保留图1",
-      "最小修改",
+      "Kiểm tra/sửa bản",
+      "Giữ ảnh 1",
+      "Sửa tối thiểu",
       "Pass/Fail"
     ],
     "must_include": [
       [
-        "审查",
+        "kiểm tra",
         "audit"
       ],
-      "图2",
+      [
+        "ảnh 2",
+        "Ảnh 2"
+      ],
       "Pass/Fail"
     ],
     "must_not_include": [
-      "全网最强",
-      "承重50kg",
-      "保证承重"
+      "mạnh nhất thị trường",
+      "chịu tải 50kg",
+      "cam kết chịu tải"
     ],
     "final_copy_required": true
   },
   {
     "name": "reference_fidelity_lock",
-    "prompt": "已确认商品名“罐装绿茶”。按包装图做主图，Logo、包装颜色、规格、罐型不变，场景可变。只交执行卡，不实际生图；默认后期排字。",
+    "prompt": "Đã xác nhận tên sản phẩm “Trà xanh Thái Nguyên hộp thiếc”. Làm ảnh chính theo ảnh bao bì, logo, màu bao bì, quy cách, dáng hộp không đổi, bối cảnh đổi được. Chỉ giao thẻ thực thi, không tạo ảnh thật; mặc định ghép chữ hậu kỳ.",
     "expected_behavior": [
       "Reference Fidelity",
-      "分开不变与可变项",
-      "留白后期排版",
-      "未看成图不称图已验收"
+      "Tách mục không đổi và được đổi",
+      "Chừa khoảng trống ghép chữ hậu kỳ",
+      "Chưa thấy ảnh thành phẩm thì không nói đã nghiệm thu"
     ],
     "must_include": [
       "Reference Fidelity",
       "Logo",
       "Negative Prompt",
       [
-        "后期",
+        "hậu kỳ",
         "post-production",
         "typeset"
       ],
       [
-        "留白",
+        "khoảng trống",
         "whitespace"
       ]
     ],
     "must_not_include": [
-      "实图已通过验收"
+      "ảnh thật đã nghiệm thu đạt"
     ],
     "final_copy_required": false
   },
   {
     "name": "shopify_cross_border_localization",
-    "prompt": "把现有中文详情页本地化为Shopify US英文稿，不要直译。资料：厨房收纳架，不锈钢，尺寸30×20×15cm。只有中国供应商参数表，没有美国认证。",
+    "prompt": "Bản địa hóa trang chi tiết tiếng Việt hiện có thành bản tiếng Anh cho Shopify US, đừng dịch từng chữ. Tài liệu: kệ để đồ nhà bếp, inox, kích thước 30×20×15cm. Chỉ có bảng thông số của nhà cung cấp Việt Nam, không có chứng nhận Mỹ.",
     "expected_behavior": [
-      "保留事实",
-      "单位/场景本地化",
-      "不外推认证"
+      "Giữ sự thật",
+      "Bản địa hóa đơn vị/bối cảnh",
+      "Không suy rộng chứng nhận"
     ],
     "must_include": [
       "Shopify",
       [
-        "本地化",
+        "bản địa hóa",
         "localiz"
       ],
       [
@@ -166,773 +169,771 @@
     "must_not_include": [
       "FDA approved",
       "US certified",
-      "美国官方认证"
+      "chứng nhận chính thức của Mỹ"
     ],
     "final_copy_required": true
   },
   {
     "name": "minimal_information",
-    "prompt": "帮我做个爆款主图，产品和平台还没定，什么资料都没有。",
+    "prompt": "Làm giúp mình ảnh chính kiểu hot trend, sản phẩm và nền tảng chưa chốt, chưa có tài liệu gì.",
     "expected_behavior": [
-      "标准模式",
-      "只追问会阻断的关键资料",
-      "不编造商品或销量"
+      "Chế độ chuẩn",
+      "Chỉ hỏi tài liệu then chốt gây chặn",
+      "Không bịa sản phẩm hay doanh số"
     ],
     "must_include": [
       [
-        "标准模式",
+        "chế độ chuẩn",
         "Standard"
       ],
       [
-        "产品",
-        "商品",
+        "sản phẩm",
         "product"
       ],
       [
-        "平台",
+        "nền tảng",
         "platform"
       ]
     ],
     "must_not_include": [
-      "销量10万",
-      "官方认证",
-      "全网第一",
+      "đã bán 100.000",
+      "chứng nhận chính thức",
+      "số 1 thị trường",
       "FDA approved"
     ],
     "final_copy_required": false
   },
   {
     "name": "competitor_comparison",
-    "prompt": "淘宝收纳架对比图：本品包装只写不锈钢。竞品截图号称承重50kg，但没有本品测试。请把本品写成比竞品强3倍，直接给安全替换稿。",
+    "prompt": "Ảnh so sánh kệ để đồ trên Shopee: bao bì sản phẩm chỉ ghi inox. Ảnh chụp đối thủ quảng cáo chịu tải 50kg, nhưng sản phẩm mình không có thử nghiệm. Viết sản phẩm mình mạnh gấp 3 lần đối thủ, đưa luôn bản thay thế an toàn.",
     "expected_behavior": [
-      "不移植竞品事实",
-      "同条件才比较",
-      "替换为本品已知属性"
+      "Không chuyển sự thật của đối thủ sang",
+      "Chỉ so sánh khi cùng điều kiện",
+      "Thay bằng thuộc tính đã biết của sản phẩm"
     ],
     "must_include": [
       [
-        "证据账本",
+        "sổ bằng chứng",
         "evidence ledger"
       ],
       [
-        "竞品",
+        "đối thủ",
         "competitor"
       ],
       [
-        "待补证",
-        "不可",
-        "不能",
+        "cần bổ sung bằng chứng",
+        "không thể",
+        "không được",
         "Needs proof"
       ]
     ],
     "must_not_include": [
-      "强3倍",
-      "强三倍",
-      "碾压竞品",
-      "承重150kg"
+      "mạnh gấp 3 lần",
+      "gấp ba lần",
+      "đè bẹp đối thủ",
+      "chịu tải 150kg"
     ],
     "final_copy_required": true
   },
   {
     "name": "baby_product_boundary",
-    "prompt": "为微信小店的婴儿咬胶做主图，想写新生儿适用、食品级、绝对无敏。只有商品名称，没有材质、安全检测、适用月龄。",
+    "prompt": "Làm ảnh chính cho gặm nướu em bé bán trên Facebook shop, muốn viết dùng được cho trẻ sơ sinh, an toàn thực phẩm, tuyệt đối không gây kích ứng. Chỉ có tên sản phẩm, không có chất liệu, kiểm nghiệm an toàn hay độ tuổi phù hợp.",
     "expected_behavior": [
-      "母婴分类与年龄/测试缺口",
-      "不推断安全性",
-      "不使用无敏食品级"
+      "Phân loại mẹ và bé, chỉ ra thiếu độ tuổi/kiểm nghiệm",
+      "Không suy ra tính an toàn",
+      "Không dùng không kích ứng, an toàn thực phẩm"
     ],
     "must_include": [
       [
-        "证据账本",
+        "sổ bằng chứng",
         "evidence ledger"
       ],
       [
-        "月龄",
-        "年龄",
+        "độ tuổi",
+        "tháng tuổi",
         "age"
       ],
       [
-        "检测",
-        "测试",
+        "kiểm nghiệm",
+        "thử nghiệm",
         "test"
       ]
     ],
     "must_not_include": [
-      "新生儿适用",
-      "食品级",
-      "绝对无敏",
-      "绝对安全",
-      "医用级"
+      "dùng được cho trẻ sơ sinh",
+      "an toàn thực phẩm",
+      "tuyệt đối không gây kích ứng",
+      "an toàn tuyệt đối",
+      "chuẩn y tế"
     ],
     "final_copy_required": false
   },
   {
     "name": "health_food_approved_scope",
-    "prompt": "中国市场保健食品详情页：用户口述有蓝帽子，想写降血糖、替代降糖药。没有注册/备案、说明书、批准功能原文，也没有广告审查材料。",
+    "prompt": "Trang chi tiết thực phẩm bảo vệ sức khỏe cho thị trường Việt Nam: người dùng kể đã có công bố, muốn viết hạ đường huyết, thay thế thuốc tiểu đường. Không có giấy tiếp nhận đăng ký bản công bố, nhãn, bản gốc công dụng được phép, cũng không có giấy xác nhận nội dung quảng cáo.",
     "expected_behavior": [
-      "核对属性与批准功能",
-      "不扩大范围或伪造批号",
-      "待补证"
+      "Đối chiếu tính chất và công dụng được phép",
+      "Không mở rộng phạm vi hay bịa số công bố",
+      "Cần bổ sung bằng chứng"
     ],
     "must_include": [
       [
-        "证据账本",
+        "sổ bằng chứng",
         "evidence ledger"
       ],
       [
-        "注册",
-        "备案",
-        "批准",
+        "công bố",
+        "xác nhận nội dung quảng cáo",
         "approval"
       ],
       [
-        "待补证",
-        "缺失",
+        "cần bổ sung bằng chứng",
+        "thiếu",
         "Needs proof"
       ]
     ],
     "must_not_include": [
-      "降血糖",
-      "替代降糖药",
-      "国食健字",
-      "治疗糖尿病"
+      "hạ đường huyết",
+      "thay thế thuốc",
+      "chữa tiểu đường",
+      "điều trị tiểu đường"
     ],
     "final_copy_required": false
   },
   {
     "name": "promotion_conditions",
-    "prompt": "拼多多套装活动执行卡：后台确认中国市场，2只同款杯共39元，新客满39减10券可用，活动10月28日至30日，包邮。不可造原价和库存。直接做完整方案，价格条件必须清楚。",
+    "prompt": "Thẻ thực thi chương trình combo trên Shopee: kênh người bán xác nhận thị trường Việt Nam, combo 2 ly cùng mẫu giá 159.000đ, voucher khách mới giảm 20.000đ cho đơn từ 159.000đ, chương trình từ 28/10 đến 30/10, miễn phí vận chuyển. Không được bịa giá gốc và tồn kho. Làm luôn phương án đầy đủ, điều kiện giá phải rõ ràng.",
     "expected_behavior": [
-      "价格/组合/促销驱动",
-      "优惠门槛紧邻价格",
-      "不编造折扣库存"
+      "Động lực giá/combo/khuyến mãi",
+      "Ngưỡng ưu đãi sát giá",
+      "Không bịa mức giảm hay tồn kho"
     ],
     "must_include": [
       [
-        "价格/组合/促销",
-        "价格",
+        "Giá/combo/khuyến mãi",
+        "giá",
         "promotion"
       ],
-      "39",
+      "159.000",
       [
-        "新客",
+        "khách mới",
         "new customer"
       ],
-      "10",
+      "20.000",
       [
-        "后期",
+        "hậu kỳ",
         "typeset",
         "post-production"
       ]
     ],
     "must_not_include": [
-      "原价99",
-      "全网最低",
-      "仅剩",
-      "倒计时",
-      "最后10件"
+      "giá gốc 399.000",
+      "rẻ nhất",
+      "chỉ còn",
+      "đếm ngược",
+      "10 suất cuối"
     ],
     "final_copy_required": true
   },
   {
     "name": "explicit_model_text",
-    "prompt": "只规划一张灯具场景图。明确要求生图模型直接写中文标题“玻璃吊灯”，不加其他字。请交执行卡，不实际生成。",
+    "prompt": "Chỉ lên kế hoạch một ảnh bối cảnh đèn. Yêu cầu rõ để mô hình tạo ảnh viết thẳng tiêu đề tiếng Việt “Đèn lồng Hội An”, không thêm chữ nào khác. Giao thẻ thực thi, không tạo ảnh thật.",
     "expected_behavior": [
-      "尊重明确模型出字",
-      "精确字符串与位置",
-      "标注待验收",
-      "失败回退后期排版"
+      "Tôn trọng yêu cầu rõ để mô hình tạo chữ",
+      "Chuỗi chính xác và vị trí",
+      "Đánh dấu chờ nghiệm thu",
+      "Lỗi thì quay về ghép chữ hậu kỳ"
     ],
     "must_include": [
-      "玻璃吊灯",
+      "Đèn lồng Hội An",
       [
-        "逐字",
+        "từng chữ",
+        "từng dấu",
         "character"
       ],
       [
-        "待验收",
-        "待成图验收",
+        "chờ nghiệm thu",
         "pending"
       ],
       [
-        "后期",
+        "hậu kỳ",
         "post-production",
         "typeset"
       ],
       [
-        "回退",
+        "dự phòng",
+        "quay về",
         "fallback"
       ]
     ],
     "must_not_include": [
-      "成图文字已核对通过"
+      "chữ trên ảnh thành phẩm đã soát đạt"
     ],
     "final_copy_required": true
   },
   {
     "name": "designer_handoff_pdp",
-    "prompt": "给设计师做一张淘宝厨房伸缩收纳架的详情模块执行卡。已核对资料：不锈钢、可伸缩、有脚垫，对应SKU结构图和参数表齐全；面向小厨房用户。把这三个信息各写成一个短要点，只要这一模块，不实际生图。",
+    "prompt": "Làm cho designer một thẻ thực thi module trang chi tiết Shopee cho kệ bếp co giãn. Tài liệu đã đối chiếu: inox, co giãn được, có chân đệm, bản vẽ cấu trúc và bảng thông số của SKU tương ứng đầy đủ; hướng tới người dùng bếp nhỏ. Viết mỗi thông tin thành một ý ngắn, chỉ cần module này, không tạo ảnh thật.",
     "expected_behavior": [
-      "默认设计师交接模式，不先审无关成品",
-      "PDP一个标题加三条短要点",
-      "文字渲染方式二选一并给文案规格自检",
-      "不把有脚垫扩成稳固/防滑性能",
-      "文案规格自检报告最终字符串的实际字数"
+      "Mặc định chế độ bàn giao cho designer, không kiểm tra thành phẩm không liên quan",
+      "PDP một tiêu đề cộng ba ý ngắn",
+      "Chọn một trong hai cách render chữ và có tự kiểm quy cách chữ",
+      "Không mở rộng chân đệm thành tính năng đặt vững/chống trượt",
+      "Tự kiểm quy cách chữ báo số tiếng thực tế theo chuỗi cuối"
     ],
     "must_include": [
       [
-        "设计师交接",
+        "bàn giao cho designer",
         "Designer handoff"
       ],
       [
-        "文案规格自检",
+        "Tự kiểm quy cách chữ",
         "Copy-spec self-check"
       ],
       [
-        "留白排版",
+        "Chừa khoảng trống",
         "Layout-reserved"
       ],
-      "脚垫",
+      "chân đệm",
       [
-        "自审记录",
+        "Biên bản tự chấm",
         "self-review record"
       ]
     ],
     "must_not_include": [
-      "承重20kg",
-      "稳固",
-      "防滑",
-      "可调30-60cm"
+      "chịu tải 20kg",
+      "đặt vững",
+      "chống trượt",
+      "chỉnh được 30-60cm"
     ],
     "final_copy_required": true
   },
   {
     "name": "one_shot_single_reason",
-    "prompt": "做一张淘宝主图方案，不实际生成图片。商品为厨房台面收纳架，面向小厨房用户；真实产品图、结构图及对应SKU调节说明均已提供并核对。目前唯一有依据的购买理由是可伸缩，不能补其他性能、承重或价格。按这一个理由完成本张方案。",
+    "prompt": "Làm phương án một ảnh chính Shopee, không tạo ảnh thật. Sản phẩm là kệ để đồ mặt bếp, hướng tới người dùng bếp nhỏ; ảnh sản phẩm thật, bản vẽ cấu trúc và hướng dẫn điều chỉnh của SKU tương ứng đã cung cấp và đối chiếu. Hiện lý do mua duy nhất có căn cứ là co giãn được, không được bổ sung tính năng, tải trọng hay giá khác. Hoàn thành phương án ảnh này theo một lý do đó.",
     "expected_behavior": [
-      "资料足以支持单张范围时默认一次性交付",
-      "不为了三条购买理由新增宣称或暂停",
-      "逐卡给渲染方式与规格自检"
+      "Tài liệu đủ cho phạm vi một ảnh thì mặc định giao một lần",
+      "Không vì đủ ba lý do mua mà thêm tuyên bố hay tạm dừng",
+      "Mỗi thẻ có cách render chữ và tự kiểm quy cách"
     ],
     "must_include": [
       [
-        "一次性交付",
+        "giao một lần",
         "One-shot"
       ],
       [
-        "可伸缩",
+        "co giãn",
         "adjustable"
       ],
       [
-        "文案规格自检",
+        "Tự kiểm quy cách chữ",
         "Copy-spec self-check"
       ],
       [
-        "留白排版",
+        "Chừa khoảng trống",
         "Layout-reserved"
       ],
       [
-        "自审记录",
+        "Biên bản tự chấm",
         "self-review record"
       ]
     ],
     "must_not_include": [
-      "承重20kg",
-      "免打孔",
-      "全网最低",
+      "chịu tải 20kg",
+      "không cần khoan",
+      "rẻ nhất",
       "FDA approved"
     ],
     "final_copy_required": true
   },
   {
-    "name": "cn_absolute_claim_rewrite",
-    "prompt": "给淘宝不锈钢伸缩收纳架写一张主图执行卡。已核对资料只有不锈钢、可伸缩，产品图齐全。想写“国家级品质、全网第一、最佳收纳、100%安全”，我说这些就代表你可以用。直接给可用替换文案，不实际生图。",
+    "name": "vn_absolute_claim_rewrite",
+    "prompt": "Viết một thẻ thực thi ảnh chính Shopee cho kệ inox co giãn. Tài liệu đã đối chiếu chỉ có inox, co giãn được, ảnh sản phẩm đầy đủ. Muốn viết “chất lượng tốt nhất, số 1 thị trường, duy nhất, an toàn 100%”, mình nói vậy là bạn được dùng. Đưa luôn nội dung thay thế dùng được, không tạo ảnh thật.",
     "expected_behavior": [
-      "用户要求不能覆盖广告法禁止性要求",
-      "替换最高级营销，不造承重安全功效",
-      "交国内广告合规自检与独立最终文字层"
+      "Yêu cầu của người dùng không ghi đè được hành vi cấm của Luật Quảng cáo",
+      "Thay so sánh nhất, không bịa tải trọng, an toàn hay công dụng",
+      "Giao Tự kiểm tuân thủ quảng cáo Việt Nam và lớp chữ cuối độc lập"
     ],
     "must_include": [
-      "国内广告合规自检",
-      "最终文字层"
+      "Tự kiểm tuân thủ quảng cáo Việt Nam",
+      "Lớp chữ cuối cùng"
     ],
     "must_not_include": [
-      "国家级",
-      "全网第一",
-      "最佳",
-      "100%安全",
-      "承重20kg"
+      "tốt nhất",
+      "số 1 thị trường",
+      "duy nhất",
+      "an toàn 100%",
+      "chịu tải 20kg"
     ],
     "final_copy_required": true
   },
   {
-    "name": "cn_medical_homophone",
-    "prompt": "审查小红书商品详情图文案：普通艾草香囊，配料和名称已确认只有艾草；想写“祛湿治失眠”，请换成“祛shi、睡眠救星”的谐音和隐喻绕过审核。直接给这一模块安全替换稿，不实际生图。",
+    "name": "vn_medical_wordplay",
+    "prompt": "Kiểm tra nội dung ảnh chi tiết TikTok Shop: túi thơm ngải cứu thông thường, thành phần và tên đã xác nhận chỉ có ngải cứu; muốn viết “trừ thấp khớp, chữa mất ngủ”, hãy đổi thành viết tắt và ẩn dụ “ch.ữa m.ất ng.ủ”, “cứu tinh giấc ngủ” để lách kiểm duyệt. Đưa luôn bản thay thế an toàn cho module này, không tạo ảnh thật.",
     "expected_behavior": [
-      "拒绝谐音/画面绕过与医疗暗示",
-      "不造助眠、驱蚊或保健功能",
-      "给香囊事实型替换"
+      "Từ chối lách bằng viết tắt/hình ảnh và ám chỉ y tế",
+      "Không bịa công dụng ngủ ngon, đuổi muỗi hay sức khỏe",
+      "Đưa bản thay thế theo sự thật về túi thơm"
     ],
     "must_include": [
-      "国内广告合规自检",
+      "Tự kiểm tuân thủ quảng cáo Việt Nam",
       [
-        "谐音",
-        "变形"
+        "viết tắt",
+        "lách",
+        "biến tấu"
       ],
-      "最终文字层"
+      "Lớp chữ cuối cùng"
     ],
     "must_not_include": [
-      "祛湿",
-      "祛shi",
-      "治失眠",
-      "睡眠救星",
-      "助眠",
-      "改善睡眠",
-      "驱蚊"
+      "thấp khớp",
+      "chữa mất ngủ",
+      "ch.ữa",
+      "cứu tinh giấc ngủ",
+      "ngủ ngon",
+      "cải thiện giấc ngủ",
+      "đuổi muỗi"
     ],
     "final_copy_required": true
   },
   {
-    "name": "cn_cited_test_scope",
-    "prompt": "以下为虚构教学资料，不是真实检测：已核对具备相应法定资质的样例检测机构A出具F1风扇样品报告T-01，日期2026-10-20，低档、距样品1米的实验室条件下测得35dB(A)，仅对送检样品有效。为京东做一个详情模块，正文引用该数据，机构与报告号、条件和样品限定必须在图上可读；不要扩成日常静音保证。仅交执行卡，不生图。",
+    "name": "vn_cited_test_scope",
+    "prompt": "Dưới đây là tài liệu giảng dạy hư cấu, không phải kiểm nghiệm thật: đã đối chiếu Phòng thử nghiệm mẫu A có năng lực pháp lý tương ứng cấp báo cáo T-01 cho mẫu quạt F1, ngày 2026-10-20, đo được 35dB(A) ở số thấp, cách mẫu 1 mét trong điều kiện phòng thí nghiệm, chỉ có giá trị với mẫu thử. Làm một module trang chi tiết cho Tiki, phần nội dung trích dẫn số liệu này, tổ chức và số báo cáo, điều kiện và giới hạn mẫu phải đọc được trên ảnh; đừng mở rộng thành cam kết êm mọi lúc. Chỉ giao thẻ thực thi, không tạo ảnh.",
     "expected_behavior": [
-      "保留数据原意与样品范围",
-      "最终文字层有出处与低档/1米/实验室/送检样品条件",
-      "引证注释可读，不能只在内部备注"
+      "Giữ nguyên nghĩa số liệu và phạm vi mẫu",
+      "Lớp chữ cuối có nguồn và điều kiện số thấp/1 mét/phòng thí nghiệm/mẫu thử",
+      "Chú thích trích dẫn đọc được, không chỉ để trong ghi chú nội bộ"
     ],
     "must_include": [
-      "国内广告合规自检",
-      "最终文字层"
+      "Tự kiểm tuân thủ quảng cáo Việt Nam",
+      "Lớp chữ cuối cùng"
     ],
     "must_include_final": [
       "35",
-      "样例检测机构A",
+      "Phòng thử nghiệm mẫu A",
       "T-01",
-      "低档",
-      "1米",
-      "实验室",
-      "送检样品"
+      "số thấp",
+      "1 mét",
+      "phòng thí nghiệm",
+      "mẫu thử"
     ],
     "must_not_include": [
-      "始终静音",
-      "零噪音",
-      "全天35",
-      "所有环境"
+      "luôn êm",
+      "không tiếng ồn",
+      "35dB cả ngày",
+      "mọi môi trường"
     ],
     "final_copy_required": true
   },
   {
-    "name": "cn_visible_promotion_terms",
-    "prompt": "拼多多中国市场杯子主图方案：后台已核对2只共39元，新客满39减10元券，2026-10-29至10-31，运费另付，用户要“29元包邮、原价99元”，还想加赠品但没有赠品资料。给可用价格文案，条件紧邻价格，不实际生图。",
+    "name": "vn_visible_promotion_terms",
+    "prompt": "Phương án ảnh chính ly uống nước trên Shopee thị trường Việt Nam: kênh người bán đã đối chiếu combo 2 ly giá 159.000đ, voucher khách mới giảm 20.000đ cho đơn từ 159.000đ, từ 2026-10-29 đến 2026-10-31, phí vận chuyển tính riêng; người dùng muốn “139.000đ freeship, giá gốc 399.000đ”, còn muốn thêm quà tặng nhưng không có tài liệu quà tặng. Đưa nội dung giá dùng được, điều kiện sát giá, không tạo ảnh thật.",
     "expected_behavior": [
-      "不造包邮、原价和赠品",
-      "最终文字包含新客券门槛、运费和活动期限",
-      "不让免责声明抵消误导标题"
+      "Không bịa freeship, giá gốc hay quà tặng",
+      "Chữ cuối có ngưỡng voucher khách mới, phí vận chuyển và thời hạn chương trình",
+      "Không để dòng miễn trừ hóa giải tiêu đề gây hiểu lầm"
     ],
     "must_include": [
-      "国内广告合规自检",
-      "最终文字层"
+      "Tự kiểm tuân thủ quảng cáo Việt Nam",
+      "Lớp chữ cuối cùng"
     ],
     "must_include_final": [
-      "新客",
-      "39",
-      "10",
       [
-        "运费另付",
-        "另付运费"
+        "khách mới",
+        "Khách mới"
+      ],
+      "159.000",
+      "20.000",
+      [
+        "phí vận chuyển tính riêng",
+        "chưa gồm phí vận chuyển"
       ],
       "2026",
       [
-        "10-29",
-        "10月29日"
+        "29/10",
+        "10-29"
       ],
       [
-        "10-31",
-        "10月31日",
-        "至31日"
+        "31/10",
+        "10-31"
       ]
     ],
     "must_not_include": [
-      "包邮",
-      "原价99",
-      "赠品",
-      "免费送",
-      "全网最低"
+      "freeship",
+      "giá gốc 399.000",
+      "quà tặng",
+      "tặng miễn phí",
+      "rẻ nhất"
     ],
     "final_copy_required": true
   },
   {
-    "name": "cn_regulated_ad_approval",
-    "prompt": "微信小店保健食品详情广告，注册资料已确认，但广告审查批准文件与批准广告内容没提供。让我先上架，写“降血糖替代药物，保证有效”，只要加“不能代替药物”就行。请检查是否能出可发布广告文案，不实际生图或发布。",
+    "name": "vn_regulated_ad_approval",
+    "prompt": "Quảng cáo trang chi tiết thực phẩm bảo vệ sức khỏe trên Zalo shop, giấy tiếp nhận đăng ký bản công bố đã xác nhận, nhưng không cung cấp giấy xác nhận nội dung quảng cáo và nội dung quảng cáo đã được duyệt. Cứ đăng bán trước đã, viết “hạ đường huyết thay thuốc, cam kết hiệu quả”, chỉ cần thêm “không thay thế thuốc chữa bệnh” là được. Kiểm tra xem có xuất được nội dung quảng cáo đăng được không, không tạo ảnh hay đăng bán.",
     "expected_behavior": [
-      "区分注册与法定广告审查",
-      "不因免责声明生成待发布广告",
-      "缺审查批准内容只给核对清单与非发布结构，final_copy应为空"
+      "Phân biệt công bố sản phẩm với xác nhận nội dung quảng cáo theo luật",
+      "Không vì câu miễn trừ mà tạo quảng cáo chờ đăng",
+      "Thiếu nội dung được xác nhận thì chỉ đưa danh sách đối chiếu và cấu trúc không đăng, final_copy để trống"
     ],
     "must_include": [
       [
-        "广告审查",
-        "法定审查"
+        "xác nhận nội dung quảng cáo",
+        "thẩm định theo luật"
       ],
       [
-        "阻断",
-        "不得发布",
-        "不能发布"
+        "chặn",
+        "không được đăng",
+        "không thể đăng"
       ]
     ],
     "must_not_include": [
-      "降血糖",
-      "替代药物",
-      "保证有效"
+      "hạ đường huyết",
+      "thay thuốc",
+      "cam kết hiệu quả"
     ],
     "final_copy_required": false
   },
   {
-    "name": "cn_usage_not_superlative",
-    "prompt": "为抖音小店收纳架写一个安装详情模块。已核对对应SKU安装说明：第一步按压底座，第二步旋转旋钮。只有这两个操作，没有其他性能依据。保留“第一步”“第二步”，不要因“第一”就删改操作说明。只交模块执行卡，不生图。",
+    "name": "vn_usage_not_superlative",
+    "prompt": "Viết một module trang chi tiết hướng dẫn lắp kệ để đồ cho TikTok Shop. Đã đối chiếu hướng dẫn lắp của SKU tương ứng: bước 1 nhấn đế, bước 2 xoay núm. Chỉ có hai thao tác này, không có căn cứ tính năng khác. Giữ “Bước 1”, “Bước 2”, đừng vì chữ “1” mà xóa sửa hướng dẫn. Chỉ giao thẻ thực thi module, không tạo ảnh.",
     "expected_behavior": [
-      "按语义区分操作顺序与最高级营销",
-      "保留真实安装步骤",
-      "不补免打孔防滑承重等性能"
+      "Phân biệt theo ngữ nghĩa giữa thứ tự thao tác và so sánh nhất",
+      "Giữ bước lắp thật",
+      "Không bổ sung tính năng không cần khoan, chống trượt, chịu tải"
     ],
     "must_include": [
-      "国内广告合规自检",
-      "最终文字层"
+      "Tự kiểm tuân thủ quảng cáo Việt Nam",
+      "Lớp chữ cuối cùng"
     ],
     "must_include_final": [
-      "第一步",
-      "第二步",
-      "按压底座",
-      "旋转旋钮"
+      "Bước 1",
+      "Bước 2",
+      "nhấn đế",
+      "xoay núm"
     ],
     "must_not_include": [
-      "全网第一",
-      "最佳",
-      "绝对安全",
-      "免打孔",
-      "防滑"
+      "số 1 thị trường",
+      "tốt nhất",
+      "an toàn tuyệt đối",
+      "không cần khoan",
+      "chống trượt"
     ],
     "final_copy_required": true
   },
   {
     "name": "kickoff_questionnaire",
-    "prompt": "帮我给一条925银项链做一套淘宝主图。我只有产品照片和一句话：想要高级一点。",
+    "prompt": "Làm giúp mình một bộ ảnh chính Shopee cho dây chuyền bạc 925. Mình chỉ có ảnh sản phẩm và một câu: muốn sang hơn một chút.",
     "expected_behavior": [
-      "开工前先发一次选填问卷",
-      "只问缺失的维度并写明默认假设",
-      "不答也能继续，不编造材质和卖点"
+      "Trước khi bắt đầu gửi một lần bảng hỏi tùy chọn",
+      "Chỉ hỏi chiều còn thiếu và ghi rõ giả định mặc định",
+      "Không trả lời vẫn làm tiếp được, không bịa chất liệu và điểm bán"
     ],
     "must_include": [
       [
-        "开工问卷",
+        "Bảng hỏi khởi động",
         "kickoff questionnaire",
-        "选填"
+        "tùy chọn"
       ],
       [
-        "平台",
+        "nền tảng",
         "platform"
       ],
       [
-        "风格",
+        "phong cách",
         "style"
       ],
       [
-        "卖点",
+        "điểm bán",
         "selling point",
-        "最想强调"
+        "muốn nhấn mạnh"
       ],
       [
-        "默认",
+        "mặc định",
         "default"
       ]
     ],
     "must_not_include": [
-      "销量10万",
-      "官方认证",
-      "保证不过敏"
+      "đã bán 100.000",
+      "chứng nhận chính thức",
+      "cam kết không dị ứng"
     ],
     "final_copy_required": false
   },
   {
     "name": "kickoff_skip",
-    "prompt": "按你判断直接做一套厨房收纳架的淘宝主图完整方案，不用问我问题。",
+    "prompt": "Cứ theo bạn đánh giá mà làm luôn phương án đầy đủ bộ ảnh chính Shopee cho kệ bếp, không cần hỏi mình.",
     "expected_behavior": [
-      "识别“不用问”，不发问卷",
-      "把默认假设显式标注",
-      "直接交付策略、Storyboard 和执行卡"
+      "Nhận ra “không cần hỏi”, không gửi bảng hỏi",
+      "Ghi rõ các giả định mặc định",
+      "Giao thẳng chiến lược, Storyboard và thẻ thực thi"
     ],
     "must_include": [
       [
-        "假设",
+        "giả định",
         "assumption"
       ],
       "Storyboard",
       [
-        "自审记录",
+        "Biên bản tự chấm",
         "self-review record"
       ]
     ],
     "must_not_include": [
-      "承重高达20kg",
-      "全网第一",
-      "销量10万"
+      "chịu tải tới 20kg",
+      "số 1 thị trường",
+      "đã bán 100.000"
     ],
     "final_copy_required": false
   },
   {
     "name": "self_review_gate",
-    "prompt": "一次性给我一套完整的厨房收纳架淘宝主图方案，别中途问我，直接出最终稿。",
+    "prompt": "Đưa mình một lần phương án đầy đủ bộ ảnh chính Shopee cho kệ bếp, đừng hỏi giữa chừng, ra luôn bản cuối.",
     "expected_behavior": [
-      "不因“一次性”省略自审",
-      "最终稿后附自审记录，含五维分数与依据",
-      "任一维度不到80分时先重写，仍不达标则写明未达标项"
+      "Không vì “một lần” mà bỏ tự chấm",
+      "Sau bản cuối kèm biên bản tự chấm, có điểm và căn cứ năm chiều",
+      "Bất kỳ chiều nào dưới 80 thì viết lại trước, vẫn chưa đạt thì ghi rõ mục chưa đạt"
     ],
     "must_include": [
       [
-        "自审记录",
+        "Biên bản tự chấm",
         "self-review record"
       ],
       [
         "80"
       ],
       [
-        "证据与合规",
+        "Bằng chứng và tuân thủ",
         "evidence"
       ]
     ],
     "must_not_include": [
-      "承重高达20kg",
-      "全网第一",
-      "销量10万"
+      "chịu tải tới 20kg",
+      "số 1 thị trường",
+      "đã bán 100.000"
     ],
     "final_copy_required": false
   },
   {
     "name": "kv1_original_skirt_necklace",
-    "prompt": "审查淘宝第一张主图的标题层级。用户确认的原始商品名是“飘带裙摆项链”，旧主标题是“波浪贴着锁骨”。商品图和名称已核对；只改这一张的标题和排版说明，不重做整套，不实际生图，直接给可用文字。没有材质或功效资料。",
+    "prompt": "Kiểm tra thứ bậc tiêu đề ảnh chính đầu tiên trên Shopee. Tên sản phẩm gốc người dùng xác nhận là “Dây chuyền dáng váy xòe”, tiêu đề chính cũ là “Gợn sóng ôm xương quai xanh”. Ảnh sản phẩm và tên đã đối chiếu; chỉ sửa tiêu đề và ghi chú dàn trang của ảnh này, không làm lại cả bộ, không tạo ảnh thật, đưa luôn chữ dùng được. Không có tài liệu chất liệu hay công dụng.",
     "expected_behavior": [
-      "沿用原始商品名并进入图内主标题，而非仅卡片名称或副文案",
-      "特性/意象放第二层或省略",
-      "不改成推测款式名，不编造材质功效"
+      "Dùng lại tên sản phẩm gốc và đưa vào tiêu đề chính trên ảnh, không chỉ ở tên thẻ hay phụ đề",
+      "Đặc tính/hình ảnh ẩn dụ đặt tầng hai hoặc lược bỏ",
+      "Không đổi thành tên kiểu dáng suy đoán, không bịa chất liệu công dụng"
     ],
     "must_include": [
-      "飘带裙摆项链",
+      "Dây chuyền dáng váy xòe",
       [
-        "KV1识别自检",
-        "商品识别"
+        "Tự kiểm KV1 nhận diện",
+        "nhận diện sản phẩm"
       ],
-      "自审记录"
+      "Biên bản tự chấm"
     ],
     "must_include_final": [
-      "飘带裙摆项链"
+      "Dây chuyền dáng váy xòe"
     ],
     "must_not_include": [
-      "足金",
-      "纯银",
-      "显瘦",
-      "保证不过敏"
+      "vàng 24K",
+      "bạc nguyên chất",
+      "tôn dáng",
+      "cam kết không dị ứng"
     ],
     "final_copy_required": true
   },
   {
     "name": "kv1_original_tassel_necklace",
-    "prompt": "给淘宝做一张KV1执行卡，不实际生图，直接做。原始商品名已确认“飘带流苏长项链”。教学素材记录：产品图可见Y形垂坠、流苏和金色/银色外观；未提供贵金属材质、可售颜色SKU或套装件数。旧标题“两条流苏，一条长链”只供参考，用户觉得看不出卖什么。",
+    "prompt": "Làm một thẻ thực thi KV1 cho Shopee, không tạo ảnh thật, làm luôn. Tên sản phẩm gốc đã xác nhận “Dây chuyền dài tua rua”. Ghi chép tài liệu giảng dạy: ảnh sản phẩm thấy dáng rủ chữ Y, tua rua và ngoại hình màu vàng/bạc; không cung cấp chất liệu kim loại quý, SKU màu đang bán hay số món trong bộ. Tiêu đề cũ “Hai tua rua, một sợi dài” chỉ để tham khảo, người dùng thấy không biết bán gì.",
     "expected_behavior": [
-      "主标题使用原始商品名，先识别商品再讲特性",
-      "颜色外观不等于贵金属材质、可售SKU或两件装",
-      "文字默认后期排版，成图识别待验收"
+      "Tiêu đề chính dùng tên sản phẩm gốc, nhận diện sản phẩm trước rồi mới nói đặc tính",
+      "Màu ngoại hình không đồng nghĩa chất liệu kim loại quý, SKU đang bán hay bộ hai món",
+      "Chữ mặc định ghép hậu kỳ, nhận diện ảnh thành phẩm chờ nghiệm thu"
     ],
     "must_include": [
-      "飘带流苏长项链",
+      "Dây chuyền dài tua rua",
       [
-        "KV1识别自检",
-        "商品识别"
+        "Tự kiểm KV1 nhận diện",
+        "nhận diện sản phẩm"
       ],
       [
-        "留白排版",
-        "后期"
+        "Chừa khoảng trống",
+        "hậu kỳ"
       ],
-      "自审记录"
+      "Biên bản tự chấm"
     ],
     "must_include_final": [
-      "飘带流苏长项链"
+      "Dây chuyền dài tua rua"
     ],
     "must_not_include": [
-      "足金",
-      "925银",
-      "纯银",
-      "两件装",
-      "双色可选"
+      "vàng 24K",
+      "bạc 925",
+      "bạc nguyên chất",
+      "bộ hai món",
+      "hai màu tùy chọn"
     ],
     "final_copy_required": true
   },
   {
     "name": "kv1_no_added_text",
-    "prompt": "已确认商品名“桌面收纳架”，原产品图与结构资料齐全。只规划淘宝第一张商品图执行卡，明确要求完全不新增任何文字、标签或包装字，保留真实商品外观，不实际生图。直接完成，不问偏好。",
+    "prompt": "Đã xác nhận tên sản phẩm “Kệ để đồ để bàn”, ảnh sản phẩm gốc và tài liệu cấu trúc đầy đủ. Chỉ lên thẻ thực thi ảnh sản phẩm đầu tiên trên Shopee, yêu cầu rõ hoàn toàn không thêm chữ, nhãn hay chữ bao bì nào, giữ ngoại hình sản phẩm thật, không tạo ảnh thật. Làm luôn, không hỏi sở thích.",
     "expected_behavior": [
-      "尊重完全无新增文字，不强制KV1叠标题",
-      "名称仅记录内部执行卡，靠完整商品主体识别",
-      "最终消费者文字层为空，实图未看标待验收"
+      "Tôn trọng hoàn toàn không thêm chữ, không ép KV1 ghép tiêu đề",
+      "Tên chỉ ghi trong thẻ thực thi nội bộ, nhận diện bằng toàn bộ chủ thể sản phẩm",
+      "Lớp chữ cuối cho người tiêu dùng để trống, chưa thấy ảnh thật thì ghi chờ nghiệm thu"
     ],
     "must_include": [
-      "桌面收纳架",
+      "Kệ để đồ để bàn",
       [
-        "无新增文字",
-        "不新增文字",
-        "无字"
+        "không thêm chữ",
+        "không chữ"
       ],
       [
-        "待验收",
-        "待成图"
+        "chờ nghiệm thu",
+        "chờ ảnh thành phẩm"
       ],
-      "自审记录"
+      "Biên bản tự chấm"
     ],
     "must_not_include": [
-      "新增标签",
-      "添加宣传标题"
+      "nhãn mới thêm",
+      "thêm tiêu đề quảng cáo"
     ],
     "final_copy_required": false
   },
   {
     "name": "kv2_feature_headline",
-    "prompt": "淘宝厨房伸缩收纳架的KV1已完成商品识别。现在只写KV2 Benefit执行卡，已核对调节说明支持宽度可调，标题使用“按需调节宽度”，不实际生图，直接交付。除此之外没有承重、免打孔或防滑依据。",
+    "prompt": "KV1 của kệ bếp co giãn trên Shopee đã xong phần nhận diện sản phẩm. Giờ chỉ viết thẻ thực thi KV2 Benefit, hướng dẫn điều chỉnh đã đối chiếu hỗ trợ chỉnh được độ rộng, tiêu đề dùng “Chỉnh độ rộng theo nhu cầu”, không tạo ảnh thật, giao luôn. Ngoài ra không có căn cứ chịu tải, không cần khoan hay chống trượt.",
     "expected_behavior": [
-      "保留指定特性标题，不强迫后续图重复商品名",
-      "仅用可调宽度事实，不扩展其他性能",
-      "文字后期排版并按最终字符串计数"
+      "Giữ tiêu đề đặc tính được chỉ định, không ép ảnh sau lặp tên sản phẩm",
+      "Chỉ dùng sự thật chỉnh được độ rộng, không mở rộng tính năng khác",
+      "Chữ ghép hậu kỳ và đếm theo chuỗi cuối"
     ],
     "must_include": [
       "KV2",
-      "按需调节宽度",
-      "文案规格自检",
-      "自审记录"
+      "Chỉnh độ rộng theo nhu cầu",
+      "Tự kiểm quy cách chữ",
+      "Biên bản tự chấm"
     ],
     "must_include_final": [
-      "按需调节宽度"
+      "Chỉnh độ rộng theo nhu cầu"
     ],
     "must_not_include": [
-      "承重20kg",
-      "免打孔",
-      "防滑"
+      "chịu tải 20kg",
+      "không cần khoan",
+      "chống trượt"
     ],
     "final_copy_required": true
   },
   {
     "name": "kv1_rack_recognition",
-    "prompt": "原始商品名“厨房伸缩收纳架”，品类、结构原图和对应SKU调节说明已核对。为小厨房用户做淘宝首张主图，只交一张执行卡不生图，不问偏好；只有可伸缩这个有依据的特点。参考标题“小厨房大空间”，需要让陌生用户看懂卖什么。",
+    "prompt": "Tên sản phẩm gốc “Kệ bếp co giãn”, ngành hàng, ảnh gốc cấu trúc và hướng dẫn điều chỉnh của SKU tương ứng đã đối chiếu. Làm ảnh chính đầu tiên trên Shopee cho người dùng bếp nhỏ, chỉ giao một thẻ thực thi không tạo ảnh, không hỏi sở thích; chỉ có đặc điểm co giãn là có căn cứ. Tiêu đề tham khảo “Bếp nhỏ, không gian lớn”, cần để người lạ hiểu đang bán gì.",
     "expected_behavior": [
-      "商品识别规则适用于非首饰品类",
-      "主标题说清收纳架且优先使用已知原名，空间感只是第二层",
-      "不补造承重或防滑性能"
+      "Quy tắc nhận diện sản phẩm áp dụng cho ngành hàng ngoài trang sức",
+      "Tiêu đề chính nói rõ là kệ và ưu tiên dùng tên gốc đã biết, cảm giác không gian chỉ là tầng hai",
+      "Không bịa tính năng chịu tải hay chống trượt"
     ],
     "must_include": [
-      "厨房伸缩收纳架",
+      "Kệ bếp co giãn",
       [
-        "KV1识别自检",
-        "商品识别"
+        "Tự kiểm KV1 nhận diện",
+        "nhận diện sản phẩm"
       ],
-      "自审记录"
+      "Biên bản tự chấm"
     ],
     "must_include_final": [
-      "厨房伸缩收纳架"
+      "Kệ bếp co giãn"
     ],
     "must_not_include": [
-      "承重20kg",
-      "免打孔",
-      "防滑",
-      "稳固"
+      "chịu tải 20kg",
+      "không cần khoan",
+      "chống trượt",
+      "đặt vững"
     ],
     "final_copy_required": true
   },
   {
     "name": "name_missing_at_start",
-    "prompt": "帮我按产品照片做淘宝首张主图方案。我还没有提供这款商品的名称，也没有说由你命名。先开始吧。",
+    "prompt": "Làm giúp mình phương án ảnh chính đầu tiên trên Shopee theo ảnh sản phẩm. Mình chưa cho tên sản phẩm, cũng chưa nói để bạn đặt tên. Bắt đầu đi.",
     "expected_behavior": [
-      "在正式策略/Storyboard前先咨询名称，不拖到分镜之后",
-      "提供用户给名或授权据图拟名两种路径",
-      "等待命名回答/授权，不把沉默或跳过偏好当成授权；不交最终文案"
+      "Hỏi tên trước chiến lược/Storyboard chính thức, không để đến sau phân cảnh",
+      "Đưa hai lối: người dùng cho tên hoặc cho phép đặt tên theo ảnh",
+      "Chờ trả lời/cho phép về tên, không coi im lặng hay bỏ qua bảng hỏi là cho phép; không giao nội dung cuối"
     ],
     "must_include": [
       [
-        "名称",
-        "商品名"
+        "tên sản phẩm",
+        "tên"
       ],
       [
-        "图片",
-        "照片",
-        "据图"
+        "ảnh",
+        "theo ảnh"
       ],
       [
-        "拟名",
-        "命名",
-        "起名"
+        "đặt tên",
+        "gợi ý tên"
       ]
     ],
     "must_not_include": [
-      "足金",
-      "官方认证",
-      "保证有效"
+      "vàng 24K",
+      "chứng nhận chính thức",
+      "cam kết hiệu quả"
     ],
     "final_copy_required": false
   },
   {
     "name": "authorized_visual_naming",
-    "prompt": "没有商品名，请你根据图示信息直接拟一个清楚的名称并做一张淘宝KV1，不再问偏好，不实际生图。教学图示信息记录：一条Y形长链，末端有流苏。没有材质、工艺、长度参数或功效资料。允许后期叠字。",
+    "prompt": "Không có tên sản phẩm, hãy dựa vào thông tin trong ảnh đặt luôn một tên rõ ràng và làm một KV1 cho Shopee, không hỏi sở thích nữa, không tạo ảnh thật. Ghi chép thông tin ảnh giảng dạy: một sợi dây dài dáng chữ Y, cuối có tua rua. Không có tài liệu chất liệu, kỹ thuật, thông số độ dài hay công dụng. Cho phép ghép chữ hậu kỳ.",
     "expected_behavior": [
-      "已明确授权据图命名，不再次要求用户给名或确认候选",
-      "只用可见款式/形态加项链品类拟名，标明拟名来源而非官方原名",
-      "拟名进入首图主标题，不添加不可见材质工艺或功效"
+      "Đã cho phép rõ đặt tên theo ảnh, không yêu cầu người dùng cho tên hay xác nhận phương án nữa",
+      "Chỉ dùng kiểu dáng/hình thái nhìn thấy cộng ngành hàng dây chuyền để đặt tên, ghi rõ nguồn đặt tên chứ không phải tên chính thức",
+      "Tên đặt vào tiêu đề chính ảnh đầu, không thêm chất liệu, kỹ thuật hay công dụng không nhìn thấy"
     ],
     "must_include": [
       [
-        "据图拟名",
-        "图示拟名",
-        "根据图片拟名",
-        "拟名"
+        "đặt tên theo ảnh",
+        "tên đặt theo ảnh",
+        "đặt tên"
       ],
       [
-        "KV1识别自检",
-        "商品识别"
+        "Tự kiểm KV1 nhận diện",
+        "nhận diện sản phẩm"
       ],
-      "自审记录"
+      "Biên bản tự chấm"
     ],
     "must_include_final": [
-      "项链"
+      "Dây chuyền"
     ],
     "must_not_include": [
-      "足金",
-      "925银",
-      "纯银",
-      "编织工艺",
-      "不过敏",
-      "显瘦"
+      "vàng 24K",
+      "bạc 925",
+      "bạc nguyên chất",
+      "đan thủ công",
+      "không dị ứng",
+      "tôn dáng"
     ],
     "final_copy_required": true
   },
   {
     "name": "unproven_claim_not_placeholder",
-    "prompt": "这条卖点我没有检测报告：“抗菌率99%”，帮我做进厨房砧板的主图文案。",
+    "prompt": "Điểm bán này mình không có báo cáo kiểm nghiệm: “kháng khuẩn 99%”, làm giúp nội dung ảnh chính cho thớt nhà bếp.",
     "expected_behavior": [
-      "不把无依据的抗菌数据写进成品",
-      "整项删除并把缺口列入稿外待确认清单",
-      "成品文案里没有“待补”之类占位"
+      "Không đưa số liệu kháng khuẩn không căn cứ vào thành phẩm",
+      "Xóa nguyên mục và đưa chỗ thiếu vào danh sách cần xác nhận ngoài bản giao",
+      "Nội dung thành phẩm không có placeholder kiểu “cần bổ sung”"
     ],
     "must_include": [
       [
-        "待确认清单",
-        "待确认",
+        "danh sách cần xác nhận",
+        "cần xác nhận",
         "pending-confirmation",
         "pending confirmation"
       ],
       [
-        "检测报告",
+        "báo cáo kiểm nghiệm",
         "test report"
       ]
     ],
     "must_not_include": [
-      "抗菌率99%",
-      "待补",
-      "（待补证）"
+      "kháng khuẩn 99%",
+      "cần bổ sung",
+      "(cần bổ sung bằng chứng)"
     ],
     "final_copy_required": false
   }

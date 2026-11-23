@@ -2,7 +2,7 @@
 
 > Full English companion to the canonical runtime entrypoint, `SKILL.md`. English and bilingual output must preserve the same evidence, compliance, routing, and execution rules.
 
-Turn raw product materials into a visual plan a designer or image model can execute. Default to Chinese; switch language when requested without changing factual scope.
+Turn raw product materials into a visual plan a designer or image model can execute. Default to Vietnamese; switch language when requested without changing factual scope.
 
 ## Core principles
 
@@ -73,14 +73,14 @@ Prioritize product identity, platform/market, audience, selling points/specifica
 Once the name is supplied or image-based naming is authorized, send **one** preference questionnaire before starting. A missing-name question may be bundled into that round but requires an answer or naming authorization. Fuller answers give a better-fitted plan; if the user does not answer, replies "skip"/"just do it", or simply supplies materials, continue with the stated default assumptions, ask nothing further, and do not relax evidence or compliance boundaries.
 
 - Ask only for dimensions missing from the message and materials; reuse existing project context.
-- Send preference items together, all optional, each with its default; the user may reply with numbers only (for example "1 Taobao  3 women 25–35, rest default").
+- Send preference items together, all optional, each with its default; the user may reply with numbers only (for example "1 Shopee  3 women 25–35, rest default").
 - If the environment has a choice-picker tool, use it for choice questions such as platform, style and scope; otherwise use numbered text. The template is in `references/output-contracts.md`.
 - One round only. Once naming is resolved, after any complete or partial reply proceed without re-asking the same preference dimension; gaps that block compliance or product identity (missing certificates, missing product photos) are listed outside the copy, not asked again.
 - Label default assumptions explicitly in the plan.
 
 | # | Dimension | Ask | Default if unanswered |
 |---|---|---|---|
-| 1 | Platform / market | Taobao/Tmall, JD, Pinduoduo, Douyin Shop, Xiaohongshu, WeChat Channels, Amazon, Shopify… | Infer from materials; else a Taobao/Tmall main-image set |
+| 1 | Platform / market | Shopee, Lazada, TikTok Shop, Tiki, Sendo, Facebook/Zalo, own website, Amazon, Shopify… | Infer from materials; else a Shopee Vietnam main-image set |
 | 2 | Scope | How many main images, PDP, Listing/A+, image prompts needed? | About 5 main images, each with execution card and prompt |
 | 3 | Audience & scene | Who buys, where, when | Infer from materials, labeled as assumption |
 | 4 | Core selling points | The 1–3 points to lead with; which have certificates, tests or parameters | Distill top 3 from materials |
@@ -130,7 +130,7 @@ Choose one primary and at most one secondary driver.
 | Rational / parameter-led | Electronics, appliances, equipment | Specifications, mechanisms, compatibility |
 | Trust / evidence-led | Food, tea, baby products, high-value goods | Origin, craft, qualifications, traceable evidence |
 | Emotional / identity-led | Fragrance, apparel, gifting, pets | Aesthetic, rituals, use scenes, identity |
-| Price / bundle / promotion | Pinduoduo, Temu, Douyin, kits/refills | Included items, unit/bundle price, conditions, dates |
+| Price / bundle / promotion | Shopee, TikTok Shop, Temu, kits/refills | Included items, unit/bundle price, conditions, dates |
 
 Translate up to three supported purchase reasons for the requested scope with `Feature -> Advantage -> Benefit -> Evidence`; never invent extra reasons to fill three slots. Conversion pressure never justifies unsupported claims.
 
@@ -179,7 +179,7 @@ A PDP may follow: `Opening -> Top Benefits -> Mechanism/material/craft -> Scenes
 
 Order information by the buyer's decision path, not by product construction: what is it → what is it to me → why this one → why trust it → how to buy. Each PDP module resolves one decision question, in the order doubts arise.
 
-Load the relevant section of `references/platform-playbooks.md` for platform work. Keep Douyin Shop separate from TikTok Shop, and use the separate Xiaohongshu and WeChat Channels/WeChat Shop sections. Verify current rules using `references/source-notes.md` when dimensions, text permissions, claims or category requirements matter.
+Load the relevant section of `references/platform-playbooks.md` for platform work. Shopee, Lazada, TikTok Shop, Tiki/Sendo and Facebook/Zalo each have their own context. Verify current rules using `references/source-notes.md` when dimensions, text permissions, claims or category requirements matter.
 
 ## Step 5 — Execute
 
@@ -198,7 +198,7 @@ Image prompts go to an AI image model by default; do not ask who receives them. 
 Ten-line minimal execution card. Teaching inputs: a structure drawing and adjustment instructions are supplied; 20kg capacity is only a verbal assertion without test evidence and is excluded from copy.
 
 ```text
-KV1 — Hero | Adjustable kitchen storage rack / Taobao (teaching example)
+KV1 — Hero | Adjustable kitchen storage rack / Shopee (teaching example)
 Task: identify the kitchen storage rack first; adjustment is secondary
 Scene: complete rack and real adjustment relationship from structure references; preserve proportions and Style Lock
 Copy: headline "Adjustable kitchen storage rack"; support "Adjust the width as needed"; no number tag
@@ -218,11 +218,11 @@ For cross-border work, preserve factual scope while adapting units, use cases, c
 
 | Surface | Suggested ceiling |
 |---|---|
-| Main image | One headline (≤12 Chinese characters / ≤6 English words) + at most two support lines (each ≤18 characters / ≤10 words) + at most one number or evidence tag |
-| Independent PDP module | One headline (≤12 characters / ≤6 words) + at most three points (each ≤18 characters / ≤12 words); number/evidence content counts toward the points |
+| Main image | One headline (≤8 Vietnamese syllables / ≤6 English words) + at most two support lines (each ≤14 syllables / ≤10 words) + at most one number or evidence tag |
+| Independent PDP module | One headline (≤8 syllables / ≤6 words) + at most three points (each ≤14 syllables / ≤12 words); number/evidence content counts toward the points |
 | Disclaimers/annotations | Distinct readable bottom area; material conditions also sit beside the relevant claim |
 
-Count numbers and punctuation, exclude whitespace for Chinese; adapt other languages to comparable visual width. Number/evidence tags are optional and must already be in the evidence ledger. Keep specification tables and FAQs separate. **Cut or split images/modules when over the limit; do not shrink type to force a fit.** Explicit layout needs may adjust these suggestions with a reason, without relaxing factual or platform constraints.
+Count Vietnamese syllables by whitespace (a number with its unit such as “500g” is one syllable; punctuation does not count); adapt other languages to comparable visual width. Number/evidence tags are optional and must already be in the evidence ledger. Keep specification tables and FAQs separate. **Cut or split images/modules when over the limit; do not shrink type to force a fit.** Explicit layout needs may adjust these suggestions with a reason, without relaxing factual or platform constraints.
 
 For the copy-spec self-check, count each final headline and individual support/point string. Count English words by whitespace. With execution tools, run `python scripts/count-copy.py --language en "Final headline" "Final support"` (omit the language flag for Chinese), or use an equivalent counter; claiming a manual recount is insufficient. Without a counter, state that lengths await tool verification instead of estimating them. Recalculate after edits.
 
@@ -236,7 +236,7 @@ Where attention is scarcest, secure three things: a dominant subject, a first to
 ### Text rendering method (choose exactly one per card)
 
 - **Layout-reserved (default)**: specify text-safe-zone position, proportion and background brightness; generate no new promotional text, prices, badges or watermarks. Deliver a separate final text layer for designer/layout-tool post-production. Preserve existing packaging text and logos, compositing the original product image if needed.
-- **Model-rendered (exception)**: only when the user explicitly asks and the text is very short (default ≤8 Chinese characters or one English headline of ≤6 words). Quote exact strings, language, type style, position and hierarchy. For longer text, deliver Layout-reserved and explain why.
+- **Model-rendered (exception)**: only when the user explicitly asks and the text is very short (default one headline of ≤6 Vietnamese syllables or ≤6 English words; image models often break Vietnamese diacritics, so check every mark). Quote exact strings, language, type style, position and hierarchy. For longer text, deliver Layout-reserved and explain why.
 - Include **text acceptance and fallback** in every card. Inspect every character after model rendering; typos, missing text, gibberish or packaging rewrites are Fail conditions. Fall back to Layout-reserved plus post-production typography. Without an inspected image, state that text rendering is pending acceptance. If the platform disallows overlays, provide no new promotional text.
 
 ### Copy quality self-check (run on every line of copy)
@@ -270,7 +270,7 @@ Hard blockers first:
 - Needs proof written as fact.
 - Unverified current platform rules stated as certain requirements.
 - Unsupported medical/health guarantees or claims outside approved scope.
-- Mainland China advertising with prohibited claims, missing statutory ad approval, or required citation sources/conditions hidden in internal notes or unreadable text.
+- Vietnam-market advertising with prohibited claims, missing statutory ad approval, or required citation sources/conditions hidden in internal notes or unreadable text.
 - Final copy still contains placeholders or internal notes ("to be added", "to confirm", "(not provided)"), or clarifications sitting in selling-point space.
 - Process, material or performance inferred from an image or not checked against the real item is written as fact, or kept despite conflicting with the item.
 - An image prompt that depends on context or lacks product structure or forbidden changes and cannot be used on its own.
@@ -282,7 +282,7 @@ Score each dimension 0–100 independently; **80 is the passing line**. Scores a
 
 | Dimension | Required conditions (all met for ≥80) | Bonus items (80–100) |
 |---|---|---|
-| Evidence & compliance | ① every factual, numerical or qualification claim traces to the ledger ② Needs-proof content is not written as fact ③ China ad compliance check passed (when applicable) ④ no placeholders or internal notes in final copy ⑤ process, material and performance follow the materials' wording and were checked against the real item | sources cite page or image number; risky lines have substitutes |
+| Evidence & compliance | ① every factual, numerical or qualification claim traces to the ledger ② Needs-proof content is not written as fact ③ Vietnam ad compliance check passed (when applicable) ④ no placeholders or internal notes in final copy ⑤ process, material and performance follow the materials' wording and were checked against the real item | sources cite page or image number; risky lines have substitutes |
 | Conversion logic | ① each image has its own decision task ② top reasons are clear (no padding to three) ③ naming is resolved in Step 0; permitted KV1 headlines name the product before secondary benefits, no-text images have a recognition basis, and later images need not repeat the name ④ copy passes the six-point quality self-check | support lines add what the picture cannot say; fit content gives bands and a conclusion |
 | Visual hierarchy | ① a clear first focus ② text within the copy-specification limits ③ reasonable subject proportion ④ the brief specifies mobile preview/type checks; inspect existing renders and mark unrendered images pending | reading order and emphasis of numbers/evidence are explained |
 | Consistency | ① Style Lock followed; no drift in style, palette or light ② product identity matches references ③ type and copy tone match across the set | every prompt repeats the Style Lock |
@@ -312,16 +312,16 @@ Append after the final draft. Without it, self-review is treated as not done, wh
 
 Read `references/compliance-rules.md` for compliance work and locate official sources by category in `references/source-notes.md`. Distinguish reviewed provisions from login-only policy entry points. An accessible entry point does not verify a specific rule.
 
-### Mainland China main-image and PDP advertising rules
+### Vietnam main-image and PDP advertising rules
 
-Before writing or revising main-image/PDP copy for mainland China on Taobao/Tmall, JD, Pinduoduo, Douyin Shop, Xiaohongshu, WeChat Channels/WeChat Shop or similar surfaces, **read section 10 of `references/compliance-rules.md`** and check the applicable PRC Advertising Law sources. Target market determines the rules regardless of output language.
+Before writing or revising main-image/PDP copy for Vietnamese consumers on Shopee, Lazada, TikTok Shop, Tiki, Sendo, Facebook/Zalo shops, own websites or similar surfaces, **read section 10 of `references/compliance-rules.md`** and check the applicable Vietnamese Law on Advertising and implementing-regulation sources. Target market determines the rules regardless of output language.
 
 - Establish the product category and permitted claims before converting materials into benefits. Do not copy unlawful or misleading source wording. Reference fidelity does not excuse problematic packaging claims: flag the blocker and obtain compliant assets without silently altering the product.
-- Default China marketing copy excludes absolute superlatives such as “国家级、最高级、最佳”, unsupported leadership/uniqueness/lowest-price claims and medical-effect promises. Do not evade restrictions with homophones, pinyin, split characters, symbols or visual implications. For a potentially substantiated exception, provide a plain factual alternative and put the original outside final copy for human review. Human review cannot authorize a prohibited claim. Distinguish objective instructions such as “第一步” from superiority marketing; do not ban individual characters mechanically.
+- Default Vietnam marketing copy excludes “nhất”, “duy nhất”, “tốt nhất”, “số một” or equivalent wording without lawful supporting documents, unsupported leadership/uniqueness/lowest-price claims and medical-effect promises. Do not evade restrictions with abbreviations, stripped diacritics, split letters, symbols, emoji or visual implications. For a potentially substantiated exception, provide a plain factual alternative and put the original outside final copy for human review. Human review cannot authorize a prohibited claim. Distinguish objective instructions such as “bước đầu tiên” from superiority marketing; do not ban individual characters mechanically.
 - Ledger the evidence for numbers, reports, rankings and comparisons, then check legal permissibility. **Required citation sources, sample/conditions, scope and validity belong in consumer-visible text**, not only the ledger. Distinguish advertiser self-tests from external citations; AI-generated data is not verified evidence.
-- Prices, gifts, promotions and service promises must match confirmed terms. Keep material conditions beside the claim, not hidden in low-contrast small print or an “actual product prevails” disclaimer. Check patent/certification scope and endorsement/testimonial rights; invent no official approval.
-- Ordinary goods cannot use disease-treatment claims or wording that confuses them with drugs/devices. If statutory ad approval is required but missing, provide a verification checklist and non-publishable structure only. Do not freely edit an approved advertisement; preserve applicable mandatory statements.
-- Every card includes a **China advertising compliance check**, with a separate final text layer and risk/source notes. Blocked or pending-human-review claims are not publishable. Continue supported portions; image acceptance remains pending until inspected. Do not promise Advertising Law certification or platform approval.
+- Prices, gifts, promotions and service promises must match confirmed terms. Keep material conditions beside the claim, not hidden in low-contrast small print or an “images are for illustration only” disclaimer. Check patent/certification scope and endorsement/testimonial rights; invent no official approval.
+- Ordinary goods cannot use disease-treatment claims or wording that confuses them with drugs/devices. If statutory confirmation of advertising content is required (for example health supplements, medical devices or cosmetics under current rules) but missing, provide a verification checklist and non-publishable structure only. Do not freely edit an approved advertisement; preserve applicable mandatory statements such as “Thực phẩm này không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh”.
+- Every card includes a **Vietnam advertising compliance check**, with a separate final text layer and risk/source notes. Blocked or pending-human-review claims are not publishable. Continue supported portions; image acceptance remains pending until inspected. Do not promise Law on Advertising certification or platform approval.
 
 - A disclaimer cannot repair an impermissible claim.
 - Absolute, comparison, price, certification, health, efficacy and review claims depend on evidence and target market.
@@ -330,7 +330,7 @@ Before writing or revising main-image/PDP copy for mainland China on Taobao/Tmal
 
 ## Reference loading
 
-- `references/compliance-rules.md` — section 10 is mandatory before all mainland China main-image/PDP copy, including isolated revisions; other markets load relevant compliance/category sections as needed.
+- `references/compliance-rules.md` — section 10 is mandatory before all Vietnam-market main-image/PDP copy, including isolated revisions; other markets load relevant compliance/category sections as needed.
 - `references/platform-playbooks.md` — platform and cross-border differences.
 - `references/output-contracts.md` — mandatory before complete plans/strategies/storyboards or formal audits in every mode; also holds the kickoff questionnaire template.
 - `references/source-notes.md` — applicable official laws/policies, price, health and children's claims.

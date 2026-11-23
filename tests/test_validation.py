@@ -34,6 +34,9 @@ class ValidationRegression(unittest.TestCase):
         }
 
     def test_copy_counts_use_final_strings_including_punctuation(self):
+        self.assertEqual(count_copy("Kệ bếp co giãn", "vi"), 4)
+        self.assertEqual(count_copy("Chỉnh độ rộng theo nhu cầu", "vi"), 6)
+        self.assertEqual(count_copy("Hộp quà 2kg – 500g", "vi"), 4)
         self.assertEqual(count_copy("小厨房，按需伸缩", "zh"), 8)
         self.assertEqual(count_copy("按需伸缩，适配台面", "zh"), 9)
         self.assertEqual(count_copy("小厨房也能灵活收纳", "zh"), 9)
@@ -47,11 +50,11 @@ class ValidationRegression(unittest.TestCase):
             verifier.require_text("SKILL.en.md", "unrelated content", ["Evidence ledger"])
 
     def test_missing_english_failure_section_is_rejected(self):
-        chinese = (ROOT / "SKILL.md").read_text(encoding="utf-8")
+        vietnamese = (ROOT / "SKILL.md").read_text(encoding="utf-8")
         english = (ROOT / "SKILL.en.md").read_text(encoding="utf-8")
-        verifier.check_bilingual_sections(chinese, english)
+        verifier.check_bilingual_sections(vietnamese, english)
         with self.assertRaisesRegex(ValueError, "bilingual contract"):
-            verifier.check_bilingual_sections(chinese, english.replace("## Key failure modes", "### Key failure modes"))
+            verifier.check_bilingual_sections(vietnamese, english.replace("## Key failure modes", "### Key failure modes"))
 
     def test_analysis_may_quote_risky_phrase_but_final_copy_may_not(self):
         response = {"name": "food", "response": "Evidence ledger: 不使用乌发。最终稿：黑芝麻食品", "final_copy": "黑芝麻食品"}
@@ -130,6 +133,10 @@ class ValidationRegression(unittest.TestCase):
         verifier.verify()
 
     def test_final_copy_scan_flags_placeholders_but_not_clean_copy(self):
+        self.assertIn("cần bổ sung/cần xác nhận/cần kiểm tra", scan_copy("Tải trọng (cần bổ sung)")["hard"])
+        self.assertIn("chưa cung cấp trong ngoặc", scan_copy("Kích thước (bảng thông số chưa cung cấp)")["hard"])
+        self.assertEqual(scan_copy("Khi dính nước hoặc mồ hôi, lau khô rồi cất ngay")["hard"], [])
+        self.assertIn("giọng ghi chú nội bộ", scan_copy("Gợi ý: thêm một dòng quy cách")["soft"])
         self.assertIn("待补/待确认/待核", scan_copy("承重（待补）")["hard"])
         self.assertIn("未提供类括注", scan_copy("尺寸（参数表未提供）")["hard"])
         self.assertEqual(scan_copy("沾到水或汗后，及时擦干再收好")["hard"], [])
