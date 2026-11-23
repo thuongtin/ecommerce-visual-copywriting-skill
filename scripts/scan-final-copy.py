@@ -6,8 +6,8 @@ import re
 import sys
 
 HARD = {
-    "cần bổ sung/cần xác nhận/cần kiểm tra": r"(?i)(?<!không )cần\s+(?:bổ\s+sung\s+(?:bằng\s+chứng|tài\s+liệu|số\s+liệu|thông\s+tin)|bổ\s+sung\s*(?=[)）\]]|$)|xác\s+(?:nhận|minh)\s*(?=[)）\]]|$)|kiểm\s+(?:tra|chứng)\s*(?=[)）\]]|$))",
-    "chưa cung cấp trong ngoặc": r"(?i)[（(][^）)\n]*(?:chưa\s+(?:cung\s+cấp|có\s+(?:số\s+liệu|tài\s+liệu|bằng\s+chứng|thông\s+số))|thiếu\s+(?:bằng\s+chứng|dữ\s+liệu|tài\s+liệu|thông\s+số|số\s+liệu)|đang\s+chờ)[^）)\n]*[）)]",
+    "cần bổ sung/cần xác nhận/cần kiểm tra": r"(?i)(?<!không )cần\s+(?:bổ\s+sung\s+(?:bằng\s+chứng|tài\s+liệu|số\s+liệu|thông\s+tin)|bổ\s+sung\s*(?=[)）\].,;:!?…]|$)|xác\s+(?:nhận|minh)\s*(?=[)）\].,;:!?…]|$)|kiểm\s+(?:tra|chứng)\s*(?=[)）\].,;:!?…]|$))",
+    "chưa cung cấp trong ngoặc": r"(?i)[（(][^）)\n]*(?:chưa\s+(?:cung\s+cấp|có\s+(?:số\s+liệu|tài\s+liệu|bằng\s+chứng|thông\s+số|kết\s+quả|báo\s+cáo|chứng\s+nhận))|thiếu\s+(?:bằng\s+chứng|dữ\s+liệu|tài\s+liệu|thông\s+số|số\s+liệu)|đang\s+chờ)[^）)\n]*[）)]",
     "待补/待确认/待核": r"待(?:补证?|确认|定|核实?|核验)",
     "未提供类括注": r"[（(][^）)\n]*(?:未提供|未给出|缺失|待提供)[^）)\n]*[）)]",
     "TODO/TBD": r"\b(?:TODO|TBD|FIXME)\b",
