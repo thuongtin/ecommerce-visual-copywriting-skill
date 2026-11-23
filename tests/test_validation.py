@@ -42,6 +42,7 @@ class ValidationRegression(unittest.TestCase):
         self.assertEqual(count_copy("小厨房也能灵活收纳", "zh"), 9)
         self.assertEqual(count_copy("39元\t 2只", "zh"), 5)
         self.assertEqual(count_copy("See the mechanism before choosing a size", "en"), 7)
+        self.assertEqual(count_copy("Fold flat – store anywhere fast", "en"), 6)
 
     def test_real_lowercase_english_ledger_is_accepted(self):
         english = (ROOT / "SKILL.en.md").read_text(encoding="utf-8").replace("Evidence ledger", "evidence ledger")
@@ -136,6 +137,9 @@ class ValidationRegression(unittest.TestCase):
         self.assertIn("cần bổ sung/cần xác nhận/cần kiểm tra", scan_copy("Tải trọng (cần bổ sung)")["hard"])
         self.assertIn("chưa cung cấp trong ngoặc", scan_copy("Kích thước (bảng thông số chưa cung cấp)")["hard"])
         self.assertEqual(scan_copy("Khi dính nước hoặc mồ hôi, lau khô rồi cất ngay")["hard"], [])
+        self.assertEqual(scan_copy("Đồ chơi gỗ (dành cho thiếu nhi)")["hard"], [])
+        self.assertEqual(scan_copy("Không cần bổ sung nước khi dùng")["hard"], [])
+        self.assertIn("cần bổ sung/cần xác nhận/cần kiểm tra", scan_copy("Chất liệu cần bổ sung bằng chứng")["hard"])
         self.assertIn("giọng ghi chú nội bộ", scan_copy("Gợi ý: thêm một dòng quy cách")["soft"])
         self.assertIn("待补/待确认/待核", scan_copy("承重（待补）")["hard"])
         self.assertIn("未提供类括注", scan_copy("尺寸（参数表未提供）")["hard"])
