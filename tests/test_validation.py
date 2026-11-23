@@ -141,6 +141,7 @@ class ValidationRegression(unittest.TestCase):
         self.assertIn("cần bổ sung/cần xác nhận/cần kiểm tra", scan_copy("Giá bán cần xác nhận.")["hard"])
         self.assertIn("chưa cung cấp trong ngoặc", scan_copy("Độ bền (chưa có kết quả thử nghiệm)")["hard"])
         self.assertEqual(scan_copy("Không cần bổ sung nước khi dùng")["hard"], [])
+        self.assertEqual(scan_copy("Trước khi sử dụng, cần kiểm tra: dây điện và phích cắm")["hard"], [])
         self.assertIn("cần bổ sung/cần xác nhận/cần kiểm tra", scan_copy("Chất liệu cần bổ sung bằng chứng")["hard"])
         self.assertIn("giọng ghi chú nội bộ", scan_copy("Gợi ý: thêm một dòng quy cách")["soft"])
         self.assertIn("待补/待确认/待核", scan_copy("承重（待补）")["hard"])
