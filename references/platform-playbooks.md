@@ -1,177 +1,136 @@
-# 电商平台视觉 Playbooks
+# Playbook hình ảnh theo nền tảng thương mại điện tử
 
-> 这里是设计策略建议，不是平台硬规则。尺寸、主图叠字、类目资质、促销和禁限词需查 [官方来源索引](source-notes.md)。先确认平台、市场、类目和展示位置，只读对应段落；默认留白后期排版，平台不允许文字的图交无字版本。
+> Đây là khuyến nghị chiến lược thiết kế, không phải quy định cứng của nền tảng. Kích thước, chữ trên ảnh chính, giấy tờ ngành hàng, khuyến mãi và từ cấm/hạn chế cần tra [danh mục nguồn chính thức](source-notes.md). Xác nhận nền tảng, thị trường, ngành hàng và vị trí hiển thị trước, chỉ đọc đoạn tương ứng; mặc định chừa khoảng trống để dàn trang hậu kỳ, ảnh nền tảng không cho chữ thì giao bản không chữ.
 
-商品图首张共同遵循“先认出商品，再讲购买理由”：缺名称先问用户提供或授权据图拟名；允许叠字时，KV1主标题使用已确认名称、授权拟名或清楚的品类短名，特性/氛围居第二层；无字首图靠真实商品整体和原包装识别。该要求是本 Skill 的交付策略，不是新增的平台规定，后续特性图可直接讲卖点。
+Ảnh sản phẩm đầu tiên cùng tuân theo “nhận ra sản phẩm trước, rồi mới nói lý do mua”: thiếu tên thì hỏi người dùng cho tên hoặc cho phép đặt tên theo ảnh; khi được ghép chữ, tiêu đề chính KV1 dùng tên đã xác nhận, tên đặt theo ảnh được cho phép hoặc tên ngành hàng ngắn rõ ràng, đặc tính/không khí ở tầng hai; ảnh đầu không chữ nhận diện bằng toàn bộ sản phẩm thật và bao bì gốc. Đây là chiến lược giao hàng của Skill, không phải quy định nền tảng mới thêm; các ảnh đặc tính sau có thể nói thẳng điểm bán.
+
+Các nền tảng trong nước cùng thực hiện: dù nền tảng có chặn hay không, nội dung ảnh chính và ảnh chi tiết đều đi qua [quy tắc thực thi Luật Quảng cáo tại Việt Nam](compliance-rules.md#10-thực-thi-nội-dung-ảnh-chínhảnh-chi-tiết-tại-việt-nam) trước, áp dụng cho Shopee, Lazada, TikTok Shop, Tiki, Sendo, Facebook/Zalo. Nền tảng duyệt không đồng nghĩa hợp pháp.
+
+## Shopee Việt Nam
+
+### Mục tiêu hình ảnh
+
+Trong kết quả tìm kiếm và gợi ý trên điện thoại, nhận ra sản phẩm ngay; trang chi tiết trả lời “vì sao chọn mẫu này”.
+
+### Phân vai nhiệm vụ
+
+- Hero: nhận diện sản phẩm và SKU tương ứng trước; tiêu đề chính nói rõ tên/ngành hàng, lý do mua đặt ở phụ đề và có thể lược; chừa vùng mà khung ảnh chương trình (Shopee Mall, Flash Sale, Freeship…) có thể đè lên.
+- Ảnh lợi ích: chất liệu/cấu trúc/quy trình → lợi ích khi dùng, tránh 5 ảnh lặp cùng một khẩu hiệu.
+- Ảnh bằng chứng: bảng thông số, nhãn bao bì, phạm vi phiếu kiểm nghiệm, chứng nhận (OCOP, VietGAP…) đúng sản phẩm; không bịa xác nhận chính thức.
+- Ảnh lựa chọn: phân loại hàng, size, quy cách, giới hạn áp dụng; ảnh chương trình ghi rõ ngưỡng voucher, đơn tối thiểu và thời gian.
+- Trang chi tiết: nối tiếp màn hình đầu → lợi ích → bằng chứng → bối cảnh → quy cách → FAQ.
+- Shopee Mall/thương hiệu: kế thừa màu thương hiệu, ánh sáng và tỷ lệ sản phẩm, không đổi phong cách theo từng module.
+
+### Lỗi thường gặp
+
+- Quy cách, số lượng hoặc quà tặng giữa ảnh chính, trang chi tiết và phân loại hàng không khớp.
+- Thông tin khuyến mãi phủ kín ảnh chính, lấn mất sản phẩm; chép công dụng hoặc cách nói tuyệt đối của shop khác.
+- Tự động dùng lại giá, lượt bán, đánh giá của ảnh cũ cho bản mới; dùng “rẻ nhất Shopee”, “bán chạy số 1” khi không có căn cứ hợp pháp.
+
+### Cần kiểm tra
+
+Yêu cầu hiện hành về ảnh chính/ảnh chương trình, nội dung, giá, giấy tờ ngành hàng và hàng cấm/hạn chế bán theo ngành hàng. Nguồn: [Học viện Shopee](source-notes.md#cổng-chính-thức-của-nền-tảng).
+
+## Lazada Việt Nam
+
+### Mục tiêu hình ảnh
+
+Làm thông số đáng tin, quy cách dễ chọn, giảm chi phí ra quyết định lý tính; LazMall chú trọng tính chính hãng và thương hiệu.
+
+### Phân vai nhiệm vụ
+
+- Hero: model thật và nội dung bộ sản phẩm; tên trên bao bì/trang chi tiết/SKU thống nhất.
+- Ảnh thông số: mỗi thông số kèm đơn vị và điều kiện, rồi giải thích lợi ích khi dùng có căn cứ.
+- Ảnh tương thích: kích thước, cổng kết nối, model tương thích, không gian lắp đặt và giới hạn sử dụng.
+- Ảnh cơ chế: tách cấu trúc/cách hoạt động, không coi ảnh minh họa là kết quả đo thật.
+- Ảnh so sánh: bảng chọn trong cùng dòng sản phẩm với cùng tiêu chí, phân biệt số đo thật, thông số nhà sản xuất và mục thiếu.
+- Ảnh dịch vụ: chỉ viết bảo hành, giao hàng, lắp đặt, đổi trả khi có cam kết thật.
+
+### Lỗi thường gặp
+
+- Thông số chỉ chép sách hướng dẫn, thiếu điều kiện dùng và giải thích lợi ích.
+- Kiểm nghiệm và chứng nhận không ứng với SKU thực tế; hứa bảo hành, đổi trả khi không có chính sách thật.
+
+### Cần kiểm tra
+
+Giấy tờ ngành hàng, đăng sản phẩm, công bố thông số, ảnh chính, giá/chương trình và cam kết dịch vụ hiện hành. Nguồn: [Lazada Seller Center VN](source-notes.md#cổng-chính-thức-của-nền-tảng).
+
+## TikTok Shop Việt Nam
+
+**Mục tiêu**: nhận ra nhanh trên điện thoại, khớp với thông tin trong thẻ sản phẩm, video ngắn và livestream.
+
+- Bộ ảnh: nhận diện sản phẩm → một lợi ích → cách dùng thật → hàng nhận được/quy cách → bằng chứng.
+- Thẻ sản phẩm/trang chi tiết/nội dung livestream đối chiếu cùng SKU, số lượng, giá và quà tặng, không được mâu thuẫn.
+- Bối cảnh tự nhiên có thể có động tác và quá trình; so sánh hiệu quả phải có căn cứ cùng điều kiện, không làm giả ảnh trước/sau.
+- Bối cảnh khuyến mãi đối chiếu thời gian chương trình, voucher và ngưỡng đối tượng; ghi rõ điều kiện áp dụng giá.
+- Thực phẩm/mỹ phẩm/mẹ và bé xác định tính chất sản phẩm và giấy tờ tại Việt Nam trước; không bê kết quả duyệt của site TikTok Shop nước khác.
+- Ảnh, video và thẻ sản phẩm có cùng tuyên bố thì phải nhất quán, không dựa vào cách nói phóng đại trong video để bảo chứng cho ảnh tĩnh.
+- Skill này chỉ lên kế hoạch hình ảnh sản phẩm và thông tin cần thiết, không mở rộng thành kịch bản livestream hay tối ưu quảng cáo.
+- Cần kiểm tra: chính sách ảnh, ngành hàng hạn chế, chứng nhận, tuyên bố sức khỏe, khuyến mãi tại Seller Center VN. Nguồn: [TikTok Shop Seller Center VN](source-notes.md#cổng-chính-thức-của-nền-tảng).
+
+## Tiki / Sendo
+
+**Mục tiêu**: thông tin sản phẩm rõ ràng, đáng tin, phù hợp người mua so sánh kỹ (sách, điện tử, gia dụng, hàng chính hãng).
+
+- Hero: nền sạch, sản phẩm thật và bao bì gốc; nhãn chính hãng/nhà phân phối chỉ dùng khi có giấy tờ.
+- Thông số và quy cách trình bày dạng bảng dễ đọc, đơn vị theo chuẩn Việt Nam (cm, kg, ml, VNĐ).
+- Tiki và Sendo xác nhận riêng, không bê quy định của nhau hoặc của Shopee/Lazada.
+- Cần kiểm tra: quy chuẩn hình ảnh, ngành hàng và chương trình trong kênh người bán. Nguồn: [Tiki / Sendo](source-notes.md#cổng-chính-thức-của-nền-tảng).
+
+## Facebook / Instagram / Zalo
+
+**Mục tiêu**: ảnh bài đăng, ảnh catalog và tin nhắn bán hàng nhất quán, người mua hiểu sản phẩm thật, quy cách và điều kiện trước khi nhắn tin chốt đơn.
+
+- Tách kế hoạch ảnh bài đăng/ảnh bìa, ảnh catalog và ảnh gửi qua tin nhắn; không dùng một ảnh chen chúc để gánh mọi nhiệm vụ.
+- Ảnh bối cảnh lấy cách dùng thật, tỷ lệ sản phẩm và chi tiết then chốt làm chính, tránh phủ kín chữ.
+- Giá, combo, quà tặng, phí ship và đổi trả chỉ viết điều kiện kiểm chứng được; không bịa “còn 3 suất”, ảnh chụp màn hình đánh giá hay feedback khách.
+- Thực phẩm/sức khỏe không bịa ca bệnh, lời chứng hay thay đổi cơ thể; kiểm theo luật Việt Nam và chính sách thương mại/quảng cáo hiện hành của Meta/Zalo.
+- Cần kiểm tra: Meta Commerce Policies, chính sách quảng cáo khi chạy ads, quy định Zalo OA. Nguồn: [Facebook / Zalo](source-notes.md#cổng-chính-thức-của-nền-tảng).
 
 ## Amazon
 
-**目标**：搜索结果识别 → 理解产品 → 比较规格 → 建立信任。
+**Mục tiêu**: nhận ra trong kết quả tìm kiếm → hiểu sản phẩm → so sánh quy cách → tạo niềm tin.
 
-- Hero：准确展示商品身份、形态、包装和数量；主图与附图分别规划，不能把附图的文字策略直接套到主图。
-- Benefit：把核心参数转为有依据的利益，一图一任务。
-- Proof：只用适用于该 SKU/市场的产地、检测、材质与认证。
-- How to use：步骤、安装、冲泡、兼容关系图示化。
-- Selection/Lifestyle：真实比例、规格与使用条件，避免道具被误认作随包赠品。
-- A+/Brand Story：品牌、工艺、系列和信任叙事，不能假设所有卖家/商品都具备使用资格。
-- 待核验：站点/类目主图背景、叠字、数量尺寸、A+ 资格与内容政策。来源：[Amazon Seller Central](source-notes.md#平台官方入口)。
+- Hero: thể hiện chính xác nhận diện sản phẩm, hình dạng, bao bì và số lượng; ảnh chính và ảnh phụ lên kế hoạch riêng, không áp chiến lược chữ của ảnh phụ cho ảnh chính.
+- Benefit: chuyển thông số cốt lõi thành lợi ích có căn cứ, mỗi ảnh một nhiệm vụ.
+- Proof: chỉ dùng xuất xứ, kiểm nghiệm, chất liệu và chứng nhận áp dụng cho SKU/thị trường đó.
+- How to use: minh họa các bước, lắp đặt, pha chế, quan hệ tương thích.
+- Selection/Lifestyle: tỷ lệ thật, quy cách và điều kiện dùng, tránh đạo cụ bị hiểu nhầm là quà kèm.
+- A+/Brand Story: thương hiệu, quy trình, dòng sản phẩm và câu chuyện niềm tin, không giả định mọi người bán/sản phẩm đều đủ điều kiện dùng.
+- Cần kiểm tra: nền ảnh chính, chữ, số lượng/kích thước, điều kiện A+ và chính sách nội dung theo site/ngành hàng. Nguồn: [Amazon Seller Central](source-notes.md#cổng-chính-thức-của-nền-tảng).
 
-## Shopify / DTC 独立站
+## Shopify / website riêng (DTC)
 
-**目标**：首屏价值清楚，页面节奏连贯，结账前异议得到回答。
+**Mục tiêu**: giá trị ở màn hình đầu rõ ràng, nhịp trang liền mạch, băn khoăn trước khi thanh toán được trả lời.
 
-- 首屏：商品 + 单一价值主张 + 已核实价格/规格 + CTA；社会证明只能用真实材料。
-- Top Benefits：最多 3 个购买理由，每项关联事实。
-- Mechanism/Proof：解释机制、材料、工艺和证据，不只堆“高级感”。
-- Variants：规格、尺寸、适配与组合，选项应和实际销售一致。
-- FAQ：使用、配送、售后、退换货，只采用店铺真实政策。
-- 移动端：先清楚展示商品，再用正文承担长解释，避免把全部信息烙在图片里。
-- 待核验：目标市场广告/消费者规则、隐私、支付/广告渠道与类目限制；独立站不豁免合规。来源：[Shopify Help Center](source-notes.md#平台官方入口)。
-
-## 淘宝 / 天猫
-
-国内平台共同执行：无论平台是否拦截，主图、详情图文案均先走 [国内广告法执行规则](compliance-rules.md#10-国内主图详情图文案执行)，覆盖京东、拼多多、抖音小店、小红书、视频号/微信小店。平台审核通过不等于法律合规。
-
-### 视觉目标
-
-搜索/推荐中识别商品，详情页回答“为何选这款”。
-
-### 任务分工
-
-- Hero：先商品身份与对应SKU；主标题明确商品名/品类，购买理由放副文案、可省；用字体/留白建立主次。
-- 利益图：材质/结构/工艺 → 使用收益，避免 5 图重复同一口号。
-- 证据图：参数表、包装标签、报告适用范围，不造官方背书。
-- 选择图：尺码、规格、型号/适用边界；活动图明确优惠门槛和有效时间。
-- 详情叙事：承接首屏 → 利益 → 证据 → 场景 → 规格 → FAQ。
-- 旗舰店/系列：继承品牌色、光影和商品比例，不随模块换风格。
-
-### 常见坑
-
-- 主图、详情页、SKU 的规格、数量或赠品不一致。
-- 促销信息占满主图，挤掉商品本身；照搬同行的功效或绝对化宣称。
-- 把旧详情图的价格、销量、评价自动沿用到新稿，或混用淘宝/天猫不同展示位置的规则。
-
-### 需核验
-
-对应类目的当前主图/活动图要求、宣传、价格、资质和禁限售规范。来源：[淘宝/天猫规则入口](source-notes.md#平台官方入口)。
-
-## 京东
-
-### 视觉目标
-
-让参数可信、规格易选，降低理性决策成本。
-
-### 任务分工
-
-- Hero：真实型号和套装内容；包装/详情/SKU 名称一致。
-- 参数图：每个参数带单位与条件，再解释可支持的使用收益。
-- 适配图：尺寸、接口、兼容型号、安装空间和使用限制。
-- 机制图：分解结构/工作方式，不把示意图误当实测效果。
-- 对比图：同口径系列选择表，区分实测、厂商参数和缺失项。
-- 场景图：保留真实比例，不能通过道具误导尺寸或功能。
-- 售后/服务图：只有真实承诺才写质保、配送、安装或退换。
-
-### 常见坑
-
-- 参数只抄说明书，缺少使用条件与利益解释。
-- 参数表、包装、SKU、详情页的型号/规格不一致。
-- 检测与认证不对应实际 SKU，把结构示意图当作实测证据；无实际政策却承诺质保、安装或退换。
-
-### 需核验
-
-开放平台当前类目资质、商品发布、参数披露、主图、价格/活动、对比和服务承诺规范。来源：[京东规则入口](source-notes.md#平台官方入口)。
-
-## 拼多多
-
-### 视觉目标
-
-迅速理解买到什么、多少、什么条件下多少钱。
-
-### 任务分工
-
-- Hero：清楚区分主商品、件数、尺寸和不包含的道具。
-- 组合图：逐项列到手清单；不同 SKU 不共用一个误导性的“大份量”画面。
-- 价格图：币种/数量/单位价格一致，券、拼单、首购或门槛紧邻价格。
-- 规格图：用实物比例/尺寸和选项对应，避免“低价 SKU 引流、高配图展示”。
-- 场景/品质图：展示可核实材料与工艺，不能只靠低价代替商品解释。
-- 详情页短模块推进，不用缩小文字塞满卖点。
-
-### 常见坑
-
-- 组合数量、赠品与实际发货不一致，或低价 SKU 配高配商品图。
-- 无依据写最低价、仅剩、热销第一、虚构原价/折扣，或隐藏新客/拼单/券门槛。
-- 信息过密、数字标签堆叠导致主体和购买条件看不清。
-
-### 需核验
-
-当前类目、图片、促销、价格、对比、极限用语和平台活动要求。来源：[拼多多帮助/商家规则](source-notes.md#平台官方入口)。
-
-## 抖音小店
-
-**目标**：移动端迅速识别，与商品卡、短视频/直播中的事实口径衔接。
-
-- 图组：商品身份 → 单一利益 → 真实使用 → 到手组合/规格 → 证据。
-- 商品卡/详情/直播口径核对同一 SKU、件数、价格和赠品，不能相互冲突。
-- 原生场景可以有动作与过程；效果对比必须有同条件依据，不能伪造前后效果。
-- 促销场景核对活动时间、券与人群门槛；写清价格适用条件。
-- 食品/美妆/母婴等先判断中国市场产品属性与资质，不借用海外 TikTok Shop 规则。
-- 本 Skill 只规划商品视觉及必要图文口径，不扩成整场直播话术或投放优化。
-- 待核验：中国抖音电商学习中心当前商品发布/营销、类目与价格规则。来源：[抖音电商官方入口](source-notes.md#平台官方入口)。
-
-## TikTok Shop
-
-**目标**：目标国家的移动购物用户能理解商品和本地购买条件。
-
-- 先定国家/站点、卖家类型和类目，再规划图组；US、UK、东南亚等不能互套审核结论。
-- Hero：用简短本地语言先说清商品身份；Benefits另讲有依据的特性。单位/插头/电压/尺码按真实SKU核对。
-- Usage/Bundle：当地使用场景、到手内容和选项，不搬中国活动价格。
-- 食品、补充剂、美妆、儿童等按该市场与站点类目政策重新核验。
-- 图片、视频和商品卡中相同宣称需一致，不能凭视频夸张表达给静态图背书。
-- 待核验：对应地区 Seller Academy 的图片、受限类目、认证、健康宣称、促销政策；不要将抖音资质直接当成 TikTok 许可。来源：[TikTok Shop US 示例入口](source-notes.md#平台官方入口)。
-
-## 小红书
-
-**目标**：商品图准确解释产品；笔记/封面用真实使用语境帮助理解。
-
-- 先区分商品主图、详情模块与笔记封面，封面做法不自动适用于商品主图。
-- 场景图：展示实际外观、比例、用法与限制，不能编造“亲测”、用户日记、素人评价。
-- 材质/细节图：近景与简短说明，关键宣称关联自有证据。
-- 选择图：规格、色差、适配人群与到手清单；不给未经确认的购买/站外引流指令。
-- 商业合作、体验表达、类目功效和价格须按实际身份/发布位置核验，不能把营销稿伪装为真实消费体验。
-- 待核验：电商学习中心当前商品发布规范、笔记/商业内容与类目要求；旧页可能标注失效。来源：[小红书官方入口](source-notes.md#平台官方入口)。
-
-## 视频号 / 微信小店
-
-**目标**：商品卡与内容承接清楚，用户能理解实际商品、规格和条件。
-
-- 分开规划视频号内容封面、商品卡和微信小店详情图；不要用一张拥挤图片承担全部任务。
-- 场景图以真实使用、产品比例和关键细节为主，避免靠字幕堆满画面。
-- 详情图回答材质/规格/用法/证据/选择，和商品卡、短视频挂载商品保持一致。
-- 价格、套装、赠品、售后仅写可核实条件，不默认添加加微信、到店或站外购买指引。
-- 食品/健康类不编造病例、用户见证或身体变化；按中国市场与当前平台政策核验。
-- 不把历史“视频号小店”文档名当成当前规则版本。后台资料需记录标题、版本/生效日期和适用类目。
-- 待核验：微信小店商家后台/成长中心的当前商品与营销规范；未取得具体条款前只给保守策略。来源：[微信小店官方入口与访问限制](source-notes.md#平台官方入口)。
+- Màn hình đầu: sản phẩm + một tuyên bố giá trị + giá/quy cách đã kiểm + CTA; bằng chứng xã hội chỉ dùng tài liệu thật.
+- Top Benefits: tối đa 3 lý do mua, mỗi lý do gắn với sự thật.
+- Mechanism/Proof: giải thích cơ chế, chất liệu, quy trình và bằng chứng, không chỉ chồng chất “cảm giác cao cấp”.
+- Variants: quy cách, kích thước, độ phù hợp và combo, lựa chọn phải khớp hàng thực bán.
+- FAQ: cách dùng, giao hàng, hậu mãi, đổi trả, chỉ dùng chính sách thật của shop.
+- Điện thoại: thể hiện rõ sản phẩm trước, để phần thân bài gánh giải thích dài, tránh in mọi thông tin lên ảnh.
+- Cần kiểm tra: quy định quảng cáo/bảo vệ người tiêu dùng của thị trường mục tiêu, quyền riêng tư, kênh thanh toán/quảng cáo và giới hạn ngành hàng; website riêng không được miễn tuân thủ (website TMĐT tại Việt Nam còn có nghĩa vụ thông báo/đăng ký). Nguồn: [Shopify Help Center](source-notes.md#cổng-chính-thức-của-nền-tảng).
 
 ## Temu
 
-**目标**：移动端清晰展示商品差异、数量、组合和规格。
+**Mục tiêu**: trên điện thoại thể hiện rõ khác biệt sản phẩm, số lượng, combo và quy cách.
 
-- Hero：真实商品本体与到手数量，区分装饰道具。
-- 参数/组合图：尺寸和件数图示化，按市场本地化语言/单位。
-- 价格驱动不等于可以推算“全网最低”或虚构折扣；采用后台已确认的实际销售条件。
-- 颜色/选项图与 SKU 一致，不拼成实际不存在的多件装。
-- 待核验：目标站点/卖家模式下的类目、图片与促销条款。来源：[Temu 官方卖家入口](source-notes.md#平台官方入口)。
+- Hero: sản phẩm thật và số lượng nhận được, phân biệt đạo cụ trang trí.
+- Ảnh thông số/combo: minh họa kích thước và số món, bản địa hóa ngôn ngữ/đơn vị theo thị trường.
+- Động lực giá không có nghĩa được suy ra “rẻ nhất” hay bịa mức giảm; dùng điều kiện bán thực tế đã xác nhận trong kênh người bán.
+- Ảnh màu/lựa chọn khớp SKU, không ghép thành bộ nhiều món không tồn tại.
+- Cần kiểm tra: điều khoản ngành hàng, ảnh và khuyến mãi theo site/mô hình người bán. Nguồn: [Temu Seller Center](source-notes.md#cổng-chính-thức-của-nền-tảng).
 
-## Shopee / Lazada
+## Shopee / Lazada (bán xuyên biên giới sang nước khác)
 
-**目标**：本地移动购物中看懂规格、适配和场景。
+**Mục tiêu**: người mua trên điện thoại tại nước mục tiêu hiểu quy cách, độ phù hợp và bối cảnh.
 
-- 两平台分别确认站点，不互套促销、物流、类目或图片规则。
-- Hero/Specs：商品身份、件数、尺寸与适配关系尽量图示化。
-- Local scenes：按当地生活方式与语言重写，不能凭当地节日编造商品事实。
-- Selection：选项和当前 SKU 一致；翻译长度不得破坏移动端字号。
-- 待核验：所在国家的卖家中心/大学、类目政策、促销和物流要求。来源：[Shopee / Lazada 官方入口](source-notes.md#平台官方入口)。
+- Xác nhận riêng từng site của hai nền tảng, không áp chéo quy định khuyến mãi, vận chuyển, ngành hàng hay hình ảnh.
+- Hero/Specs: nhận diện sản phẩm, số món, kích thước và quan hệ tương thích cố gắng minh họa bằng hình.
+- Local scenes: viết lại theo lối sống và ngôn ngữ địa phương, không dựa vào lễ hội địa phương để bịa sự thật sản phẩm.
+- Selection: lựa chọn khớp SKU hiện tại; độ dài bản dịch không được phá cỡ chữ trên điện thoại.
+- Cần kiểm tra: Seller Center/University của nước sở tại, chính sách ngành hàng, khuyến mãi và vận chuyển. Nguồn: [Shopee / Lazada quốc tế](source-notes.md#cổng-chính-thức-của-nền-tảng).
 
-## 跨境本地化通用规则
+## Quy tắc chung khi bản địa hóa xuyên biên giới
 
-核对目标消费者是否理解卖点、单位与换算精度、实际使用/送礼场景、品牌/产地名一致性、语言长度和商品事实。文化语境可改，净含量、功效、资质或电压不能为“本地化”改造。中国资质不自动适用于海外；事实缺口单列，规则无法核验就标记未核验。
+Đối chiếu người tiêu dùng mục tiêu có hiểu điểm bán không, đơn vị và độ chính xác quy đổi, bối cảnh dùng/tặng quà thực tế, tính nhất quán tên thương hiệu/xuất xứ, độ dài ngôn ngữ và sự thật sản phẩm. Bối cảnh văn hóa được đổi, khối lượng tịnh, công dụng, giấy tờ hay điện áp không được thay đổi vì “bản địa hóa”. Giấy tờ Việt Nam không tự động áp dụng ở nước ngoài; chỗ thiếu sự thật liệt kê riêng, không kiểm tra được quy định thì đánh dấu chưa kiểm tra.

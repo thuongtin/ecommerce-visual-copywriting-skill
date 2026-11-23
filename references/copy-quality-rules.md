@@ -1,120 +1,120 @@
-# 文案质量规则（细则与正反例）
+# Quy tắc chất lượng nội dung (chi tiết và ví dụ đúng/sai)
 
 
-## 优先级
+## Mức ưu tiên
 
-| 层级 | 规则 | 违反后果 |
+| Tầng | Quy tắc | Hậu quả khi vi phạm |
 |---|---|---|
-| 阻断项 | 交付即终态；推断不写成事实；Prompt 自包含 | 不能交付，先改 |
-| 质量项 | 跟我有什么关系、信息增量、数字有感知、消费者语言、问答三关、澄清归位 | 文案平庸但可用，交付前应修掉 |
-| 前置 | 按决策顺序排信息；参考资料先提炼成硬约束 | 写文案之前完成 |
-| 场景开关 | `references/category-notes.md` 中对应品类的补充 | 命中品类才启用 |
+| Điểm chặn | Giao là trạng thái cuối; không viết suy luận thành sự thật; Prompt tự đủ nghĩa | Không được giao, sửa trước |
+| Chất lượng | Liên quan gì đến tôi, thông tin gia tăng, con số có cảm nhận, ngôn ngữ người tiêu dùng, ba cửa hỏi–đáp, đặt đúng chỗ các làm rõ | Nội dung nhạt nhưng dùng được, nên sửa trước khi giao |
+| Tiền đề | Xếp thông tin theo thứ tự ra quyết định; rút tài liệu tham chiếu thành ràng buộc cứng | Hoàn thành trước khi viết |
+| Công tắc theo bối cảnh | Phần bổ sung ngành hàng tương ứng trong `references/category-notes.md` | Chỉ bật khi đúng ngành hàng |
 
-## 阻断项
+## Điểm chặn
 
-### 1. 交付即终态
+### 1. Giao là trạng thái cuối
 
-成品文案会直接进入出图、排版、上架。交付前扫描“待补”“待确认”“待核”“（xx未提供）”和内部建议口吻，缺失项**整行删除**，不留空标注，商品数量等已确认事实可进入规格/可读注释，不能把内部待确认说明印到图上。
+Nội dung thành phẩm sẽ đi thẳng vào tạo ảnh, dàn trang, đăng bán. Trước khi giao, quét “cần bổ sung”, “cần xác nhận”, “cần kiểm tra”, “(chưa cung cấp xx)” và giọng khuyến nghị nội bộ; mục thiếu **xóa cả dòng**, không để chú thích trống. Sự thật đã xác nhận như số lượng sản phẩm có thể vào vùng quy cách/chú thích đọc được, nhưng không in ghi chú cần xác nhận nội bộ lên ảnh.
 
-- 反例：数字标签「承重（待补）」。
-- 正例：整条数字标签删除；缺的资料写进稿外的待确认清单。
+- Sai: nhãn số «Tải trọng (cần bổ sung)».
+- Đúng: xóa cả nhãn số; tài liệu thiếu ghi vào danh sách cần xác nhận ngoài bản.
 
-### 2. 推断不写成事实
+### 2. Không viết suy luận thành sự thật
 
-来源分凭证、供应商口径、视觉观察、推测四类。只有凭证和已交叉验证的供应商口径能进成品；视觉观察和推测只写在稿外备注。与实物冲突时以实物为准并回问。
+Nguồn chia bốn loại: chứng từ, lời nhà cung cấp, quan sát hình ảnh, phỏng đoán. Chỉ chứng từ và lời nhà cung cấp đã kiểm chéo mới vào thành phẩm; quan sát hình ảnh và phỏng đoán chỉ ghi chú ngoài bản. Mâu thuẫn với hàng thật thì theo hàng thật và hỏi lại.
 
-事实宣称遵守上述证据边界；用户授权的据图拟名仍按 `SKILL.md` Step 0执行，名称不证明材质、工艺或性能，内部保留拟名来源。
+Tuyên bố sự thật tuân theo ranh giới bằng chứng trên; tên đặt theo ảnh được người dùng cho phép vẫn làm theo Bước 0 của `SKILL.md`, tên không chứng minh chất liệu, kỹ thuật hay tính năng, nội bộ giữ nguồn đặt tên.
 
-- 反例：资料只写“不锈钢”，看图上的抛光纹理就写成“镜面拉丝工艺”。
-- 反例：商家写“一体成型”，图上明显有拼接缝，仍照抄。
-- 正例：只写资料口径“不锈钢”；冲突时回问商家，在稿外列为待确认。
+- Sai: tài liệu chỉ ghi “inox”, nhìn vân đánh bóng trên ảnh liền viết “công nghệ xước gương”.
+- Sai: người bán ghi “đúc nguyên khối”, ảnh rõ ràng có mối ghép vẫn chép lại.
+- Đúng: chỉ viết theo tài liệu “inox”; mâu thuẫn thì hỏi lại người bán, ghi ngoài bản là cần xác nhận.
 
-### 3. Prompt 自包含
+### 3. Prompt tự đủ nghĩa
 
-默认下游是 AI 生图模型。每条 Prompt 单独复制到新会话也能出图。
+Khâu sau mặc định là mô hình tạo ảnh AI. Mỗi Prompt sao chép riêng sang một phiên mới cũng phải tạo được ảnh.
 
-- 反例：“风格同上一张，换个俯视角度。”
-- 正例：写全产品结构（部件数量、形状、比例）、材质与表面、光线方向与软硬、构图与产品占比、留白位置、背景、禁止项（不新增配件、不改结构、不出现文字），并重复 Style Lock。
-- 同一套图的 Style Lock 在每条 Prompt 里重复写，不写“同上”。
+- Sai: “Phong cách như ảnh trên, đổi sang góc nhìn từ trên xuống.”
+- Đúng: viết đủ cấu trúc sản phẩm (số bộ phận, hình dạng, tỷ lệ), chất liệu và bề mặt, hướng và độ cứng/mềm của ánh sáng, bố cục và tỷ lệ sản phẩm, vị trí khoảng trống, nền, mục cấm (không thêm phụ kiện, không đổi cấu trúc, không có chữ), và lặp lại Style Lock.
+- Style Lock của cùng một bộ ảnh viết lại trong từng Prompt, không viết “như trên”.
 
-## 质量项
+## Chất lượng
 
-### 4. 卖点语体，不是说明语体
+### 4. Giọng điểm bán, không phải giọng hướng dẫn sử dụng
 
-首图商品名先完成识别，不因缺少营销语气而删除；其余营销句逐句问“这句能让用户更想买吗”。解释产品怎么构成的句子，要么改成“为什么值得买”，要么删。
+Tên sản phẩm ở ảnh đầu phải hoàn thành nhận diện trước, không xóa vì thiếu giọng tiếp thị; các câu tiếp thị khác hỏi từng câu “câu này có làm người dùng muốn mua hơn không”. Câu giải thích sản phẩm được cấu tạo thế nào thì hoặc đổi thành “vì sao đáng mua”, hoặc xóa.
 
-- 反例：「三层隔板，可调节高度」（说明构造）。
-- 正例：「隔板高度可调，大小物品都能分层放」（讲用户得到什么；以资料确认隔板可调为前提）。
+- Sai: «Ba tầng kệ, chỉnh được độ cao» (nói cấu tạo).
+- Đúng: «Chỉnh độ cao kệ, đồ to nhỏ đều xếp gọn» (nói người dùng được gì; với điều kiện tài liệu xác nhận kệ chỉnh được).
 
-### 5. 信息增量，不复述画面
+### 5. Thông tin gia tăng, không lặp lại hình
 
-首图名称/品类与必要规格、条件是例外；其余信息不机械复述画面。文字补画面说不出的：动态、场合、触感、规格、搭配。
+Tên/ngành hàng ở ảnh đầu và quy cách, điều kiện cần thiết là ngoại lệ; thông tin khác không lặp lại máy móc điều hình đã thể hiện. Chữ bổ sung điều hình không nói được: chuyển động, dịp dùng, cảm giác chạm, quy cách, cách phối.
 
-- 反例：图上能看到三层格，文案又写「三层收纳格」；标题与副文案说同一件事。
-- 正例：副文案写使用场合或规格信息（前提是资料支持）。
+- Sai: ảnh đã thấy rõ ba ngăn, chữ lại viết «Ba ngăn lưu trữ»; tiêu đề và phụ đề nói cùng một ý.
+- Đúng: phụ đề viết dịp dùng hoặc thông tin quy cách (với điều kiện tài liệu hỗ trợ).
 
-### 6. 数字有感知，适配给判断
+### 6. Con số có cảm nhận, độ phù hợp có kết luận
 
-KV1名称中用于识别规格的数字可保留；其余营销标题避免只列参数。数字要配位置、体感或对照物；适配类内容给分档、结论和后果。体感与阈值只用资料里已有的数据，没有就回问。
+Con số dùng để nhận diện quy cách trong tên KV1 được giữ; tiêu đề tiếp thị khác tránh chỉ liệt kê thông số. Con số phải đi kèm vị trí, cảm nhận cơ thể hoặc vật đối chiếu; nội dung độ phù hợp đưa ra mức, kết luận và hệ quả. Cảm nhận và ngưỡng chỉ dùng số liệu đã có trong tài liệu, không có thì hỏi lại.
 
-- 反例：标题只写「500ml」就当作购买理由。正例：准确容量放规格区；有经过核对的容量对照图时再补直观对照，没有就保留准确参数，不虚构“标准瓶”容量或体感。
-- 反例：「按自身身高选尺码」。正例：照资料里的尺码表写分档，如“身高 160cm 以下选 S”；资料没有尺码表就回问，不自己编阈值。
+- Sai: tiêu đề chỉ ghi «500ml» và coi đó là lý do mua. Đúng: dung tích chính xác đặt ở vùng quy cách; có ảnh đối chiếu dung tích đã kiểm thì mới thêm so sánh trực quan, không có thì giữ thông số chính xác, không bịa dung tích “chai tiêu chuẩn” hay cảm nhận.
+- Sai: «Chọn size theo chiều cao của bạn». Đúng: viết theo bảng size trong tài liệu thành các mức, ví dụ “cao dưới 160cm chọn S”; tài liệu không có bảng size thì hỏi lại, không tự đặt ngưỡng.
 
-### 7. 消费者语言
+### 7. Ngôn ngữ người tiêu dùng
 
-术语只在规格区出现，宣传区转成日常表达。
+Thuật ngữ chỉ xuất hiện ở vùng quy cách, vùng quảng cáo chuyển thành cách nói thường ngày.
 
-- 反例：「视觉聚焦，信息层级清晰」。
-- 正例：「一眼看到重点」。
+- Sai: «Điểm nhấn thị giác, thứ bậc thông tin rõ ràng».
+- Đúng: «Nhìn là thấy ngay điểm chính».
 
-### 8. 句子完整可读
+### 8. Câu đầy đủ, đọc trôi
 
-写完朗读一遍；宁可删一条要点，不留残句。
+Viết xong đọc to một lượt; thà bỏ một ý chứ không để câu cụt.
 
-- 反例：「沾水汗液后及时擦拭收好」。
-- 正例：「沾到水或汗后，及时擦干再收好」。
+- Sai: «Dính nước mồ hôi lau cất kịp».
+- Đúng: «Khi dính nước hoặc mồ hôi, lau khô rồi cất ngay».
 
-### 9. 问答三关
+### 9. Ba cửa cho hỏi–đáp
 
-FAQ 的每个问题同时过三关：
+Mỗi câu hỏi FAQ phải qua cả ba cửa:
 
-- 有依据可答。反例：问「会褪色吗？」答「不做不褪色承诺」。答不了就不设。
-- 给明确判断。反例：「视个体差异而定」。正例：给分档阈值和选错的后果。
-- 只回应本品用户真实存在的顾虑。反例：无盖款商品设「盖子会不会漏」。
+- Có căn cứ để trả lời. Sai: hỏi «Có bị phai màu không?» đáp «Không cam kết không phai màu». Không trả lời được thì không đặt câu đó.
+- Đưa phán đoán rõ ràng. Sai: «Tùy cơ địa mỗi người». Đúng: đưa ngưỡng theo mức và hệ quả khi chọn sai.
+- Chỉ trả lời băn khoăn có thật của người mua sản phẩm này. Sai: sản phẩm không có nắp lại hỏi «Nắp có bị rò không».
 
-### 10. 澄清归位
+### 10. Đặt đúng chỗ các làm rõ
 
-套装、搭配、规格的澄清放规格表或可读注释区，不占卖点位；影响到手内容或价格理解的条件仍紧邻相关画面/宣称，不得藏在小字中。搭配展示图里，不属于本品的搭配物要标明“不含”。
+Làm rõ về bộ, cách phối, quy cách đặt ở bảng quy cách hoặc vùng chú thích đọc được, không chiếm vị trí điểm bán; điều kiện ảnh hưởng đến hiểu biết về hàng nhận được hoặc giá vẫn phải sát hình/tuyên bố liên quan, không giấu trong chữ nhỏ. Trong ảnh phối đồ, đồ phối không thuộc sản phẩm phải ghi “không kèm theo”.
 
-- 反例：卖点区写「本品为单条」。
-- 正例：规格表写“数量：1 条”；搭配图底部小字写“图中其余饰品/配件不含”。
+- Sai: vùng điểm bán ghi «Sản phẩm gồm một sợi».
+- Đúng: bảng quy cách ghi “Số lượng: 1 sợi”; chữ nhỏ dưới ảnh phối ghi “Trang sức/phụ kiện khác trong ảnh không kèm theo”.
 
-## 前置
+## Tiền đề
 
-### 11. 按决策顺序排信息
+### 11. Xếp thông tin theo thứ tự ra quyết định
 
-是什么 → 和我有什么关系 → 为何选它 → 凭什么信 → 怎么买。首图让人一眼知道品类，意象句放副标题；详情页每个模块只解决一个决策问题。
+Là gì → liên quan gì đến tôi → vì sao chọn nó → dựa vào đâu để tin → mua thế nào. Ảnh đầu cho người xem biết ngay ngành hàng, câu hình ảnh đặt ở phụ đề; mỗi module trang chi tiết chỉ giải quyết một câu hỏi quyết định.
 
-- 反例：首图标题讲产品结构怎么分，用户看不出这是什么品类。
-- 正例：首图标题使用已确认名称或授权据图拟名，明确品类；卖点第二层且可省，结构细节放后面的图。
+- Sai: tiêu đề ảnh đầu nói cấu trúc sản phẩm chia ra sao, người dùng không biết đây là ngành hàng gì.
+- Đúng: tiêu đề ảnh đầu dùng tên đã xác nhận hoặc tên đặt theo ảnh được cho phép, rõ ngành hàng; điểm bán ở tầng hai và có thể lược, chi tiết cấu trúc để các ảnh sau.
 
-### 12. 参考资料先提炼成硬约束
+### 12. Rút tài liệu tham chiếu thành ràng buộc cứng trước
 
-用户给了商机分析、竞品参考、品牌资料时，先列 3–5 条硬约束再动笔。
+Khi người dùng đưa phân tích cơ hội, tham chiếu đối thủ, tài liệu thương hiệu, hãy liệt kê 3–5 ràng buộc cứng trước khi viết.
 
-| 提炼项 | 写法示例 |
+| Mục rút ra | Ví dụ cách viết |
 |---|---|
-| 目标人群 | 资料指向的人群和使用场合 |
-| 必须强调的差异 | 资料里被验证的差异点 |
-| 必须避开的做法 | 资料里指出的误区或平台限制 |
-| 可借鉴的结构 | 句式、信息层级、模块分工 |
+| Khách hàng mục tiêu | Nhóm người và dịp dùng mà tài liệu chỉ ra |
+| Khác biệt bắt buộc nhấn mạnh | Điểm khác biệt đã được kiểm chứng trong tài liệu |
+| Cách làm bắt buộc tránh | Sai lầm hoặc giới hạn nền tảng mà tài liệu chỉ ra |
+| Cấu trúc có thể học | Mẫu câu, thứ bậc thông tin, phân vai module |
 
-学结构，不学表皮；不移植他人的事实、数据、承诺和品牌元素。
+Học cấu trúc, không học lớp vỏ; không chuyển sự thật, số liệu, cam kết và yếu tố thương hiệu của người khác sang.
 
-用户自己的品牌色或明确授权保留的视觉参考按 Reference Fidelity 执行，不因这条规则被删除。
+Màu thương hiệu riêng của người dùng hoặc tham chiếu hình ảnh được cho phép giữ rõ ràng thì làm theo Reference Fidelity, không bị quy tắc này xóa.
 
-## 交付前三问
+## Ba câu hỏi trước khi giao
 
-1. 成品里还有没有占位符或内部说明？
-2. 每个工艺、材质、性能说法，资料里有吗，和实物一致吗？
-3. 每条 Prompt 单独复制出去，能不能出图？
+1. Thành phẩm còn placeholder hoặc ghi chú nội bộ không?
+2. Mỗi cách nói về kỹ thuật, chất liệu, tính năng có trong tài liệu không, có khớp hàng thật không?
+3. Mỗi Prompt sao chép riêng ra ngoài có tạo được ảnh không?

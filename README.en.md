@@ -12,7 +12,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Verify](https://github.com/feichanggege/ecommerce-visual-copywriting-skill/actions/workflows/verify.yml/badge.svg)](https://github.com/feichanggege/ecommerce-visual-copywriting-skill/actions/workflows/verify.yml)
 
-[中文](README.md) · **English**
+[Tiếng Việt](README.md) · **English**
 
 [Quick Start](#-quick-start) · [Why It Exists](#-why-it-exists) · [Workflow](#-workflow) · [Platforms](#-platforms) · [Showcase](#-showcase) · [Safety](#-safety)
 
@@ -22,7 +22,7 @@
   <img src="assets/showcase-output.svg" alt="E-commerce Visual Copywriting structured output" width="900">
 </p>
 
-The overview is a teaching reconstruction using existing durian artwork: request → evidence ledger → execution card → visual reference. Its origin/D197 claims still need source evidence; the artwork is not a new render of the revised card. [Read the traced example](examples/durian-worked-example.md).
+The overview is a teaching reconstruction using the Ri6 durian artwork: request → evidence ledger → execution card → visual reference. Its growing-region/“hạt lép”/weight claims still need source evidence; the artwork is not a new render of the revised card. [Read the traced example](examples/durian-worked-example.md).
 
 The Skill confirms product identity and an **Evidence Ledger**, then adds supported purchase reasoning, **Style Lock**, execution cards, and production constraints. The first image identifies what is sold; benefits are secondary. Image prompts reserve whitespace by default; designers/layout tools add the final text.
 
@@ -103,14 +103,14 @@ Default priority: finished work to review → Audit; designer/operator-ready bri
 - **Reference Fidelity** — defines what must stay and what may change.
 - **Negative Constraints** — blocks packaging drift, logo changes, wrong specs, text artifacts, anatomy errors, etc.
 - **Dynamic image count** — five is a default, not a hard rule.
-- **KV1 recognition first** — keep a supplied name; if absent, ask for one or obtain permission to name from the image. Use the clear, short established name as the headline. Features are secondary; hide support copy and check that the product is still identifiable. Later feature images need not repeat the name. Where overlays are disallowed or the user requests no added text, establish recognition through the real product. [Original-name examples](examples/README.md#example-7首图先说商品保留原始名字).
-- **Multi-platform playbooks** — China e-commerce + Amazon / Shopify / TikTok Shop / Temu / Shopee / Lazada.
-- **Copy limits and typography** — main image: one headline, up to two support lines and one number/evidence tag; PDP module: one headline and up to three points. Headlines: ≤12 Chinese characters/≤6 English words; main-image support: ≤18 characters/≤10 words; PDP points: ≤18 characters/≤12 words. These are defaults, not platform rules; cut or split rather than shrink type.
+- **KV1 recognition first** — keep a supplied name; if absent, ask for one or obtain permission to name from the image. Use the clear, short established name as the headline. Features are secondary; hide support copy and check that the product is still identifiable. Later feature images need not repeat the name. Where overlays are disallowed or the user requests no added text, establish recognition through the real product. [Original-name examples](examples/README.md#example-7-ảnh-đầu-nói-sản-phẩm-trước-giữ-tên-gốc).
+- **Multi-platform playbooks** — Shopee / Lazada / TikTok Shop / Tiki / Sendo / Facebook–Zalo + Amazon / Shopify / Temu.
+- **Copy limits and typography** — main image: one headline, up to two support lines and one number/evidence tag; PDP module: one headline and up to three points. Headlines: ≤8 Vietnamese syllables/≤6 English words; main-image support: ≤14 syllables/≤10 words; PDP points: ≤14 syllables/≤12 words. These are defaults, not platform rules; cut or split rather than shrink type.
 - **One text method per card** — Layout-reserved (default post-production typography) or Model-rendered (only explicitly requested short text), with a copy-spec self-check and character-by-character acceptance/fallback. Keep bottom disclaimers readable and material conditions beside claims.
 - **Six conversion drivers** — visual, pain point, parameters, trust, emotion, and price/bundle/promotion with verified conditions.
 - **Cross-border localization** — rewrites purchase reasoning instead of literal translation.
 - **Hard blockers + an 80-point self-review line** — each of the five dimensions is anchored to required conditions; any dimension below 80 is rewritten (at most two rounds) and every delivery carries a self-review record. No unanchored 80/100 scoring.
-- **Mainland China advertising copy rules** — check category and legal claim scope before writing main images/PDPs. Default to no superiority marketing or medical implications; put required citation sources and conditions in visible copy, not hidden notes or small print.
+- **Vietnam advertising copy rules** — check category and legal claim scope before writing main images/PDPs. Default to no superiority marketing or medical implications; put required citation sources and conditions in visible copy, not hidden notes or small print.
 
 ---
 
@@ -151,18 +151,17 @@ The actual count depends on the platform and product.
 
 ## 🌍 Platforms
 
-| China | Cross-border / DTC |
+| Vietnam | Cross-border / DTC |
 |---|---|
-| Taobao / Tmall | Amazon Listing / A+ / Brand Story |
-| JD | Shopify / DTC PDP |
-| Pinduoduo | TikTok Shop |
-| Douyin Shop | Temu |
-| Xiaohongshu product images / note covers | Shopee / Lazada |
-| WeChat Channels covers / WeChat Shop | Other PDP scenarios |
+| Shopee Vietnam (Shopee Mall) | Amazon Listing / A+ / Brand Story |
+| Lazada Vietnam (LazMall) | Shopify / own website (DTC PDP) |
+| TikTok Shop Vietnam | Temu |
+| Tiki / Sendo | Shopee / Lazada in other markets |
+| Facebook / Instagram / Zalo shops | Other PDP scenarios |
 
 Stable visual strategy lives in `references/platform-playbooks.md`. Time-sensitive requirements such as image restrictions, dimensions, category qualifications, or claim policies should be verified against current official platform documentation when needed.
 
-Douyin Shop and TikTok Shop have separate playbooks. [Official source notes](references/source-notes.md) distinguish reviewed texts, navigation entry points, markets, and access limits.
+Each Vietnamese platform has its own playbook section; cross-border rules are checked per country/site. [Official source notes](references/source-notes.md) distinguish reviewed texts, navigation entry points, markets, and access limits.
 
 ---
 
@@ -186,7 +185,7 @@ Use this packaging image as the source of truth. Logo, color, size, and containe
 ```
 
 ```text
-Localize this Chinese PDP for Shopify US. Do not translate literally.
+Localize this Vietnamese PDP for Shopify US. Do not translate literally.
 ```
 
 More examples: [examples/README.md](examples/README.md).
@@ -199,28 +198,28 @@ More examples: [examples/README.md](examples/README.md).
   <table>
     <tr>
       <td align="center" width="50%">
-        <a href="assets/showcase/musang-king-durian-main.jpg"><img src="assets/showcase/thumbs/musang-king-durian-main-thumb.jpg" alt="Complete portrait durian artwork, with no thumbnail crop" height="360"></a><br>
-        <strong>Premium Food Hero</strong>
+        <a href="assets/showcase/sau-rieng-ri6-main.jpg"><img src="assets/showcase/thumbs/sau-rieng-ri6-main-thumb.jpg" alt="Complete portrait Ri6 durian gift-box artwork, with no thumbnail crop" height="360"></a><br>
+        <strong>Premium Produce Hero</strong>
       </td>
       <td align="center" width="50%">
-        <a href="assets/showcase/figure-multi-angle.jpg"><img src="assets/showcase/thumbs/figure-multi-angle-thumb.jpg" alt="Multi-angle product view" width="360" height="360"></a><br>
+        <a href="assets/showcase/am-tra-bat-trang-multi-angle.jpg"><img src="assets/showcase/thumbs/am-tra-bat-trang-multi-angle-thumb.jpg" alt="Bat Trang blue-glaze ceramic tea set, four views" width="360" height="360"></a><br>
         <strong>Multi-angle Product View</strong>
       </td>
     </tr>
     <tr>
       <td align="center" width="50%">
-        <a href="assets/showcase/figure-desktop-scene.jpg"><img src="assets/showcase/thumbs/figure-desktop-scene-thumb.jpg" alt="Lifestyle detail module" width="360" height="360"></a><br>
+        <a href="assets/showcase/am-tra-bat-trang-scene.jpg"><img src="assets/showcase/thumbs/am-tra-bat-trang-scene-thumb.jpg" alt="Bat Trang tea set on a wooden table by the window, afternoon tea scene" width="360" height="360"></a><br>
         <strong>Lifestyle Detail Module</strong>
       </td>
       <td align="center" width="50%">
-        <a href="assets/showcase/lumina-pendant-lamp.jpg"><img src="assets/showcase/thumbs/lumina-pendant-lamp-thumb.jpg" alt="Material and lighting" width="360" height="360"></a><br>
+        <a href="assets/showcase/den-long-hoi-an.jpg"><img src="assets/showcase/thumbs/den-long-hoi-an-thumb.jpg" alt="Three glowing Hoi An silk lanterns" width="360" height="360"></a><br>
         <strong>Material & Lighting</strong>
       </td>
     </tr>
   </table>
 </div>
 
-> Showcase images demonstrate output formats only. They are not legal opinions, platform approval guarantees, or proof of commercial claims.
+> Showcase images are AI-generated illustrations of output formats, not real product photos. They are not legal opinions, platform approval guarantees, or proof of commercial claims; on-image text such as growing region, “hạt lép” or weight is illustrative and unproven.
 
 Each asset is at most 500KB; the durian thumbnail preserves the complete portrait. Historical Git blobs remain in history. Use a shallow clone or current-source archive for a smaller download.
 
@@ -238,7 +237,7 @@ This Skill does not:
 
 See [references/compliance-rules.md](references/compliance-rules.md).
 
-All mainland China main-image/PDP copy, including isolated edits, loads the [China copy rules](references/compliance-rules.md#10-国内主图详情图文案执行). They address category restrictions, rankings, readable conditions and statutory ad approval using the Advertising Law, internet advertising rules and absolute-language/citation guidance. Potential exceptions stay outside final copy for human review; human approval cannot legalize prohibited claims. Separate final text from risk notes, without promising legal certification or platform approval. [Official sources and verification scope](references/source-notes.md).
+All Vietnam-market main-image/PDP copy, including isolated edits, loads the [Vietnam copy rules](references/compliance-rules.md#10-thực-thi-nội-dung-ảnh-chínhảnh-chi-tiết-tại-việt-nam). They address category restrictions, rankings/comparisons, readable conditions and statutory ad-content confirmation using the Law on Advertising, the Consumer Protection Law and related decrees. This is not legal advice. Potential exceptions stay outside final copy for human review; human approval cannot legalize prohibited claims. Separate final text from risk notes, without promising legal certification or platform approval. [Official sources and verification scope](references/source-notes.md).
 
 ---
 
@@ -255,7 +254,7 @@ references/copy-quality-rules.md  # Copy-quality rules with examples
 references/category-notes.md      # Category notes (currently jewelry)
 references/source-notes.md        # Official sources, scope and access limits
 examples/README.md                # Example requests and expected behavior
-examples/durian-worked-example.md # Traced teaching example
+examples/durian-worked-example.md # Ri6 durian traced teaching example
 scripts/count-copy.py             # Count final copy strings
 scripts/scan-final-copy.py        # Flag placeholders and internal notes
 assets/showcase/                  # Showcase assets
@@ -277,7 +276,7 @@ python -m unittest discover -s tests -v
 
 Actions runs offline verification, regression tests and minimal packaging. The badge reports the actual workflow state after it is pushed; local success is separate from remote CI.
 
-Evaluate saved real outputs with `python tools/evaluate-prompts.py --responses responses.json`. `must_include` applies to the full response; `must_not_include` and optional `must_include_final` apply to the separate publishable `final_copy` excerpt. Analysis may quote risky phrases, but cannot alone satisfy required visible conditions. [Format and limits](examples/README.md#自动检查实际输出). Lexical checks do not establish semantic/legal correctness or visual acceptance.
+Evaluate saved real outputs with `python tools/evaluate-prompts.py --responses responses.json`. `must_include` applies to the full response; `must_not_include` and optional `must_include_final` apply to the separate publishable `final_copy` excerpt. Analysis may quote risky phrases, but cannot alone satisfy required visible conditions. [Format and limits](examples/README.md#tự-động-kiểm-tra-đầu-ra-thực-tế). Lexical checks do not establish semantic/legal correctness or visual acceptance.
 
 The repository already has a [v3.0.0 Release](https://github.com/feichanggege/ecommerce-visual-copywriting-skill/releases/tag/v3.0.0). This update stays under Unreleased in [CHANGELOG.md](CHANGELOG.md).
 

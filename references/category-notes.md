@@ -1,26 +1,26 @@
-# 品类补充说明
+# Ghi chú bổ sung theo ngành hàng
 
 
-## 饰品（项链、手链、耳饰、戒指等）
+## Trang sức (dây chuyền, vòng tay, bông tai, nhẫn…)
 
-### 材质与工艺
+### Chất liệu và kỹ thuật
 
-- 材质、镀层、合成、处理等属性按资料写**规范全称并保留限定词**，不用行业口语简称替代。资料写“镀”就写“镀”，不简化成只剩材质名；资料写明材料全称，就不换成更短的通称。
-- 工艺名称（如编织、镶嵌、镂空类的说法）只认商家口径，不由图片纹理推断；商家的工艺说法也要对照实物图核对，冲突以实物为准并回问。
+- Thuộc tính chất liệu, lớp mạ, tổng hợp, xử lý… viết theo **tên chuẩn đầy đủ trong tài liệu và giữ từ giới hạn**, không thay bằng khẩu ngữ trong ngành. Tài liệu ghi “mạ” thì viết “mạ”, không rút gọn chỉ còn tên kim loại; tài liệu ghi tên đầy đủ của vật liệu thì không đổi sang tên gọi chung ngắn hơn.
+- Tên kỹ thuật (như đan, đính đá, chạm rỗng) chỉ theo cách nói của người bán, không suy từ vân trên ảnh; cách nói của người bán cũng phải đối chiếu ảnh hàng thật, mâu thuẫn thì theo hàng thật và hỏi lại.
 
-### 尺寸与适配
+### Kích thước và độ phù hợp
 
-- 长度、周长、直径要转成佩戴位置或视觉结果，但只用资料里的数据和模特信息：能写“落在哪个位置”，要有资料里的长度和模特参数支撑，没有就回问，不自己编。
-- 适配类内容给分档、上限和后果，不写“按自身颈围/手腕对照”。
-- 不把别的款式的顾虑搬过来：短款不设只对长款成立的问题。
+- Chiều dài, chu vi, đường kính phải chuyển thành vị trí đeo hoặc kết quả nhìn thấy, nhưng chỉ dùng số liệu và thông tin người mẫu trong tài liệu: muốn viết “rơi tới vị trí nào” phải có chiều dài và số đo người mẫu trong tài liệu, không có thì hỏi lại, không tự bịa.
+- Nội dung về độ phù hợp đưa ra mức, giới hạn và hệ quả, không viết “tự đối chiếu với vòng cổ/cổ tay của bạn”.
+- Không bê băn khoăn của kiểu khác sang: mẫu ngắn không đặt câu hỏi chỉ đúng với mẫu dài.
 
-### 画面与文案
+### Hình ảnh và nội dung
 
-- KV1商品名和必要规格/条件优先保留；其余画面里能看到的结构（几条链、几个吊坠、流苏数量）不在文案里机械复述；文案补佩戴场合、动态、触感、搭配。
-- 搭配展示图里，不属于本品的饰品要在可读注释区标明“不含”；影响到手内容理解时紧邻相关画面，不得隐藏；“本品为单条/单只”这类说明放规格区，不占卖点位。
-- 名称缺失时先问用户给名或授权据图拟名；首图要让人一眼知道是什么品类（项链/耳饰/手链），意象句放副标题。
+- Tên sản phẩm ở KV1 và quy cách/điều kiện cần thiết được ưu tiên giữ; các cấu trúc khác nhìn thấy trong ảnh (mấy sợi dây, mấy mặt, số tua rua) không lặp lại máy móc trong chữ; chữ bổ sung dịp đeo, chuyển động, cảm giác chạm, cách phối.
+- Trong ảnh phối đồ, trang sức không thuộc sản phẩm phải ghi “không kèm theo” ở vùng chú thích đọc được; ảnh hưởng đến hiểu biết về hàng nhận được thì đặt sát hình liên quan, không được giấu; làm rõ kiểu “sản phẩm gồm một sợi/một chiếc” đặt ở vùng quy cách, không chiếm vị trí điểm bán.
+- Thiếu tên thì hỏi người dùng cho tên hoặc cho phép đặt tên theo ảnh trước; ảnh đầu phải cho người xem biết ngay ngành hàng (dây chuyền/bông tai/vòng tay), câu hình ảnh đặt ở phụ đề.
 
-### 功效与耐用类说法
+### Cách nói về công dụng và độ bền
 
-- “不掉色”“不易打结”“不过敏”等没有检测或资料依据的承诺，降级为结构描述或保养提示，不靠免责声明补救。
-- 保养提示只写资料支持的内容，语句要完整通顺。
+- “Không phai màu”, “không rối”, “không gây dị ứng” mà không có kiểm nghiệm hoặc tài liệu thì hạ xuống mô tả cấu trúc hoặc hướng dẫn bảo quản, không dựa vào tuyên bố miễn trừ để chữa.
+- Hướng dẫn bảo quản chỉ viết nội dung có tài liệu hỗ trợ, câu phải đầy đủ, trôi chảy.

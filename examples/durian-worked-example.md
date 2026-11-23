@@ -1,64 +1,64 @@
-# 榴莲样稿：从一句话到执行卡
+# Mẫu sầu riêng: từ một câu đến thẻ thực thi
 
-这是基于仓库既有展示图制作的**教学复盘**，不是历史真实对话或本次模型生图记录。只有成图，没有原商品资料，不能反过来把图片里的文字当作商品事实。
+Đây là **bài phân tích giảng dạy** dựa trên ảnh minh họa có sẵn trong repo, không phải đoạn hội thoại thật trong quá khứ hay bản ghi tạo ảnh của lần này. Chỉ có ảnh thành phẩm, không có tài liệu sản phẩm gốc, nên không thể lấy chữ trong ảnh làm sự thật sản phẩm.
 
-## 用户一句话输入
+## Một câu đầu vào của người dùng
 
-> 按这张榴莲样稿，给淘宝做一张场景图执行卡；商品的通用品类名确认用“榴莲礼盒”。保留奶油白和橄榄绿的视觉，别从图里补造产地、D197、认证、规格或价格。
+> Theo mẫu sầu riêng này, làm cho mình một thẻ thực thi ảnh bối cảnh cho Shopee; tên ngành hàng chung xác nhận là “Hộp quà sầu riêng Ri6”. Giữ tông kem và xanh ô liu, đừng lấy từ ảnh ra vùng trồng, “hạt lép”, khối lượng, chứng nhận hay giá.
 
-## 原始材料与证据账本
+## Tài liệu gốc và sổ bằng chứng
 
-E0为上述教学输入中用户确认的通用品类名，不等于品牌/原始SKU名已核验。E1 为[仓库既有榴莲样稿](https://github.com/feichanggege/ecommerce-visual-copywriting-skill/blob/main/assets/showcase/musang-king-durian-main.jpg)。除此之外没有产品档案、标签原件、检测、产地或 SKU 资料。
+E0 là tên ngành hàng chung người dùng xác nhận trong đầu vào giảng dạy trên, không có nghĩa tên thương hiệu/SKU gốc đã được kiểm. E1 là [ảnh mẫu sầu riêng có sẵn trong repo](../assets/showcase/sau-rieng-ri6-main.jpg). Ngoài ra không có hồ sơ sản phẩm, bản gốc nhãn, kiểm nghiệm, vùng trồng hay tài liệu SKU.
 
-| 项目 | 来源/范围 | 状态 | 处理 |
+| Mục | Nguồn/phạm vi | Trạng thái | Xử lý |
 |---|---|---|---|
-| 通用品类名“榴莲礼盒” | E0：教学用户输入 | 已确认（仅称呼/品类） | 可用于本次标题；不扩成品牌或产地证明 |
-| 奶油白/橄榄绿、礼盒与果肉的画面关系 | E1：只能确认样稿外观 | 已确认（仅视觉） | 可作为视觉参考 |
-| 猫山王、马来西亚、D197 | E1 里有字，缺原始商品证据 | 待补证 | 不作为新文案的事实依据 |
-| 认证、重量、到手价、销量 | 未提供 | 待补证 | 不写，不补造 |
-| 图片证明品质/味道/产地 | 图像不能证明 | 禁止这样推断 | 不进入宣称 |
+| Tên ngành hàng chung “Hộp quà sầu riêng Ri6” | E0: đầu vào giảng dạy | Đã xác nhận (chỉ tên gọi/ngành hàng) | Dùng làm tiêu đề lần này; không mở rộng thành bằng chứng thương hiệu hay vùng trồng |
+| Quan hệ hình ảnh tông kem/xanh ô liu, hộp quà và múi sầu riêng | E1: chỉ xác nhận được ngoại hình mẫu | Đã xác nhận (chỉ hình ảnh) | Dùng làm tham chiếu hình ảnh |
+| “Cái Mơn – Bến Tre”, “hạt lép”, “2kg” | E1 có chữ, thiếu bằng chứng sản phẩm gốc | Cần bổ sung bằng chứng | Không làm căn cứ sự thật cho nội dung mới |
+| Chứng nhận (VietGAP/OCOP), giá, lượt bán | Chưa cung cấp | Cần bổ sung bằng chứng | Không viết, không bịa |
+| Dùng ảnh để chứng minh chất lượng/vị/vùng trồng | Ảnh không chứng minh được | Cấm suy luận như vậy | Không đưa vào tuyên bố |
 
-**模式**：标准模式，先完成可支持的视觉规划；真实商品身份与证据是发布前缺口。主驱动力是视觉/质感，不凭图片升级成产地/认证驱动。
+**Chế độ**: chế độ chuẩn, hoàn thành trước phần kế hoạch hình ảnh có hỗ trợ; nhận diện sản phẩm thật và bằng chứng là chỗ thiếu trước khi đăng. Động lực chính là thị giác/chất cảm, không dựa vào ảnh để nâng thành động lực vùng trồng/chứng nhận.
 
-## Storyboard 与唯一确认点
+## Storyboard và điểm xác nhận duy nhất
 
-| 编号 | 任务 | 画面方向 | 证据与缺口 |
+| Mã | Nhiệm vụ | Hướng khung hình | Bằng chứng và chỗ thiếu |
 |---|---|---|---|
-| KV1 | 识别礼盒外观 | 原产品图、暖浅色台面、上方留白 | E1仅支持视觉参考；真实商品身份与宣称待补证 |
+| KV1 | Nhận diện ngoại hình hộp quà | Ảnh sản phẩm gốc, mặt bàn sáng ấm, chừa khoảng trống phía trên | E1 chỉ hỗ trợ tham chiếu hình ảnh; nhận diện sản phẩm thật và tuyên bố cần bổ sung bằng chứng |
 
-标准模式到这里合并提出必要补证与方向确认，只停一次。下面展示后续执行卡的结构，供教学审阅；不表示用户确认或补证已经发生。
+Chế độ chuẩn đến đây gộp phần bổ sung bằng chứng cần thiết và xác nhận hướng đi, chỉ dừng một lần. Bên dưới minh họa cấu trúc thẻ thực thi tiếp theo để xem xét giảng dạy; không có nghĩa người dùng đã xác nhận hay đã bổ sung bằng chứng.
 
-## 单张执行卡
+## Thẻ thực thi một ảnh
 
-### KV1 — 礼盒外观识别
+### KV1 — Nhận diện ngoại hình hộp quà
 
-- 视觉任务：让用户辨认商品与礼盒场景，一张图只承担一个决策问题。
-- 画面：参照 E1 的暖浅色背景、橄榄绿点缀和台面层次；正式生产时用经确认的原产品图，保留准确包装、件数与结构。示意图不能代替实拍证据。
-- 图内文案：使用用户给出的通用品类名“榴莲礼盒”作主标题；原始SKU/品牌名仍待资料确认。不新增副文案、产地、价格或认证。
-- 文字渲染方式：留白排版；上方预留干净文字区，后期叠字。1080px 宽时标题至少72px；必要注释至少36px、底部独立留白，并在约360px宽预览。
-- 文案规格自检：标题“榴莲礼盒”4字，副文案0条，数字/证据标签0个；正式名称仍待核对。
-- Campaign Style Lock：奶油白 + 橄榄绿、柔和棚光、真实产品比例；包装和 Logo 以正式原产品图为准，光影/道具可变，商品身份不可改。
-- 生图 Prompt：以已确认的原产品图为主体，暖浅色台面、柔和棚光、橄榄绿细节点缀，上部保留干净留白供后期标题排版；不生成新的宣传字、价格、认证、产地或水印；包装保真失败时使用原产品图合成。
-- Negative Prompt：包装结构/颜色/Logo/规格漂移、伪造 D197 或原产地、额外赠品、认证徽章、价格、宣传文字、水印。
-- 证据/平台备注：E1 仅提供视觉参考。淘宝当前商品主图/场景图规则、真实商品名称、包装与资质尚待核验；不得把该执行草案标为可直接发布。
+- Nhiệm vụ hình ảnh: giúp người dùng nhận ra sản phẩm và bối cảnh hộp quà, một ảnh chỉ gánh một câu hỏi quyết định.
+- Khung hình: tham chiếu nền sáng ấm, điểm xanh ô liu và các lớp mặt bàn của E1; khi sản xuất thật dùng ảnh sản phẩm gốc đã xác nhận, giữ đúng bao bì, số múi/số trái và cấu trúc. Ảnh minh họa không thay được ảnh chụp thật làm bằng chứng.
+- Chữ trên ảnh: dùng tên ngành hàng chung người dùng đưa “Hộp quà sầu riêng Ri6” làm tiêu đề chính; tên SKU/thương hiệu gốc vẫn chờ tài liệu xác nhận. Không thêm phụ đề, vùng trồng, giá hay chứng nhận.
+- Cách render chữ: chừa khoảng trống; phía trên chừa vùng chữ sạch, ghép chữ hậu kỳ. Ở bề rộng 1080px, tiêu đề ít nhất 72px; chú thích cần thiết ít nhất 36px, vùng trống riêng ở đáy, xem trước ở bề rộng khoảng 360px.
+- Tự kiểm quy cách chữ: tiêu đề “Hộp quà sầu riêng Ri6” 5 tiếng, phụ đề 0 dòng, nhãn số/bằng chứng 0; tên chính thức vẫn cần đối chiếu.
+- Campaign Style Lock: kem + xanh ô liu, sáng studio mềm, tỷ lệ sản phẩm thật; bao bì và logo theo ảnh sản phẩm gốc chính thức, ánh sáng/đạo cụ được thay đổi, nhận diện sản phẩm không được đổi.
+- Prompt tạo ảnh: lấy ảnh sản phẩm gốc đã xác nhận làm chủ thể, mặt bàn sáng ấm, sáng studio mềm, điểm xuyết chi tiết xanh ô liu, phía trên chừa khoảng trống sạch để dàn tiêu đề hậu kỳ; không tạo chữ quảng cáo mới, giá, chứng nhận, vùng trồng hay watermark; bao bì không giữ được thì ghép ảnh sản phẩm gốc.
+- Negative Prompt: trôi cấu trúc/màu/logo/quy cách bao bì, giả mạo “Cái Mơn” hay vùng trồng, quà tặng thừa, huy hiệu chứng nhận, giá, chữ quảng cáo, watermark.
+- Ghi chú bằng chứng/nền tảng: E1 chỉ cung cấp tham chiếu hình ảnh. Quy định ảnh chính/ảnh bối cảnh hiện hành của Shopee, tên sản phẩm thật, bao bì và giấy tờ còn chờ kiểm tra; không được đánh dấu bản nháp thực thi này là đăng được ngay.
 
-## 成图示意与差异
+## Ảnh minh họa và khác biệt
 
-[查看完整既有样稿](https://github.com/feichanggege/ecommerce-visual-copywriting-skill/blob/main/assets/showcase/musang-king-durian-main.jpg)。首屏把该图放在流程旁，便于看清视觉方向。**它不是上述新执行卡已完成的成图**：原图的产地/D197文字仍待补证；正式成图需采用确认后的产品资料，删除不支持的宣传文字，并完成逐字、包装与移动端验收。
+[Xem ảnh mẫu có sẵn đầy đủ](../assets/showcase/sau-rieng-ri6-main.jpg). Màn hình đầu của README đặt ảnh này cạnh quy trình để thấy rõ hướng hình ảnh. **Đây không phải ảnh thành phẩm của thẻ thực thi mới ở trên**: chữ “Cái Mơn – Bến Tre”, “hạt lép”, “2kg” trên ảnh gốc vẫn cần bổ sung bằng chứng; ảnh thành phẩm chính thức phải dùng tài liệu sản phẩm đã xác nhận, xóa chữ quảng cáo không có căn cứ, và soát từng chữ, từng dấu.
 
-## 自审记录
+## Biên bản tự chấm
 
-该稿缺原产品资料，证据与合规未过线，只交付已达标部分。
+Bản này thiếu tài liệu sản phẩm gốc, bằng chứng và tuân thủ chưa qua ngưỡng, chỉ giao phần đã đạt.
 
-| 维度 | 分数 | 依据 | 重写了什么 |
+| Chiều | Điểm | Căn cứ | Đã viết lại gì |
 |---|---|---|---|
-| 证据与合规 | 70 | 未证实宣称已排除，但原产地、真实商品名和包装资料缺失，必要条件①无法满足 | 删除不支持的宣传文字 |
-| 转化逻辑 | 85 | 仅承担商品识别，首图可识别品类 | 无 |
-| 视觉层级 | 82 | 执行卡规定了留白与字号；实际成图待验收 | 无 |
-| 一致性 | 80 | 已列 Style Lock；原产品图未齐，保真待验收 | 无 |
-| 可执行性 | 70 | 只有结构示例，缺指定SKU原产品图；不能当作可直接生图的正式执行卡 | 保留视觉准备方案，不标成正式执行卡 |
-- 机械检查：未运行（教学样例，不冒充工具运行记录）
-- 重写轮次：1
-- 未达标项：证据与合规、可执行性（缺原产品资料与资质原件），补齐后重新自审
+| Bằng chứng và tuân thủ | 70 | Đã loại tuyên bố chưa chứng minh, nhưng thiếu vùng trồng, tên sản phẩm thật và tài liệu bao bì, không thỏa điều kiện bắt buộc ① | Xóa chữ quảng cáo không có căn cứ |
+| Logic chuyển đổi | 85 | Chỉ gánh nhận diện sản phẩm, ảnh đầu nhận ra ngành hàng | Không |
+| Thứ bậc thị giác | 82 | Thẻ thực thi đã quy định khoảng trống và cỡ chữ; ảnh thành phẩm chờ nghiệm thu | Không |
+| Tính nhất quán | 80 | Đã liệt kê Style Lock; ảnh sản phẩm gốc chưa đủ, độ trung thực chờ nghiệm thu | Không |
+| Tính thực thi | 70 | Chỉ có ví dụ cấu trúc, thiếu ảnh sản phẩm gốc của SKU chỉ định; không dùng như thẻ thực thi chính thức để tạo ảnh ngay | Giữ phương án chuẩn bị hình ảnh, không đánh dấu là thẻ chính thức |
+- Kiểm tra cơ học: chưa chạy (ví dụ giảng dạy, không giả làm bản ghi chạy công cụ)
+- Số vòng viết lại: 1
+- Mục chưa đạt: Bằng chứng và tuân thủ, Tính thực thi (thiếu tài liệu sản phẩm gốc và bản gốc giấy tờ), bổ sung xong thì tự chấm lại
 
-这次示例说明 Skill 增加的是可追溯证据、任务分工、风格约束与交接细节，不能把漂亮样稿当作商业宣称已经成立。
+Ví dụ này cho thấy Skill thêm vào bằng chứng truy được, phân vai nhiệm vụ, ràng buộc phong cách và chi tiết bàn giao, không thể coi một ảnh mẫu đẹp là tuyên bố thương mại đã thành lập.

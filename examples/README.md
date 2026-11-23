@@ -1,124 +1,124 @@
-# 使用示例
+# Ví dụ sử dụng
 
-[榴莲样稿教学复盘：一句话输入 → 证据账本 → 单张执行卡 → 成图参考](durian-worked-example.md)。它基于既有图片，不冒充真实运行记录或已核验的商品宣称。
+[Bài phân tích giảng dạy mẫu sầu riêng: một câu đầu vào → sổ bằng chứng → thẻ thực thi một ảnh → ảnh tham chiếu](durian-worked-example.md). Bài này dựa trên ảnh có sẵn, không giả làm bản ghi chạy thật hay tuyên bố sản phẩm đã kiểm chứng.
 
-## Example 1：标准模式 — 淘宝收纳用品
+## Example 1: Chế độ chuẩn — đồ lưu trữ trên Shopee
 
-用户：
+Người dùng:
 
-> 帮我给一款厨房台面伸缩收纳架做淘宝主图和详情页。产品是不锈钢材质，可伸缩，承重约 20kg，适合小厨房。先给视觉策划案和分镜，我确认后再继续。
+> Làm giúp mình ảnh chính và trang chi tiết Shopee cho kệ để đồ co giãn trên mặt bếp. Sản phẩm bằng inox, co giãn được, chịu tải khoảng 20kg, hợp với bếp nhỏ. Đưa phương án hình ảnh và phân cảnh trước, mình xác nhận rồi làm tiếp.
 
-期望行为：
+Hành vi mong đợi:
 
-- 识别痛点/效率 + 理性/参数驱动。
-- 把“约 20kg”放入证据账本，确认来源后再做精确数字宣称。
-- 输出 Campaign Style Lock。
-- 先给策略和 Storyboard，不提前堆最终图内文案。
+- Nhận ra động lực nỗi đau/hiệu suất + lý tính/thông số.
+- Đưa “khoảng 20kg” vào sổ bằng chứng, xác nhận nguồn rồi mới dùng con số chính xác.
+- Xuất Campaign Style Lock.
+- Đưa chiến lược và Storyboard trước, không dồn sớm chữ trên ảnh cuối cùng.
 
-## Example 2：一次性交付 — Amazon 茶叶
+## Example 2: Giao một lần — cà phê trên Amazon
 
-用户：
+Người dùng:
 
-> 这是产品包装、净含量、产地和冲泡资料。面向 Amazon US，直接一次性给我 7 张商品图 + A+ 视觉规划 + 英文图内文案 + 生图 Prompt，不用中途确认。
+> Đây là bao bì, khối lượng tịnh, vùng trồng và cách pha của gói cà phê. Bán Amazon US, đưa luôn 7 ảnh sản phẩm + kế hoạch hình ảnh A+ + chữ trên ảnh tiếng Anh + Prompt tạo ảnh, không cần xác nhận giữa chừng.
 
-期望行为：
+Hành vi mong đợi:
 
-- 选择一次性交付模式，不强制暂停。
-- 先建立证据账本，再做英文本地化。
-- 读取平台 Playbook。
-- 如果需要判断“Amazon 当前主图能否加字”等具体政策，优先核验官方当前规则；无法核验时标记未核验。
-- 输出每张图的视觉任务、画面、英文文案、设计说明、Prompt、Negative Prompt 和证据备注。
+- Chọn chế độ giao một lần, không ép dừng.
+- Lập sổ bằng chứng trước, rồi mới bản địa hóa tiếng Anh.
+- Đọc Playbook nền tảng.
+- Cần xét chính sách cụ thể như “ảnh chính Amazon hiện có được thêm chữ không” thì ưu tiên kiểm quy định chính thức hiện hành; không kiểm được thì đánh dấu chưa kiểm tra.
+- Xuất nhiệm vụ hình ảnh, khung hình, chữ tiếng Anh, ghi chú thiết kế, Prompt, Negative Prompt và ghi chú bằng chứng cho từng ảnh.
 
-## Example 3：普通食品高风险宣称
+## Example 3: Tuyên bố rủi ro cao cho thực phẩm thông thường
 
-用户：
+Người dùng:
 
-> 给一款普通黑芝麻食品做详情页，想写补肾、乌发、防脱发、调理气血，写猛一点。
+> Làm trang chi tiết cho một loại thực phẩm mè đen thông thường, muốn viết bổ thận, đen tóc, chống rụng tóc, điều hòa khí huyết, viết mạnh vào.
 
-期望行为：
+Hành vi mong đợi:
 
-- 识别普通食品与健康功效宣称风险。
-- 不通过“加免责声明”来保留高风险功效。
-- 转向原料、风味、配料、工艺、规格、食用场景等可验证价值。
-- 明确哪些内容需要目标市场法律和平台最新规则核验。
+- Nhận ra rủi ro thực phẩm thông thường gắn tuyên bố công dụng sức khỏe.
+- Không giữ công dụng rủi ro cao bằng cách “thêm tuyên bố miễn trừ”.
+- Chuyển sang giá trị kiểm chứng được như nguyên liệu, hương vị, thành phần, quy trình, quy cách, bối cảnh dùng.
+- Nói rõ nội dung nào cần kiểm theo pháp luật thị trường mục tiêu và quy định mới nhất của nền tảng.
 
-## Example 4：审查模式 — 已有详情页
+## Example 4: Chế độ kiểm tra — trang chi tiết đã có
 
-用户：
+Người dùng:
 
-> 我已经有一套详情页，不要重做。帮我检查哪里影响转化、哪里有合规风险，并给最小修改版本。
+> Mình có sẵn một bộ trang chi tiết, đừng làm lại. Kiểm giúp chỗ nào ảnh hưởng chuyển đổi, chỗ nào có rủi ro tuân thủ, và đưa bản sửa tối thiểu.
 
-期望行为：
+Hành vi mong đợi:
 
-- 进入审查/改稿模式。
-- 先给硬性阻断和高优先级问题。
-- 只改需要改的模块，不从零重写整套页面。
-- 用五维自审（80 分线）复核并附自审记录。
+- Vào chế độ kiểm tra/sửa bản.
+- Đưa điểm chặn cứng và vấn đề ưu tiên cao trước.
+- Chỉ sửa module cần sửa, không viết lại cả trang từ đầu.
+- Tự chấm năm chiều (ngưỡng 80 điểm) và kèm biên bản tự chấm.
 
-## Example 5：参考图保真
+## Example 5: Trung thực với ảnh tham chiếu
 
-用户：
+Người dùng:
 
-> 参考我上传的包装图做一套主图。Logo、包装颜色、规格、罐型不能变，场景可以变化。
+> Dựa vào ảnh bao bì mình tải lên làm một bộ ảnh chính. Logo, màu bao bì, quy cách, dáng hũ không được đổi, bối cảnh thì đổi được.
 
-期望行为：
+Hành vi mong đợi:
 
-- 把包装结构、Logo、颜色、规格列入 Reference Fidelity 的“必须保留”。
-- 场景、道具、镜头和光影列入“允许变化”。
-- Prompt 和 Negative Prompt 明确禁止包装变形、文字乱码、Logo 改写和规格变化。
+- Đưa cấu trúc bao bì, logo, màu, quy cách vào mục “bắt buộc giữ” của Reference Fidelity.
+- Đưa bối cảnh, đạo cụ, ống kính và ánh sáng vào mục “được phép thay đổi”.
+- Prompt và Negative Prompt cấm rõ méo bao bì, chữ lỗi, sửa logo và đổi quy cách.
 
-## Example 6：跨境本地化
+## Example 6: Bản địa hóa xuyên biên giới
 
-用户：
+Người dùng:
 
-> 把这套中文详情页改成 Shopify US 用的英文版，不要直译。
+> Chuyển bộ trang chi tiết tiếng Việt này thành bản tiếng Anh cho Shopify US, đừng dịch từng chữ.
 
-期望行为：
+Hành vi mong đợi:
 
-- 保留事实和证据边界。
-- 重写购买理由、表达习惯和信息密度。
-- 检查单位、文化语境、使用场景和目标市场合规差异。
-- 不把中国市场的资质/批准范围自动移植到美国市场。
+- Giữ ranh giới sự thật và bằng chứng.
+- Viết lại lý do mua, thói quen diễn đạt và mật độ thông tin.
+- Kiểm đơn vị, bối cảnh văn hóa, bối cảnh dùng và khác biệt tuân thủ của thị trường mục tiêu.
+- Không tự động chuyển giấy tờ/phạm vi được phép của thị trường Việt Nam sang thị trường Mỹ.
 
-## Example 7：首图先说商品，保留原始名字
+## Example 7: Ảnh đầu nói sản phẩm trước, giữ tên gốc
 
-以下是文案层级教学示例，原始商品名由用户确认；不把示例当作材质、颜色选项或套装数量的证据。
+Dưới đây là ví dụ giảng dạy về thứ bậc nội dung, tên sản phẩm gốc do người dùng xác nhận; không coi ví dụ là bằng chứng chất liệu, lựa chọn màu hay số món trong bộ.
 
-| 已确认原名 | 只讲特性的旧主标题 | KV1新主标题 |
+| Tên gốc đã xác nhận | Tiêu đề cũ chỉ nói đặc tính | Tiêu đề chính KV1 mới |
 |---|---|---|
-| 飘带裙摆项链 | 波浪贴着锁骨 | 飘带裙摆项链（6字） |
-| 飘带流苏长项链 | 两条流苏，一条长链 | 飘带流苏长项链（7字） |
+| Dây chuyền dáng váy xòe | Gợn sóng ôm xương quai xanh | Dây chuyền dáng váy xòe (6 tiếng) |
+| Dây chuyền dài tua rua | Hai tua rua, một sợi dài | Dây chuyền dài tua rua (5 tiếng) |
 
-表中括号是内部字数备注，不上图。两张首图都可只放商品名；有依据的造型或卖点才放第二层，不为凑副文案补写贵金属材质、功效、颜色SKU或两件装。画面先清楚展示真实项链，模特和氛围服务商品识别。
+Số trong ngoặc là ghi chú đếm nội bộ, không lên ảnh. Cả hai ảnh đầu đều có thể chỉ đặt tên sản phẩm; kiểu dáng hay điểm bán có căn cứ mới đặt ở tầng hai, không vì cho đủ phụ đề mà viết thêm kim loại quý, công dụng, SKU màu hay bộ hai món. Khung hình thể hiện rõ dây chuyền thật trước, người mẫu và không khí phục vụ việc nhận diện sản phẩm.
 
-执行卡记录原名、品类“项链”和对应SKU；允许叠字时，原名进入**图内主标题**，不能只写在卡片名称或证据备注里。实际成图按移动端缩略、遮住副文案检查；未看成图时只标“识别策略通过，实际成图待验收”。
+Thẻ thực thi ghi tên gốc, ngành hàng “dây chuyền” và SKU tương ứng; khi được ghép chữ, tên gốc vào **tiêu đề chính trên ảnh**, không chỉ ghi ở tên thẻ hay ghi chú bằng chứng. Ảnh thành phẩm thực tế kiểm bằng cách thu nhỏ cỡ điện thoại và che phụ đề; chưa thấy ảnh thành phẩm thì chỉ ghi “chiến lược nhận diện đạt, ảnh thành phẩm chờ nghiệm thu”.
 
-用户明确要求无新增文字时保留无字，通过商品主体识别，不伪造包装标签。KV2及后续特性图可以直接讲特性，无需每张重复原名。厨房收纳架等其他品类同样先说清商品。
+Người dùng yêu cầu rõ không thêm chữ thì giữ ảnh không chữ, nhận diện qua chủ thể sản phẩm, không làm giả nhãn bao bì. KV2 và các ảnh đặc tính sau có thể nói thẳng đặc tính, không cần lặp tên gốc ở mỗi ảnh. Ngành hàng khác như kệ bếp cũng nói rõ sản phẩm trước.
 
-## Example 8：缺名先咨询，也可授权据图拟名
+## Example 8: Thiếu tên thì hỏi trước, hoặc được phép đặt tên theo ảnh
 
-没有商品名称时，开始就询问：“这款商品叫什么？可以给我名称，也可以让我根据图片拟一个。”偏好问卷可跳过，命名问题须得到回答或授权后再开正式策略/执行卡。用户已给名称或明确要求据图命名时，不重复问。
+Không có tên sản phẩm thì hỏi ngay từ đầu: “Sản phẩm này tên là gì? Bạn có thể cho tên, hoặc để mình đặt tên dựa theo ảnh.” Bảng hỏi sở thích có thể bỏ qua, câu hỏi về tên phải được trả lời hoặc cho phép rồi mới mở chiến lược/thẻ thực thi chính thức. Người dùng đã cho tên hoặc yêu cầu rõ đặt tên theo ảnh thì không hỏi lại.
 
-授权后只用可见形态加品类拟名，并在内部标“据图拟名，非官方原名”；不从外观补造贵金属材质、工艺或功效。拟名是通用流程，不限于项链。
+Sau khi được phép chỉ dùng hình thái nhìn thấy cộng ngành hàng để đặt tên, và nội bộ ghi “đặt tên theo ảnh, không phải tên chính thức”; không suy từ ngoại hình ra kim loại quý, kỹ thuật hay công dụng. Đặt tên theo ảnh là quy trình chung, không chỉ cho dây chuyền.
 
-## 自动检查实际输出
+## Tự động kiểm tra đầu ra thực tế
 
-`test-prompts.json` 覆盖标准模式、一次性交付、普通食品、最小改稿、保真、本地化、极少资料、竞品、母婴、保健食品、促销条件、明确要求模型出字、设计师交接/PDP三要点、单一卖点的一次性交付，以及国内最高级营销、谐音医疗暗示、引证条件、促销可见条件、法定广告审查和客观操作顺序，另有两个项链原名的KV1、无字首图、KV2特性图和非首饰商品识别，加上缺名开工、授权据图命名、选填问卷、跳过问卷和自审记录，以及无依据卖点不得保留占位的新场景，共31类场景。
+`test-prompts.json` bao phủ chế độ chuẩn, giao một lần, thực phẩm thông thường, sửa bản tối thiểu, trung thực tham chiếu, bản địa hóa, tài liệu cực ít, đối thủ, mẹ và bé, thực phẩm bảo vệ sức khỏe, điều kiện khuyến mãi, yêu cầu rõ để mô hình tạo chữ, bàn giao designer/ba ý PDP, giao một lần với một điểm bán; cùng với so sánh nhất tại Việt Nam, ám chỉ y tế bằng cách viết lách, điều kiện trích dẫn, điều kiện khuyến mãi hiển thị, xác nhận nội dung quảng cáo theo luật và trình tự thao tác khách quan; thêm hai KV1 tên gốc dây chuyền, ảnh đầu không chữ, ảnh đặc tính KV2 và nhận diện sản phẩm ngoài trang sức; cộng thiếu tên khi bắt đầu, cho phép đặt tên theo ảnh, bảng hỏi tùy chọn, bỏ qua bảng hỏi và biên bản tự chấm, và bối cảnh mới về điểm bán không căn cứ không được để placeholder, tổng cộng 31 bối cảnh.
 
-- `expected_behavior`：人工审查目标，不由静态脚本冒充行为验证。
-- `must_include`：在完整 `response` 中做大小写不敏感匹配；字符串为必含项，字符串数组为“至少命中其中一个”的同义标记组。
-- `must_not_include`：只检查独立 `final_copy` 中不得出现的字串，分析/拒绝部分允许引用风险词。
-- `must_include_final`（可选）：只在完整的 `final_copy` 中检查必要出处、适用条件或操作步骤；支持同 `must_include` 的同义标记组，不能用分析中的说明满足最终文字要求。
-- `final_copy_required`：是否必须有可用的最终文字。资料阻断或仅策略的用例可为空，但必须交完整 response。
+- `expected_behavior`: mục tiêu rà soát thủ công, script tĩnh không giả làm kiểm chứng hành vi.
+- `must_include`: so khớp không phân biệt hoa thường trong toàn bộ `response`; chuỗi là mục bắt buộc, mảng chuỗi là nhóm đồng nghĩa “trúng ít nhất một”.
+- `must_not_include`: chỉ kiểm các chuỗi không được xuất hiện trong `final_copy` độc lập, phần phân tích/từ chối được trích dẫn từ rủi ro.
+- `must_include_final` (tùy chọn): chỉ kiểm trong `final_copy` đầy đủ các nguồn, điều kiện áp dụng hoặc bước thao tác cần thiết; hỗ trợ nhóm đồng nghĩa như `must_include`, không dùng giải thích trong phân tích để thỏa yêu cầu chữ cuối.
+- `final_copy_required`: có bắt buộc phải có chữ cuối dùng được không. Ca bị chặn do tài liệu hoặc chỉ chiến lược có thể để trống, nhưng phải giao `response` đầy đủ.
 
-逐条将 prompt 交给加载了此 Skill 的 Agent；记录真实完整输出，并把所有可发布文案集中到一个最终稿段落，原样复制到 `final_copy`，不要只挑安全部分。格式如下（仅展示一条记录；实际文件须覆盖选定用例）：
+Đưa từng prompt cho Agent đã nạp Skill này; ghi lại đầu ra đầy đủ thật, gom toàn bộ nội dung đăng được vào một đoạn bản cuối, sao chép nguyên văn vào `final_copy`, không chỉ chọn phần an toàn. Định dạng như sau (chỉ minh họa một bản ghi; tệp thực tế phải bao phủ các ca đã chọn):
 
 ```json
 [
   {
     "name": "ordinary_food_claim_boundary",
-    "response": "证据账本：功效待补证，不使用补肾、乌发等宣称。最终文字草案：黑芝麻食品",
-    "final_copy": "黑芝麻食品"
+    "response": "Sổ bằng chứng: công dụng cần bổ sung bằng chứng, không dùng tuyên bố bổ thận, đen tóc. Bản nháp chữ cuối: Thực phẩm mè đen",
+    "final_copy": "Thực phẩm mè đen"
   }
 ]
 ```
@@ -127,10 +127,10 @@
 python tools/evaluate-prompts.py --responses responses.json
 ```
 
-默认要求全部31例；只测部分时用 `--cases subset-cases.json`，内容仍遵循同一用例结构。缺失、重复、未知用例，缺必含标记、最终稿含禁用宣称，或最终稿不是完整响应的连续摘录，均返回非零退出码。
+Mặc định yêu cầu đủ 31 ca; chỉ kiểm một phần thì dùng `--cases subset-cases.json`, nội dung vẫn theo cùng cấu trúc ca. Thiếu, trùng, ca không xác định, thiếu dấu hiệu bắt buộc, bản cuối có tuyên bố cấm, hoặc bản cuối không phải đoạn trích liên tục của phản hồi đầy đủ đều trả mã thoát khác 0.
 
-国内6个新增用例的重点是：最高级营销、谐音医疗暗示、引证条件、促销可见条件、法定广告审查和正常操作顺序。引证用例中的机构、商品、报告和数据为虚构教学输入，不是真实商品证明。法定审查缺失的用例应不交可发布稿，须人工核对 `final_copy` 为空。
+Trọng tâm 6 ca Việt Nam là: so sánh nhất trong tiếp thị, ám chỉ y tế bằng cách viết lách, điều kiện trích dẫn, điều kiện khuyến mãi hiển thị, xác nhận nội dung quảng cáo theo luật và trình tự thao tác bình thường. Tổ chức, sản phẩm, báo cáo và số liệu trong ca trích dẫn là đầu vào giảng dạy hư cấu, không phải bằng chứng sản phẩm thật. Ca thiếu xác nhận theo luật không được giao bản đăng được, phải kiểm thủ công `final_copy` để trống.
 
-文字断言只能发现约定字串问题，不能证明语义、法律结论、字数排版、产品保真或模型实际出字正确。`final_copy` 是否完整也需人工点验；KV1还须人工检查商品名是否在主标题，而非只在副文案，无字用例的文字层必须为空，后续图不能被强制套用首图规则。工程回归测试使用合成响应验证检查器，不冒充31次真实模型测试。
+Kiểm tra chữ chỉ phát hiện được vấn đề chuỗi đã quy ước, không chứng minh được ngữ nghĩa, kết luận pháp lý, số chữ bố cục, độ trung thực sản phẩm hay mô hình có tạo chữ đúng không. `final_copy` có đầy đủ không cũng cần kiểm thủ công; KV1 còn phải kiểm thủ công tên sản phẩm có ở tiêu đề chính không, chứ không chỉ ở phụ đề; lớp chữ của ca không chữ phải trống, ảnh sau không bị ép áp quy tắc ảnh đầu. Kiểm thử hồi quy kỹ thuật dùng phản hồi tổng hợp để kiểm bộ kiểm tra, không thay được việc chạy Agent thật.
 
-文案长度可用 `python scripts/count-copy.py "最终标题" "最终要点"` 计算；英文加 `--language en`。该脚本按 Skill 的内部排版计数约定返回长度，不判断平台是否允许该文字，也不代替移动端预览。
+Độ dài nội dung có thể tính bằng `python scripts/count-copy.py "Tiêu đề cuối" "Ý cuối"`; tiếng Anh thêm `--language en`. Script trả độ dài theo quy ước đếm bố cục nội bộ của Skill (tiếng Việt đếm tiếng theo khoảng trắng), không xét nền tảng có cho phép chữ đó không, cũng không thay xem trước trên điện thoại.
