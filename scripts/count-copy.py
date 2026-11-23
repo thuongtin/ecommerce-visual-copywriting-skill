@@ -5,7 +5,9 @@ import json
 
 
 def count(text: str, language: str) -> int:
-    if language in ("vi", "en"):
+    if language == "en":
+        return len(text.split())
+    if language == "vi":
         return sum(any(char.isalnum() for char in token) for token in text.split())
     return sum(not char.isspace() for char in text)
 
